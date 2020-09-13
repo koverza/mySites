@@ -1,0 +1,251 @@
+/* Fonts 
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* Обнуление */
+*, *:before,*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Обнуление */
+
+.header_container{
+    width: 1000px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.container{
+    width: 500px;
+    margin: 0 auto;
+    height: auto;
+    
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/intro.png') center no-repeat;
+    background-size: cover;
+}
+
+.header{
+    padding-top: 85px;
+}
+
+.timber_house{
+    position: relative;
+    padding-top: 5px;
+    width: 253px;
+    height: 253px;
+    background-color: #FFFFFF;
+    border: solid 5px #f4d4a5;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timber_text{
+    color: #bf4200;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tel{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 14px;
+}
+
+.timber_key{
+    color: #1fad26;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 9px;
+}
+
+.sale{
+    position: absolute;
+    top: 250px;
+    left: 320px;
+}
+
+/* block1*/
+
+.block1{
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.text1{
+    color: #D17B29;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.text2{
+    margin-top: 40px;
+}
+
+.text3{
+    margin-top: 20px;
+}
+
+.text4{
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.tree{
+    margin-top: 50px;
+    margin-bottom: 43px;
+    width: 100px;
+    height: 70px;
+    background: url('../img/footer.jpg') center no-repeat;
+    background-size: cover;
+}
+
+/* block2*/
+
+.block2{
+    text-align: center;
+}
+
+.main_text{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #d0662d;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.house{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+}
+
+.font{
+    font-weight: 700;
+}
+
+.idential{
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.green{
+    font-weight: normal;
+    color: green;
+    font-size: 14px;
+}
+
+.house_img{
+    margin-bottom: 9px;
+}
+.house_pic{
+    margin-bottom: 60px;
+}
+
+/* download */
+
+.download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 155px;
+    background-color: #F1E0BD;
+}
+
+.katalog{
+    border: 3px solid yellow;
+    background-color: green;
+    padding-right: 23px;
+    padding-left: 23px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    color: white;
+    cursor: pointer;
+}
+
+.katalog:hover{
+    text-decoration: underline;
+}
+
+.works{
+    text-align: center;
+}
+
+.works_text{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #d0662d;
+    font-weight: 700;
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+
+.works_text2{
+    margin-top: 30px;
+}
+
+.gallery{
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.gallery img{
+    display: block;
+}
+
+.footer{
+    text-align: center;
+    margin: 0 auto;
+}
+.footer-img{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.email{
+color: blue;
+text-decoration: none;
+margin-top: 40px;
+margin-bottom: 100px;
+cursor: pointer;
+font-size: 30px;
+}
+
+.email:hover{
+text-decoration: underline;
+}
