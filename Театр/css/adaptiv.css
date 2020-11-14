@@ -192,7 +192,7 @@
 @media (max-width: 768px) { 
 
     .container{
-        width: 600px;
+        max-width: 600px;
         margin: 0 auto;
     }
 
@@ -212,14 +212,16 @@
     }
 
     .top{
-        width: 650px;
+        width: 600px;
         display: flex;
         justify-content: center;
         flex-direction: row;
     }
 
     .tel{
+        width: 350px;
         margin-left: 370px;
+        font-size: 20px;
     }
 
     .about__block{
@@ -321,8 +323,7 @@
 @media (max-width: 576px) { 
 
     .container{
-        max-width: 640px;
-        margin: 0 auto;
+        min-width: 500px;
     }
 
     .img{
@@ -330,12 +331,13 @@
     }
 
     .tel{
+        width: 200px;
         padding-left: 20px;
     }
 
 
     .copyright{
-        width: 620px;
+        width: 500px;
         padding-left: 50px;
     }
 
@@ -537,44 +539,34 @@
 
 }
 
-@media (max-width: 576px) {
-    .header__content{
-        padding-left: 70px;
-    }
 
-    .top{
-        width: 700px;
-    }
-
-    .tel{
-        padding-left: 80px;
-    }
-}
 
 @media (max-width: 375px) {
-    .header__content{
-        padding-left: 90px;
+    .container{
+    max-width: 370px;
     }
 
-    .top{
-        width: 720px;
+    .header__content{
+        width: 300px;
+        padding-left: 60px;
     }
 
     .tel{
-        padding-left: 80px;
+        width: 350px;
+        margin-left: 350px;
     }
 }
 
 @media (max-width: 320px) {
+    
     .header__content{
-        padding-left: 120px;
+        padding-left: 90px;
     }
 
-    .top{
-        width: 750px;
-    }
+
 
     .tel{
-        padding-left: 80px;
+        width: 200px;
+        padding-left: 40px;
     }
 }
