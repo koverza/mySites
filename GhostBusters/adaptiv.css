@@ -1,5 +1,7 @@
 @media (max-width: 375px) {
 
+
+
     
     .header{
     z-index: 2;
@@ -38,7 +40,7 @@
    }
 
    .play{
-       width: 309px;
+       width: 299px;
    }
 
    .poster{

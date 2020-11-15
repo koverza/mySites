@@ -490,6 +490,7 @@ li a{
 }
 
 .fas.fa-dot-circle{
+    visibility: hidden;
     padding-right: 100px;
 }
 
