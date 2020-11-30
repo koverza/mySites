@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Global</title>
+
+    <!--Подключаем стили-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Подключаем иконки-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-
+    fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG95r"
+    crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="left"> <!--Левая часть-->
+
+            <a href="index.html"  class="logo__block">
+                <img src="./img/logo.svg" alt="" class="logo">
+                
+            </a href="#" >
+
+            <div class="left__block">
+
+                <ul class="nav">
+
+                    <li>
+                        <a href="list.html" class="nav__link">
+                            <i class="fas fa-list-ul"></i>
+
+                            <button class="text">Список накладных</button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav__link on">
+                            <i class="fas fa-file-alt"></i>
+
+                            <button class="text">Справочники</button>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+
+                    <div class="hidden__block">
+                        <li>
+                            <a href="firm.html" class="nav__link">
+                                <i class="fas fa-building"></i>
+    
+                                <button class="text">Фирмы</button>
+                                
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="contacts.html" class="nav__link">
+                                <i class="fas fa-user-friends"></i>
+    
+                                <button class="text">Контакты</button>
+                                
+                            </a>
+                        </li>
+                    </div>
+                    
+
+                </ul>
+                <!--.nav-->
+
+            </div>
+
+        </div>
+        <!--left-->
+
+
+        <div class="right"> <!--Правая часть-->
+                
+            <div class="header">
+
+                <div class="container">
+
+                    <div class="header__inner">
+
+                        <a href="#create">
+                    
+                            <button class="header__button">
+                                <i class="fas fa-plus"></i>
+                                Создать накладную
+                            </button>
+        
+                            <a href="#">
+                                <i class="far fa-user"></i>
+                            </a>
+                        </a>
+
+                    </div>
+                    <!-- /.header__inner -->
+                    
+                </div>
+                <!-- /.container -->
+                
+            </div>
+            <!-- /.header -->
+
+
+            <div class="filter">
+
+                <div class="container">
+
+                    <div class="filter__inner">
+
+
+                        <div class="filter__row">
+
+                            <div class="filter__block">
+
+                                <div class="filter__podblock">
+
+                                    <div class="filter__text">Фильтры:</div>
+                    
+                                    <i class="fas fa-phone-volume"></i>
+                                    <input type="text" placeholder="Номер" class="filter__firstInput">
+
+                                </div>
+
+
+                                <div class="filter__podblock">
+
+                                    <div class="filter__text">За период:</div>
+                    
+                                    <input type="date"  class="filter__thirdInput">
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="filter__block">
+
+                                <div class="filter__podblock">
+
+                                    <i class="fas fa-spinner"></i>
+
+                                    <select name="select" class="filter__select">
+                                        <option value="1">Статус</option>
+                                        <option value="2">Отменена</option>
+                                        <option value="3">Заявка</option>
+                                        <option value="4">В транзите</option>
+                                        <option value="5">На доставке</option>
+                                        <option value="6">Доставлена</option>
+                                        <option value="7">На уточнении</option>
+                                        <option value="8">Не доставлена</option>
+                            
+                                    </select>
+                                </div>
+
+                                <div class="filter__podblock">
+                                    <input type="date"  class="filter__thirdInput">
+                                </div>
+
+                            </div>
+
+                            <div class="filter__block">
+
+                                <div class="filter__podblock">
+                                    <i class="fas fa-box-open"></i>
+                                    <input type="text" placeholder="Получатель: название, представитель, телефон, адрес" class="filter__secondInput">
+                                </div>
+
+                                <div class="filter__podblock">
+
+                                    <a href="#" >
+                                        <button class="old__view">Старый вид</button>
+                                    </a>
+
+                                    <a href="#" >
+                                        <button class="discharge">
+                                            <i class="fas fa-undo-alt"></i>
+                                            Сбросить
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>    
+
+                    </div>
+                    <!-- /.filter__inner -->
+
+                    <div class="list">
+                        <div class="list__inner">
+
+                            <div class="list__header">
+
+                                <div class="list__description">
+
+                                    <div class="list__title">Список накладных</div>
+
+                                    <div class="list__subtitle">Всего накладных: 24</div>
+
+                                </div>
+
+                                <div class="list__icon">
+
+                                    <a href="#">
+                                        <button class="list__button">
+                                            <i class="fas fa-th"></i>
+                                        </button>                                        
+                                    </a>
+
+                                    <a href="#">
+                                        <button class="list__button">
+                                            <i class="fas fa-th-large"></i>
+                                        </button>
+                                    </a>
+
+                                    <a href="#">
+                                        <button class="list__button">
+                                            <i class="fas fa-sd-card"></i>
+                                        </button>
+                                    </a>      
+                                </div>
+
+                            </div>
+
+                            <div class="list__name">
+                                <div class="name__text">Номер/Дата</div>
+                                <div class="name__text">Отправитель</div>
+                                <div class="name__text">Получатель</div>
+                                <div class="name__text">Параметры</div>
+                                <div class="name__text">Статус</div>
+                                <div class="name__text">Действие</div>
+                            </div>
+
+                            <div class="list__content">
+                                <div class="content__text">7894561
+                                    <br>
+                                    18/11/20  17:30</div>
+                                <div class="content__text">Представитель</div>
+                                <div class="content__text">Получатель</div>
+                                <div class="content__text">Название параметра</div>
+                                <div class="content__text">Заявка</div>
+                                <div class="content__text">
+                                    <div class="text__block">
+                                        <i class="far fa-clone"></i>
+                                        <i class="fas fa-print"></i>
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list__content">
+                                <div class="content__text">7894561
+                                    <br>
+                                    18/11/20  17:30</div>
+                                <div class="content__text">Представитель</div>
+                                <div class="content__text">Получатель </div>
+                                <div class="content__text">Название параметра</div>
+                                <div class="content__text">Заявка</div>
+                                <div class="content__text">
+                                    <div class="text__block">
+                                        <i class="far fa-clone"></i>
+                                        <i class="fas fa-print"></i>
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list__content">
+                                <div class="content__text">7894561
+                                    <br>
+                                    18/11/20  17:30</div>
+                                <div class="content__text">Представитель</div>
+                                <div class="content__text">Получатель</div>
+                                <div class="content__text">Название параметра</div>
+                                <div class="content__text">Заявка</div>
+                                <div class="content__text">
+                                    <div class="text__block">
+                                        <i class="far fa-clone"></i>
+                                        <i class="fas fa-print"></i>
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="pages">
+                        <div class="pages__inner">
+                            <a href="#">
+                                <button class="page__block">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                            </a>
+
+                            <a href="#">
+                                <button class="page__block">1</button>
+                            </a>
+
+                            <a href="#">
+                                <button class="page__block">2</button>
+                            </a>
+
+                            <a href="#">
+                                <button class="page__block">3</button>
+                            </a>
+
+                            <a href="#">
+                                <button class="page__block">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container -->
+            
+            </div>
+            <!-- /.filter -->
+
+           
+        </div>
+        <!--right-->
+
+    </div>
+    <!--wrapper-->
+
+
+    <!--Подключаем скрипты-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
+
+
+
+
+                            
+                    
+                           
+                    
+                            
+                     
+                    
+                        

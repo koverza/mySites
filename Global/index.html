@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Global</title>
+
+    <!--Подключаем стили-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Подключаем иконки-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-
+    fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG95r"
+    crossorigin="anonymous">
+
+    
+
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="left"> <!--Левая часть-->
+
+            <a href="#"  class="logo__block">
+
+                <img src="./img/logo.svg" alt="" class="logo">
+                
+            </a href="#" >
+
+            <div class="left__block">
+
+                <ul class="nav">
+
+                    <li>
+                        <a href="list.html" class="nav__link">
+                            <i class="fas fa-list-ul"></i>
+
+                            <button class="text">Список накладных</button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav__link on">
+                            <i class="fas fa-file-alt"></i>
+
+                            <button class="text">Справочники</button>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+
+                    <div class="hidden__block">
+                        <li >
+                            <a href="firm.html" class="nav__link">
+                                <i class="fas fa-building"></i>
+    
+                                <button class="text">Фирмы</button>
+                                
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="contacts.html" class="nav__link">
+                                <i class="fas fa-user-friends"></i>
+    
+                                <button class="text">Контакты</button>
+                                
+                            </a>
+                        </li>
+                    </div>
+
+                    
+                    
+
+                </ul>
+                <!--.nav-->
+
+            </div>
+
+        </div>
+        <!--left-->
+
+
+        <div class="right"> <!--Правая часть-->
+                
+            <div class="header">
+
+                <div class="container">
+
+                    <div class="header__inner">
+
+                        <a href="#create"></a>
+                    
+                            <button class="header__button" >
+
+                                <i class="fas fa-plus" ></i>
+                                Создать накладную
+                                
+                            </button>
+        
+                            <a href="#">
+                                <i class="far fa-user"></i>
+                            </a>
+                            
+                        </a>
+
+
+
+                    </div>
+                    <!-- /.header__inner -->
+                    
+                </div>
+                <!-- /.container -->
+                
+            </div>
+           
+        </div>
+        <!--right-->
+
+        <div class="create" id="create">
+
+            <div class="create__body">
+
+                <h1 class="create__name">Новая накладная</h1>
+
+                <div class="create__block">
+
+                    <div class="create__bg">
+                        <div class="create__podblock">
+
+                            <h2 class="create__title">Отправитель</h2>
+
+                            <div class="send__block">
+
+                                <div class="create__pod">
+                                    <div class="create__description">ФИО</div>
+    
+                                    <input type="text" class="create__input">
+                                </div>
+    
+                                <div class="create__pod">
+                                    <div class="create__description">Отправитель</div>
+    
+                                    <select class="create__select">
+                                        <option value="">Украина</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+
+                                    
+                                
+                                </div>
+    
+                                <div class="create__pod">
+                                    <div class="create__description">Телефон</div>
+        
+                                    <input type="text" class="create__input" placeholder="+ 3 80X XXX XXX">
+                                </div>
+    
+                                <div class="create__pod">
+                                    <div class="create__description">Область</div>
+        
+                                    <select class="create__select">
+                                        <option value="">не указана</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+
+                                    <select class="create__select">
+                                        <option value="">не указана</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </div>
+    
+                                <div class="create__pod">
+                                    <div class="create__description">Город</div>
+        
+                                    <select class="create__select">
+                                        <option value="">Введите</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </div>
+    
+                                <div class="create__pod">
+                                    <div class="create__description">Индекс</div>
+        
+                                    <input type="text" class="create__input" placeholder="20 7033">
+                                </div>
+    
+                                <div class="create__pod">
+                                    <div class="create__description">Адрес</div>
+        
+                                    <input type="text" class="create__input">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="create__row">
+
+                            <div class="row__name">Доставка</div>
+
+                            <div class="row__block">
+                                <input type="radio" checked name="" id="">
+                                По Украине
+                            </div>
+                            
+                            <div class="row__block">
+                                <input type="radio" name="" id="">
+                               Международная
+                            </div>
+
+                        </div>
+
+                        <div class="create__row">
+
+                            <div class="row__name">Оплата</div>
+
+                            <div class="row__block">
+                                <input type="radio" checked name="" id="">
+                                Отправителем
+                            </div>
+                            
+                            <div class="row__block">
+                                <input type="radio" name="" id="">
+                               Получателем
+                            </div>
+
+                            <div class="row__block">
+                                <input type="radio" name="" id="">
+                               Другой
+                            </div>
+                            
+                        </div>
+
+                        <div class="create__row">
+
+                            <div class="row__name">Экспрасс</div>
+
+                            <div class="row__block">
+                                <input type="radio" checked name="" id="">
+                                18
+                            </div>
+                            
+                            <div class="row__block">
+                                <input type="radio" name="" id="">
+                               10
+                            </div>
+
+                            <div class="row__block">
+                                <input type="radio" name="" id="">
+                               12
+                            </div>
+
+                            <div class="row__block">
+                                <input type="radio" name="" id="">
+                               Субботний
+                            </div>
+                            
+                        </div>
+
+                        <div class="create__row">
+
+                            <div class="row__name">Доставка</div>
+
+                            <div class="row__block">
+                                <input type="radio" checked name="" id="">
+                                По Украине
+                            </div>
+                            
+                            <div class="row__block">
+                                <input type="radio" name="" id="">
+                               Международная
+                            </div>
+                            
+                        </div>
+
+                        <div class="create__row">
+
+                            <div class="row__name">Детали</div>
+
+                            <div class="row__block">
+                                <input type="checkbox" checked name="" id="">
+                                Уведомление
+                            </div>
+                            
+                            <div class="row__block">
+                                <input type="checkbox" name="" id="">
+                               Лично в руки
+                            </div>
+
+                            <div class="row__block">
+                                <input type="checkbox" name="" id="">
+                               Доупаковка
+                            </div>
+
+                            <div class="row__block">
+                                <input type="checkbox" name="" id="">
+                               Объявленная стоимость
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="create__bg">
+                        <div class="create__podblock">
+                            <h2 class="create__title"  style="color: blue;">Получатель</h2>
+
+                            <div class="send__block">
+
+                                <div class="create__pod">
+                                    <div class="create__description">ФИО</div>
+    
+                                    <input type="text" class="create__input">
+                                </div>
+    
+                                <div class="create__pod">
+                                    <div class="create__description">Отправитель</div>
+    
+                                    <select class="create__select">
+                                        <option value="">Украина</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                
+                                </div>
+    
+                                <div class="create__pod">
+                                    <div class="create__description">Телефон</div>
+        
+                                    <input type="text" class="create__input" placeholder="+ 3 80X XXX XXX">
+                                </div>
+    
+                                <div class="create__pod">
+                                    <div class="create__description">Область</div>
+        
+                                    <select class="create__select">
+                                        <option value="">не указана</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+
+                                    <select class="create__select">
+                                        <option value="">не указана</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </div>
+    
+                                <div class="create__pod">
+                                    <div class="create__description">Город</div>
+        
+                                    <select class="create__select">
+                                        <option value="">Введите</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </div>
+    
+                                <div class="create__pod">
+                                    <div class="create__description">Индекс</div>
+        
+                                    <input type="text" class="create__input" placeholder="20 7033">
+                                </div>
+    
+                                <div class="create__pod">
+                                    <div class="create__description">Адрес</div>
+        
+                                    <input type="text" class="create__input">
+                                </div>
+
+                                
+
+                            </div>
+
+                            
+                        </div>
+
+                        
+                        <div class="right__row">
+
+                            <div class="row_in_row">
+
+                                <div class="inRow">
+
+                                    <div class="inRow__text">Ширина</div>
+
+                                    <input type="text" class="inRow__input" placeholder="см">
+
+                                </div>
+
+                                <div class="inRow">
+
+                                    <div class="inRow__text">Вес</div>
+
+                                    <input type="text" class="inRow__input" placeholder="см">
+
+                                </div>
+
+                                <div class="inRow">
+
+                                    <div class="inRow__text">Длина</div>
+
+                                    <input type="text" class="inRow__input" placeholder="см">
+
+                                </div>
+                            </div>
+
+                            <div class="row_in_row">
+
+                                <div class="inRow">
+
+                                    <div class="inRow__text">Вес</div>
+
+                                    <input type="text" class="inRow__input" placeholder="кг">
+
+                                </div>
+
+                                <div class="inRow">
+
+                                    <div class="inRow__text">Мест</div>
+
+                                    <input type="text" class="inRow__input" placeholder="шт">
+
+                                </div>
+
+                                <div class="inRow">
+
+                                    <div class="inRow__text">Объем</div>
+
+                                    <input type="text" class="inRow__input" placeholder="кг">
+
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+
+                        <div class="dopolnitelno">
+
+                            <div class="dop__row">
+
+                                <div class="dop__title">Описание</div>
+
+                                <textarea class="dop__area"></textarea>
+
+                            </div>
+
+                            <div class="dop__row">
+
+                                <div class="dop__title">Дополнительно<br>
+                                    
+                                <span class="dop__span">печатают на накладной</span> 
+                                </div>
+
+                                <textarea class="dop__area"></textarea>
+
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="create__buttons">
+
+                        <a href="#">
+                            <button class="create__cancel">Отмена</button>
+                        </a>
+
+                        <a href="#">
+                            <button class="save">Сохранить</button>
+                        </a>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--wrapper-->
+
+
+    <!--Подключаем скрипты-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>

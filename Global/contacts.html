@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Global</title>
+
+    <!--Подключаем стили-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Подключаем иконки-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-
+    fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG95r"
+    crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="left"> <!--Левая часть-->
+
+            <a href="index.html"  class="logo__block">
+
+                <img src="./img/logo.svg" alt="" class="logo">
+                
+            </a href="#" >
+
+            <div class="left__block">
+
+                <ul class="nav">
+
+                    <li>
+                        <a href="list.html" class="nav__link">
+                            <i class="fas fa-list-ul"></i>
+
+                            <button class="text">Список накладных</button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav__link on">
+                            <i class="fas fa-file-alt"></i>
+
+                            <button class="text">Справочники</button>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+
+                    <div class="hidden__block">
+                        <li >
+                            <a href="firm.html" class="nav__link">
+                                <i class="fas fa-building"></i>
+    
+                                <button class="text">Фирмы</button>
+                                
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#" class="nav__link">
+                                <i class="fas fa-user-friends"></i>
+    
+                                <button class="text">Контакты</button>
+                                
+                            </a>
+                        </li>
+                    </div>
+                    
+
+                </ul>
+                <!--.nav-->
+
+            </div>
+
+        </div>
+        <!--left-->
+
+
+        <div class="right"> <!--Правая часть-->
+                
+            <div class="header">
+
+                <div class="container">
+
+                    <div class="header__inner">
+
+                        <a href="#create">
+                    
+                            <button class="header__button">
+                                <i class="fas fa-plus"></i>
+                                Создать накладную
+                            </button>
+        
+                            <a href="#">
+                                <i class="far fa-user"></i>
+                            </a>
+                        </a>
+
+                    </div>
+                    <!-- /.header__inner -->
+                    
+                    
+                </div>
+                <!-- /.container -->
+                
+            </div>
+
+            <div class="firm">
+                <div class="container">
+                    <div class="firm__block">
+                        <div class="list__inner">
+                            <div class="list__header">
+        
+                                <div class="list__description">
+        
+                                    <div class="list__title">Справочник фирм</div>
+        
+                                    <div class="list__subtitle">Перетащите столбец и поместите его сюда, чтобы сгруппировать по этому столбцу</div>
+        
+                                </div>
+        
+                                <div class="list__icon">
+        
+                                    <a href="#">
+                                        <button class="list__button">
+                                            <i class="fas fa-plus"></i>
+                                        </button>                                        
+                                    </a>
+        
+                                    <a href="#">
+                                        <button class="list__button">
+                                            <i class="far fa-file-excel"></i>
+                                        </button>
+                                    </a>
+        
+                                    <a href="#">
+                                        <button class="list__button">
+                                            <i class="fas fa-undo-alt"></i>
+                                        </button>
+                                    </a>      
+                                </div>
+        
+                            </div>
+                        </div>
+
+                        <div class="contacts__name">
+                            <div class="contacts__text">№</div>
+                            <div class="contacts__text">Название<i class="fas fa-tools"></i></div>
+                            <div class="contacts__text">Телефон<i class="fas fa-tools"></i></div>
+                            <div class="contacts__text">Получатель/название<i class="fas fa-tools"></i></div>
+                            <div class="contacts__text">Действие<i class="fas fa-tools"></i></div>
+                        </div>
+    
+                    
+                    </div>
+
+                    <div class="contacts__name">
+                        <div class="contacts__text">1</div>
+                        <div class="contacts__text">Crative startap TM<i class="fas fa-tools"></i></div>
+                        <div class="contacts__text">Украина<i class="fas fa-tools"></i></div>
+                        <div class="contacts__text">+3 8066 123 4567<i class="fas fa-tools"></i></div>
+                        <div class="contacts__text">
+                            <div class="contacts__block">
+                               <a href="#bg" class="clickBtn"><i class="fas fa-pen"></i></a> 
+                               <a href="#"><i class="fas fa-trash"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    
+
+                
+                    
+                    
+                    <div class="pages">
+                        <div class="pages__inner">
+                            <a href="#">
+                                <button class="page__block">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                            </a>
+
+                            <a href="#">
+                                <button class="page__block">1</button>
+                            </a>
+
+                            <a href="#">
+                                <button class="page__block">2</button>
+                            </a>
+
+                            <a href="#">
+                                <button class="page__block">3</button>
+                            </a>
+
+                            <a href="#">
+                                <button class="page__block">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            
+           
+        </div>
+        <!--right-->
+
+
+        <div id="edit" class="edit">
+            <div class="edit__body">
+
+                <div class="edit__form">
+
+                    <div class="edit__block">
+                        <h1 class="edit__title">Редактирование</h1>
+    
+                        <div class="edit__close">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    
+    
+                    <div class="edit__content">
+    
+                        <h2 class="edit__subtitle">Отправитель</h2>
+    
+                        <div class="subtitle__block">
+    
+                            <div class="subtitle__podblock">
+                                <div class="edit__description">Название</div>
+    
+                                <input type="text" class="edit__input">
+                            </div>
+    
+                            <div class="subtitle__podblock">
+                                <div class="edit__description">Страна</div>
+    
+                                <select class="edit__select">
+                                    <option value="">Украина</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+    
+                            <div class="subtitle__podblock">
+                                <div class="edit__description">Телефон</div>
+    
+                                <input type="text" class="edit__input" placeholder="+ 3 80X XXX XXX">
+                            </div>
+    
+                            <div class="subtitle__podblock">
+                                <div class="edit__description">Область</div>
+    
+                                <select class="edit__select">
+                                    <option value="">не указана</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+    
+                            <div class="subtitle__podblock">
+                                <div class="edit__description">Город</div>
+    
+                                <select class="edit__select">
+                                    <option value="">Введите</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+    
+                            <div class="subtitle__podblock">
+                                <div class="edit__description">Индекс</div>
+    
+                                <input type="text" class="edit__input" placeholder="20 7033">
+                            </div>
+    
+                            <div class="subtitle__podblock">
+                                <div class="edit__description">Адрес</div>
+    
+                                <input type="text" class="edit__input">
+                            </div>
+    
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="edit__buttons">
+
+                        <a href="#">
+                            <button class="cancel">Отмена</button>
+                        </a>
+
+                        <a href="#">
+                            <button class="save">Сохранить</button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--wrapper-->
+
+
+    <!--Подключаем скрипты-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
