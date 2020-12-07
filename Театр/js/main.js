@@ -11,7 +11,7 @@ let popupAphishaImg = document.querySelector('.popup__img')
 AphishaClick.addEventListener('click', () => {
     popupAphisha.style.visibility = 'visible'
     popupAphishaImg.style.top = '100px'
-    popupAphisha.style.position = 'fixed'
+    popupAphisha.style.position = 'absolute'
 })
 
 // Нажимаем на крестик чтобы закрыть модальное окно
@@ -35,7 +35,7 @@ for (let anchor of anchors) {
 
 let burger = document.querySelector('.burger')
 let burgerMenu = document.querySelector('.burger-menu')
-let burgerClose = document.querySelector('.burger__close')
+let burgerClose = document.getElementById('burgerClose')
 
 burger.addEventListener('click', () => {
     burgerMenu.style.visibility = 'visible'
