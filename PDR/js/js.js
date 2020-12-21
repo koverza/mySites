@@ -8,9 +8,19 @@ item.parentNode.dataset.totalValue = item.dataset.itemValue
 );
 
 
-$(function() {
-    $('.slider').slick({
-        dots: false,
-        slidesToShow: 5
-    });
+let enter = document.querySelector('.signIn')
+let registration = document.querySelector('.logIn')
+let popup = document.getElementById('popup')
+let popupClose = document.querySelector('.popup__close')
+
+enter.addEventListener('click', () => {
+    popup.style.display = 'flex'
+})
+
+registration.addEventListener('click', () => {
+    popup.style.display = 'flex'
+})
+
+popupClose.addEventListener('click', () => {
+    popup.style.display = 'none'
 })
