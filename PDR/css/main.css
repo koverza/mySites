@@ -45,6 +45,12 @@ button{
 /* Обнуление */
 
 
+
+
+/*========================================================================================================*/
+
+
+
 .circle{
     position: absolute;
     top: 0;
@@ -115,18 +121,11 @@ button{
 
 
 
-
-
-
-
-
-
-
-
-
-/* ================================================================================ */
+/*========================================================================================================*/
 
 /* DESKTOP-1 */
+
+/*========================================================================================================*/
 
 .desktop__header{
     padding-left: 15px;
@@ -393,14 +392,13 @@ button{
 
 
 
-
-
-
-
-
-/* ================================================================================ */
+/*========================================================================================================*/
 
 /* DIALOG */
+
+/*========================================================================================================*/
+
+
 
 .text-decoration{
     text-decoration: underline;
@@ -743,22 +741,12 @@ button{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ================================================================================ */
+/*========================================================================================================*/
 
 /* MAIN */
+
+/*========================================================================================================*/
+
 
 .header{
     width: 100%;
@@ -1012,9 +1000,15 @@ ul li:hover .nav__link{
     width: 100%;
 }
 
-/* ================================================================================ */
+
+
+/*========================================================================================================*/
 
 /* HOW */
+
+/*========================================================================================================*/
+
+
 
 .how{
     margin-top: 150px;
@@ -1112,10 +1106,15 @@ margin-right: 30px;
     width: 130px;
 }
 
-/* ================================================================================ */
 
+
+/*========================================================================================================*/
 
 /* SPEED */
+
+/*========================================================================================================*/
+
+
 
 .speed{
     margin-top: 150px;
@@ -1199,18 +1198,13 @@ margin-right: 30px;
 
 
 
-
-
-
-
-
-
-
-
-
-/* ================================================================================ */
+/*========================================================================================================*/
 
 /* MASTER */
+
+/*========================================================================================================*/
+
+
 
 .master{
     margin-top: 100px;
@@ -1500,9 +1494,15 @@ margin-right: 30px;
 }
 
 
-/* ================================================================================ */
+
+
+/*========================================================================================================*/
 
 /* NEWS */
+
+/*========================================================================================================*/
+
+
 
 .news{
     margin-top: 150px;
@@ -1629,177 +1629,17 @@ margin-right: 30px;
     color: #222454;
 }
 
-/* ================================================================================ */
-
-/* SLIDER */
-
-.slider{
-    width: 100%;
-    height: 150px;
-    background-color: teal;
-    font-size: 24px;
-    padding-top: 50px;
-}
-
-
-/* .slider{
-    width: 1460px;
-    padding-top: 60px;
-    background-color: #383097;
-    height: 400px;
-    border-radius: 15px;
-    margin-top: 200px;
-    margin-left: 75px;
-}
-
-.slider__item{
-    width: 470px;
-}
-.slider__top{
-    display: flex;
-    align-items: center;
-}
-
-.slider__block{
-    width: 420px;
-    height: 450px;
-    padding: 20px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 15px 55px rgba(56, 48, 151, 0.15);
-    border-radius: 15px;
-    margin-left: 50px;
-    margin-bottom: 350px;
-}
-
-.slider__img{
-    margin-right: 27px;
-}
-
-.slider__description{
-    display: flex;
-    flex-direction: column;
-}
-
-.slider__city{
-    font-style: normal;
-    font-weight: 800;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #B80036;
-}
-
-.slider__name{
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 22px;
-    text-transform: uppercase;
-    color: #222454;
-    margin-top: 6px;
-}
-
-.slider__company{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 13px;
-    text-transform: uppercase;
-    color: #A9B0BE;
-    margin-top: 6px;
-}
-
-.slider__content{
-    margin-top: 50px;
-    display: flex;
-    align-items: flex-start;
-}
-
-.slider__p{
-    display: flex;
-    margin-right: 30px;
-}
-
-.slider__title{
-    font-style: normal;
-    font-weight: 800;
-    font-size: 21px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #222454;
-}
-
-.slider__subtitle{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 160%;
-    color: #A9B0BE;
-}
-
-/* Slider */
-
-.slick-slider{}
-
-.slick-list{}
-
-.slick-track{}
 
 
 
-/* Slide */
-
-.slider__item.slick-slide{}
-
-.slick-slide.slide-active{}
-
-.slick-slide.slick-current{}
-
-.slick-slide.slick-center{}
-
-
-
-
-/*Arrows */
-
-.slider.slick-arrow{}
-
-.slider.slick-arrow.slide-prev{}
-
-.slick-arrow.slide-next{}
-
-.slick-arrow.slide-disabled{}
-
-
-
-/* Dots */
-
-.slider .slick-dots{
-
-}
-.slider .slick-dots li{
-
-}
-
-.slider .slick-dots button{
-
-}
-
-
-.slider .slick-dots button::before{
-
-}
-
-.slider .slick-dots li.slick-active button::before{
-
-}
-
-
-
-/* ================================================================================ */
+/*========================================================================================================*/
 
 /* FOOTER */
+
+/*========================================================================================================*/
+
+
+
 
 .footer{
     width: 100%;
@@ -1898,30 +1738,13 @@ margin-right: 30px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ================================================================================ */
+/*========================================================================================================*/
 
 /* SEARCH-PAGE 1*/
 
-/* ================================================================================ */
+/*========================================================================================================*/
+
+
 
 .map{
     width: 100%;
@@ -2072,47 +1895,13 @@ margin-right: 30px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ================================================================================ */
+/*========================================================================================================*/
 
 /* SEARCH-PAGE 2*/
 
-/* ================================================================================ */
+/*========================================================================================================*/
 
 
-/* SEARCH */
 
 .search{
     padding-top: 30px;
@@ -2295,15 +2084,14 @@ margin-right: 30px;
 
 
 
-
-
-
-
-/* ================================================================================ */
+/*========================================================================================================*/
 
 /* APPLICATION-PAGE*/
 
-/* ================================================================================ */
+/*========================================================================================================*/
+
+
+
 
 .application{
     margin-top: 30px;
@@ -2692,20 +2480,14 @@ margin-right: 30px;
 
 
 
-
-
-
-
-
-
-
-
-
-/* ================================================================================ */
+/*========================================================================================================*/
 
 /* MASTER-PAGE*/
 
-/* ================================================================================ */
+/*========================================================================================================*/
+
+
+
 
 .master-top{
     margin-top: 50px;
@@ -3058,16 +2840,14 @@ margin-right: 30px;
 
 
 
-
-
-
-
-
-/* ================================================================================ */
+/*========================================================================================================*/
 
 /* APPLICATION(ONLY FOR MASTERS*/
 
-/* ================================================================================ */
+/*========================================================================================================*/
+
+
+
 
 .row__app{
     display: flex;
@@ -3166,11 +2946,15 @@ margin-right: 30px;
 
 
 
-/* ================================================================================ */
+
+/*========================================================================================================*/
 
 /* ENTER*/
 
-/* ================================================================================ */
+/*========================================================================================================*/
+
+
+
 
 .enter__inner{
     display: flex;
@@ -3401,16 +3185,394 @@ margin-right: 30px;
 
 
 
+/*========================================================================================================*/
+
+/* ADD-CAR*/
+
+/*========================================================================================================*/
+
+.client__inner{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #D9DFEA;
+}
+
+.client__title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #222454;
+    margin-bottom: 30px;
+}
+
+.client__row{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.client__input{
+    background: #F5F9FC;
+    border: 1px solid #D9DFEA;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A9B0BE;
+    width: 48%;
+    height: 60px;
+    outline: none;
+    padding-left: 20px;
+    margin-right: 15px;
+}
+
+.done{
+    background-color: white;
+}
+
+.fa-trash-alt{
+    cursor: pointer;
+}
+
+.fa-trash-alt:hover{
+    color: #B80036;
+}
+
+.fa-check{
+    color: #54C442;
+}
+
+.fa-plus{
+    color: #B80036;
+    margin-right: 10px;
+}
+
+.client__add{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #B80036;
+    cursor: pointer;
+}
+
+.client__add:hover{
+    text-decoration: underline;
+}
+
+.client__subtitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #222454;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.client__save{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #B80036;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.client__save:hover{
+    text-decoration: underline;
+}
+
+.client__password{
+    width: 48%;
+    position: relative;
+}
+
+.password__block{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.password__title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #222454;
+}
+
+.edit__password{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #B80036;
+}
+
+.edit__password:hover{
+    text-decoration: underline;
+}
+
+.password__input{
+    background: #F5F9FC;
+    border: 1px solid #D9DFEA;
+    border-radius: 4px;
+    width: 75%;
+    height: 60px;
+    outline: none;
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #A9B0BE;
+}
+
+.fa-eye{
+    position: absolute;
+    top: 60px;
+    right: 180px;
+    color: #A9B0BE;
+}
+
+.relati{
+    position: relative;
+}
+
+.position{
+    position: absolute;
+    top: -30px;
+    right: -250px;
+}
+
+.diflex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.border{
+    width: 48%;
+    
+}
+
+.inner{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D9DFEA;
+}
+
+.justify-flex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.remove__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #B80036;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.color{
+    color: #B80036;
+}
+
+.remove__text:hover{
+    text-decoration: underline;
+}
+
+.show__block{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.show__all{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #B80036;
+    border-radius: 4px;
+    width: 275px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*========================================================================================================*/
+
+/* STUDY*/
+
+/*========================================================================================================*/
+
+.study__review{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    background-color: transparent;
+    color: #B80036;
+    cursor: pointer;
+}
+
+.study__review:hover{
+    text-decoration: underline;
+}
+
+.champ__date{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    color: #A9B0BE;
+}
+
+
+
+.study__links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.studyIcon{
+    width: 30px;
+    font-size: 22px;
+}
+
+.study__internet{
+    margin-top: 30px;
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.study__subtitle{
+    margin-left: 10px;
+}
 
 
 
 
 
-/* ================================================================================ */
+/*========================================================================================================*/
+
+/* CONTACTS*/
+
+/*========================================================================================================*/
+
+.contact__inner{
+    padding-top: 50px;
+}
+
+.contact__title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #222454;
+
+}
+
+.contact__row{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.contact__block{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.contact__icon{
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B80036;
+}
+
+.contactIcon{
+    font-size: 20px;
+    color: white;
+}
+
+.contact__podblock{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__subtitle{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #A9B0BE;
+}
+
+.contact__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #212121;
+}
+
+.contact__button button{
+    width: 200px;
+    height: 60px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: #B80036;
+    border-radius: 4px;
+    width: 50%;
+}
+
+
+
+/*========================================================================================================*/
 
 /* REGISTRATION-MASTER1*/
 
-/* ================================================================================ */
+/*========================================================================================================*/
+
+
+
 
 .step__to__step{
     background-color: #4C45A1;
@@ -3579,55 +3741,15 @@ margin-right: 30px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ================================================================================ */
+/*========================================================================================================*/
+/*========================================================================================================*/
+/*========================================================================================================*/
+/*========================================================================================================*/
+/*========================================================================================================*/
+/*========================================================================================================*/
 
 /* POPUP*/
 
-/* ================================================================================ */
 
 .popup{
     position: absolute;
