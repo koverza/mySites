@@ -3550,6 +3550,10 @@ margin-right: 30px;
     color: #212121;
 }
 
+.contact__button{
+    width: 50%;
+}
+
 .contact__button button{
     width: 200px;
     height: 60px;
@@ -3560,7 +3564,6 @@ margin-right: 30px;
     color: #FFFFFF;
     background-color: #B80036;
     border-radius: 4px;
-    width: 50%;
 }
 
 
