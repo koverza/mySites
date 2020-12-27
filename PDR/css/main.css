@@ -2958,12 +2958,12 @@ margin-right: 30px;
 
 .enter__inner{
     display: flex;
-    align-items: center;
     padding-left: 100px;
     height: 100vh;
 }
 
 .enter__left{
+    padding-top: 50px;
     width: 75%;
 }
 
@@ -3182,6 +3182,231 @@ margin-right: 30px;
     background-color: white;
     color: #222454;
 }
+
+
+
+
+/*========================================================================================================*/
+
+/* CREATE-APPLICATION1*/
+
+/*========================================================================================================*/
+
+
+.create__title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #222454;
+    margin-top: 50px;
+}
+
+.create__row{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.create__input{
+    width: 48%;
+    height: 60px;
+    padding-left: 20px;
+    background: #FFFFFF;
+    border: 1px solid #D9DFEA;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222454;
+}
+
+.create__area{
+    width: 90%;
+    max-width: 90%;
+    margin-top: 30px;
+    min-height: 150px;
+    background: #FFFFFF;
+    border: 1px solid #D9DFEA;
+    border-radius: 4px;
+    padding: 20px;
+    outline: none;
+}
+
+.edit__description{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #222454;
+    margin-top: 40px;
+}
+
+.block__logotype{
+    margin-top: 20px;
+}
+
+.wCreate{
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.wInput{
+    width: 73%;
+}
+
+.wSelect{
+    width: 22%;
+}
+
+.edit__offer{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #222454;
+}
+
+.offer__radio{
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+.radio__text{
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #212121;
+}
+
+.radio__date{
+    background: #FFFFFF;
+    border: 1px solid #D9DFEA;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222454;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.create__btn{
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.cancel{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #A9B0BE;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.cancel:hover{
+    text-decoration: underline;
+}
+
+.save{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #B80036;
+    border-radius: 4px;
+    width: 175px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+
+/*========================================================================================================*/
+
+/* CREATE-APPLICATION2*/
+
+/*========================================================================================================*/
+
+.create__subtitle{
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #222454;
+}
+
+.master2__enter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.enter__policy{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.master2__log{
+    background: #FFFFFF;
+    border: 1px solid #D9DFEA;
+    border-radius: 4px;
+    padding: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222454;
+    margin-bottom: 10px;
+}
+
+.policy__check{
+    display: flex;
+    align-items: flex-start;
+}
+
+.policy__text{
+    margin-left: 10px;
+}
+
+.wiCreate{
+    margin-top: 30px;
+    width: 30%;
+}
+
+
+
+
+
+
+
 
 
 
@@ -3574,8 +3799,24 @@ margin-right: 30px;
 
 /*========================================================================================================*/
 
+.step__to__step:first-child{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 140px;
+    opacity: 1;
+}
 
-
+.step__to__step:first-child .i__title,
+.step__to__step:first-child .i__subtitle{
+    opacity: 1;
+    background-color: white;
+    color: #222454;
+}
 
 .step__to__step{
     background-color: #4C45A1;
