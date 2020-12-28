@@ -1,4 +1,4 @@
-/* Подлюкчаем шрифты =*/
+/* Подлюкчаем шрифты */
 
 @font-face {
     font-family: 'Gilroy';
@@ -2393,6 +2393,7 @@ margin-right: 30px;
 
 .pages{
     margin-top: 80px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4347,6 +4348,114 @@ margin-right: 30px;
     text-decoration: underline;
 }
 
+.filter__menu{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #B80036;
+    border-radius: 2px;
+    width: 110px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.adaptive__flex{
+    display: none;
+}
+
+@media(max-width: 850px) {
+    .filter{
+        display: none;
+    }
+
+    .map__column{
+        width: 100%;
+    }
+
+    .map__row{
+        width: 100%;
+    }
+
+    .show:nth-child(2){
+        display: none;
+    }
+
+    .filter__menu{
+        display: block;
+    }
+
+    .mapHidden{
+        display: none;
+    }
+
+    .adaptive__flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mapMt{
+        margin-top: 10px;
+    }
+
+    .study__text{
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 630px){
+
+    .column__block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column__img{
+        margin-bottom: 30px;
+    }
+
+    .contentFlex{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .study__review{
+        margin-top: 20px;
+    }
+
+}
+
+@media(max-width: 480px){
+    .champ__date{
+        display: none;
+    }
+
+    .pageHidden{
+        display: none;
+    }
+    
+}
+
+@media(max-width: 380px){
+
+    .map__title{
+        font-size: 26px;
+    }
+
+    .show{
+        font-size: 12px;
+    }
+
+    .map__text{
+        font-size: 12px;
+    }
+}
 
 /*========================================================================================================*/
 
