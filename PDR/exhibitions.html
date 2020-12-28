@@ -34,16 +34,15 @@
                     <img src="./img/location.svg" alt="" class="location__img">
 
                     <div class="location__text">Челябинск</div>
-
                 </div>
                 <!-- /.location -->
 
                 <ul class="nav">
-                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="#" class="nav__link">Главная</a></li>
 
                     <li><a href="#" class="nav__link">Поиск</a></li>
 
-                    <li><a href="application-page.html" class="nav__link">Заявки</a></li>
+                    <li><a href="#" class="nav__link">Заявки</a></li>
 
                     <li>
                         <a href="#" class="nav__link">Инфо
@@ -68,16 +67,25 @@
 
                 <div class="registration">
 
+                    <div class="reg__block">
+
                     <button><a href="#" class="signIn">Войти</a></button>
                     <button><a href="#" class="logIn">Регистрация</a></button>
+
+                    </div>
+
+                    
+
+                    <div class="burger">
+                        <div class="burger__line"></div>
+                    </div>
+                    <!-- /.burger -->
+
                 </div>
                 <!-- /.registration -->
 
-                <div class="burger">
-                    <div class="burger__line"></div>
-                </div>
-                <!-- /.burger -->
                 
+
             </div>
             <!-- /.header__top -->
 
@@ -93,9 +101,10 @@
 
                     <div class="map">
 
-                        <div class="map__row">
+                        <div class="map__row mapHidden">
     
-                            <div class="map__title">Выставки</div>
+                            
+                            <div class="map__title">Чемпионаты</div>
     
                             <a href="search-page2.html" class="show">Показать на карте</a>
                             <a href="#" class="show">Показать списком</a>
@@ -113,9 +122,43 @@
                                 </div>
     
                             </div>
+
+                        
     
                         </div>
                         <!-- /.map__row -->
+
+                        <div class="adaptive__flex">
+
+                            <div class="map__row">
+
+                                <div class="map__title">Выставки</div>
+
+                                <button class="filter__menu">Фильтр</button>
+
+                            </div>
+
+                            <div class="map__row mapMt">
+
+                                <a href="#" class="show">Показать списком</a>
+
+                                <div class="map__block">
+    
+                                    <div class="map__text">Сортировка:</div>
+        
+                                    <div class="map__podblock">
+        
+                                        <div class="map__text red">Обычная</div>
+        
+                                        <i class="fas fa-sort-down"></i>
+        
+                                    </div>
+        
+                                </div>
+
+                            </div>
+
+                        </div>
 
 
                         <div class="map__column">
@@ -152,7 +195,7 @@
 
                                     </div>
 
-                                    <div class="content__row">
+                                    <div class="content__row contentFlex">
 
                                         <div class="content__icons">
                                             <img src="./img/spec1.svg" alt="" class="content__icon ">
@@ -328,7 +371,7 @@
 
                                     </div>
 
-                                    <div class="content__row">
+                                    <div class="content__row contentFlex">
 
                                         <div class="content__icons">
                                             <img src="./img/spec1.svg" alt="" class="content__icon ">
@@ -381,7 +424,7 @@
 
                                     </div>
 
-                                    <div class="content__row">
+                                    <div class="content__row contentFlex">
 
                                         <div class="content__icons">
                                             <img src="./img/spec1.svg" alt="" class="content__icon ">
@@ -434,7 +477,7 @@
 
                                     </div>
 
-                                    <div class="content__row">
+                                    <div class="content__row contentFlex">
 
                                         <div class="content__icons">
                                             <img src="./img/spec1.svg" alt="" class="content__icon ">
@@ -487,7 +530,7 @@
 
                                     </div>
 
-                                    <div class="content__row">
+                                    <div class="content__row contentFlex">
 
                                         <div class="content__icons">
                                             <img src="./img/spec1.svg" alt="" class="content__icon ">
@@ -540,7 +583,7 @@
 
                                     </div>
 
-                                    <div class="content__row">
+                                    <div class="content__row contentFlex">
 
                                         <div class="content__icons">
                                             <img src="./img/spec1.svg" alt="" class="content__icon ">
@@ -696,19 +739,19 @@
                         </button>
                     </a>
 
-                    <a href="#">
+                    <a href="#" class="pageHidden">
                         <button class="page__link">
                             3
                         </button>
                     </a>
 
-                    <a href="#">
+                    <a href="#" class="pageHidden">
                         <button class="page__link">
                             4
                         </button>
                     </a>
 
-                    <a href="#">
+                    <a href="#" class="pageHidden">
                         <button class="page__link">
                             5
                         </button>
@@ -745,82 +788,88 @@
     
                         <img src="./img/logo.svg" alt="" class="footer__img">
     
-                        <div class="footer__address">2019876 Москва, пр. Свободы, 76/1</div>
+                        <div class="footer__pos">
     
-                        <a href="#" class="footer__phone">0 800 900 92 00</a>
+                            <div class="footer__address">2019876 Москва, пр. Свободы, 76/1</div>
     
-                        <a href="#" class="footer__mail">hello@pdr.team</a>
-                    </div>
+                            <a href="#" class="footer__phone">0 800 900 92 00</a>
     
-                    <div class="footer__column">
+                            <a href="#" class="footer__mail">hello@pdr.team</a>
     
-                        <a href="#" class="footer__title">Главная</a>
+                        </div>
     
-                        <a href="#" class="footer__page">Поиск</a>
-    
-                        <a href="#" class="footer__page">Заявки</a>
-    
-                    </div>
-    
-                    <div class="footer__column">
-    
-                        <a href="#" class="footer__title">Инфо</a>
-    
-                        <a href="#" class="footer__page">Учеба</a>
-    
-                        <a href="#" class="footer__page">Магазины</a>
-    
-                        <a href="#" class="footer__page">Выставки</a>
-    
-                        <a href="#" class="footer__page">Чемпионаты</a>
-    
-                        <a href="#" class="footer__page">Семинары</a>
                         
                     </div>
     
                     <div class="footer__column">
     
-                        <a href="#" class="footer__title">Технология</a>
+                        <a href="add-car.html" class="footer__title">Главная</a>
     
-                        <a href="#" class="footer__page">Что такое PDR</a>
+                        <a href="application-page.html" class="footer__page">Поиск</a>
     
-                        <a href="#" class="footer__page">Выдавливание</a>
+                        <a href="application-page(view master).html" class="footer__page">Заявки</a>
     
-                        <a href="#" class="footer__page">Клеевая</a>
+                    </div>
     
-                        <a href="#" class="footer__page">Блендинг</a>
+                    <div class="footer__column">
     
-                        <a href="#" class="footer__page">Холодный клей</a>
+                        <a href="application(only for masters).html" class="footer__title">Инфо</a>
     
-                        <a href="#" class="footer__page">Индукция</a>
+                        <a href="championship.html" class="footer__page">Учеба</a>
     
-                        <a href="#" class="footer__page">Горячая стяжка</a>
+                        <a href="contacts.html" class="footer__page">Магазины</a>
     
-                        <a href="#" class="footer__page">История PDR</a>
+                        <a href="create-application1.html" class="footer__page">Выставки</a>
+    
+                        <a href="create-application2.html" class="footer__page">Чемпионаты</a>
+    
+                        <a href="DESKTOP-1.html" class="footer__page">Семинары</a>
                         
                     </div>
     
                     <div class="footer__column">
     
-                        <a href="#" class="footer__title">Форум</a>
+                        <a href="dialog.html" class="footer__title">Технология</a>
+    
+                        <a href="edit-application.html" class="footer__page">Что такое PDR</a>
+    
+                        <a href="enter.html" class="footer__page">Выдавливание</a>
+    
+                        <a href="exhibitions.html" class="footer__page">Клеевая</a>
+    
+                        <a href="index.html" class="footer__page">Блендинг</a>
+    
+                        <a href="magazin.html" class="footer__page">Холодный клей</a>
+    
+                        <a href="master-page.html" class="footer__page">Индукция</a>
+    
+                        <a href="master-page(view master).html" class="footer__page">Горячая стяжка</a>
+    
+                        <a href="news.html" class="footer__page">История PDR</a>
                         
                     </div>
     
                     <div class="footer__column">
     
-                        <a href="#" class="footer__title">Юр.информация</a>
+                        <a href="profile-client.html" class="footer__title">Форум</a>
+                        
+                    </div>
     
-                        <a href="#" class="footer__page">Конфеденциальность</a>
+                    <div class="footer__column">
     
-                        <a href="#" class="footer__page">Ответственность</a>
+                        <a href="registration-master1.html" class="footer__title">Юр.информация</a>
     
-                        <a href="#" class="footer__page">О проекте</a>
+                        <a href="registration-master2.html" class="footer__page">Конфеденциальность</a>
     
-                        <a href="#" class="footer__page">Пользовательское соглашение</a>
+                        <a href="registration-master3.html" class="footer__page">Ответственность</a>
     
-                        <a href="#" class="footer__page">Сообщить об ошибке</a>
+                        <a href="search-page1.html" class="footer__page">О проекте</a>
     
-                        <a href="#" class="footer__page">Написать администрации</a>
+                        <a href="search-page2.html" class="footer__page">Пользовательское соглашение</a>
+    
+                        <a href="study.html" class="footer__page">Сообщить об ошибке</a>
+    
+                        <a href="technology.html" class="footer__page">Написать администрации</a>
                         
                     </div>
     

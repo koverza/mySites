@@ -4429,6 +4429,20 @@ margin-right: 30px;
         margin-top: 20px;
     }
 
+    .ex__block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .study__links{
+        width: 100%;
+    }
+
+    .ex__podblock{
+        max-width: 0%;
+        min-width: 100%;
+    }
+
 }
 
 @media(max-width: 480px){
@@ -4440,6 +4454,9 @@ margin-right: 30px;
         display: none;
     }
     
+    .study__subtitle{
+        font-size: 12px;
+    }
 }
 
 @media(max-width: 380px){
@@ -4454,6 +4471,15 @@ margin-right: 30px;
 
     .map__text{
         font-size: 12px;
+    }
+
+    .content__icon{
+        width: 31px;
+        height: 31px;
+    }
+
+    .media{
+        height: 30px;
     }
 }
 
