@@ -5780,6 +5780,153 @@ margin-right: 30px;
     padding-bottom: 0px;
 }
 
+.reg3__padd{
+    display: none;
+}
+
+
+@media(max-width: 1024px){
+    .master3__text{
+        font-size: 14px;
+    }
+
+    .master3__title{
+        font-size: 20px;
+    }
+
+    .master3__column:nth-child(2), .master3__column:nth-child(3){
+        width: 32%;
+    }
+}
+
+@media(max-width: 990px){
+    .master3__text{
+        font-size: 12px;
+    }
+
+    .master3__title{
+        font-size: 12px;
+    }
+
+    .master3__column:nth-child(2), .master3__column:nth-child(3){
+        width: 23%;
+    }
+
+    .master3__base{
+        font-size: 12px;
+    }
+
+    .master3__premium{
+        font-size: 12px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .fa-check{
+        margin-top: 11px;
+    }
+
+    .master3__button{
+        width: 220px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 780px){
+
+    .master3__column:nth-child(2), .master3__column:nth-child(3){
+        width: 24%;
+    }
+
+    .master3__text{
+        font-size: 11px;
+    }
+
+    .master3__title{
+        font-size: 11px;
+    }
+
+    .master3__base{
+        font-size: 11px;
+    }
+
+    .master3__premium{
+        font-size: 11px;
+    }
+
+    .fa-check{
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 680px){
+    .reg3__hidden{
+        display: none;
+    }
+
+    .reg3__padd{
+        display: block;
+    }
+
+    .padding__row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .padding__base{
+        font-size: 20px;
+    }
+
+    .master3__title{
+        text-align: center;
+        font-size: 20px;
+        padding-top: 18px;
+    }
+
+    .reg3marg{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .master3__base{
+        font-size: 16px;
+    }
+
+    .master3__premium{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 395px){
+
+    .reg3marg{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .master3__button{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .master3__title{
+        font-size: 14.5px;
+        padding-top: 18px;
+    }
+
+    .master3__base{
+        font-size: 14.5px;
+    }
+
+    .master3__premium{
+        font-size: 14.5px;
+    }
+
+
+}
+
 
 /*========================================================================================================*/
 /*========================================================================================================*/
