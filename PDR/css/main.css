@@ -5506,12 +5506,179 @@ margin-right: 30px;
     padding-bottom: 50px;
 }
 
+.reg2height{
+    height: 200vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 100px;
+}
+
+.adaptive__policy{
+    display: none;
+}
 
 
+@media(max-width: 1024px) {
+    .reg2height{
+        height: 123vh;
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 0px;
+    }
 
+    .master2__portfolio{
+        display: flex;
+        flex-direction: column;
+    }
 
+    .master2__text{
+        font-size: 14px;
+    }
 
+    .portfolio__text{
+        text-align: center;
+    }
+}
 
+@media(max-width: 768px) {
+    .reg2height{
+        height: 161vh;
+        margin-left: 35px;
+    }
+
+}
+
+@media(max-width: 680px) {
+
+    .reg2height{
+        display: none;
+    }
+    .reg2logo{
+    display: none;
+    }
+
+    .portfolio__text{
+        margin-bottom: 20px;
+    }
+
+    .master2__select{
+        width: 100%;
+    }
+
+    .wi2{
+        width: 46%;
+    }
+}
+
+@media(max-width: 500px) {
+    .master2__title{
+        margin-top: 15px;
+    }
+
+    .master2__select{
+        padding: 13px;
+        height: 50px;
+    }
+
+    .master2__row{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .master2__radio{
+        width: 50%;
+    }
+
+    .master2__text{
+        font-size: 16px;
+    }
+
+    .master2__enter{
+        display: none;
+    }
+
+    .adaptive__policy{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .policy__log{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .master2__portfolio{
+        width: 20%;
+    }
+
+    .policy__check{
+        margin-top: 20px;
+    }
+
+    .master2__title{
+        margin-top: 50px;
+    }
+
+    .portfolio__row{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .reg2marg{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column
+    }
+
+    .reg2w{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .reg2_img{
+        width: 110px;
+        height: 75px;
+        margin-bottom: 10px;
+    }
+
+    .block__logotype{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 400px) {
+
+    .width{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wi2{
+        width: 100%;
+    }
+
+    .block__logotype{
+        display: flex;
+        justify-content: center;
+    }
+
+    .reg2_img{
+        width: 150px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .edit__description{
+        text-align: center;
+    }
+
+    .reg2None{
+        display: none;
+    }
+}
 
 /*========================================================================================================*/
 
