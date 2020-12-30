@@ -4273,8 +4273,17 @@ margin-right: 30px;
     width: 30%;
 }
 
+.creaWi{
+    width: 55%;
+    margin-top: 50px;
+    margin-left: 0px;
+}
 
-
+@media(max-width: 500px) {
+    .creaVisible{
+        display: flex;
+    }
+}
 
 
 
@@ -5625,6 +5634,12 @@ margin-right: 30px;
 
     .wi2{
         width: 46%;
+    }
+}
+
+@media(max-width: 680px){
+    .creaWi{
+        display: none;
     }
 }
 
