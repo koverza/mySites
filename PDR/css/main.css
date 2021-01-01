@@ -739,7 +739,56 @@ button{
     background: linear-gradient(150.86deg, #990430 0%, #B80036 100%);    
 }
 
+@media(max-width: 768px) {
+    .dialogHidden{
+        display: none;
+    }
 
+    .dialog__icon{
+        right: 20px;
+    }
+
+    .dialog__block{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .margin{
+        margin-left: 0px;
+    }
+
+    .dialog__header{
+        padding: 20px;
+    }
+
+    .dialog__message{
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media(max-width: 425px) {
+    .top__block{
+        flex-direction: column;
+    }
+
+    .dialog__podblock{
+        align-items: flex-start;
+    }
+
+    .dialog__time{
+        font-size: 14px;
+    }
+
+    .dialog__push input{
+        width: 70%;
+    }
+
+    .dialog__icon{
+        top: 25px;
+    }
+}
 
 /*========================================================================================================*/
 
@@ -3914,7 +3963,37 @@ margin-right: 30px;
     color: #F7AE26;
 }
 
+.only__column{
+    display: none;
+}
 
+.newHidden{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media(max-width: 600px) {
+    .appHidden{
+        display: none;
+    }
+
+    .only__column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   .btnTop{
+       margin-top: 20px;
+   }
+
+    .newHidden{
+        display: none;
+    }
+   
+}
 
 
 /*========================================================================================================*/
