@@ -1,4 +1,4 @@
-/* Подлюкчаем шрифты =*/
+/* Подлюкчаем шрифты */
 
 @font-face {
     font-family: 'Gilroy';
@@ -6872,3 +6872,374 @@ margin-right: 30px;
     text-align: center;
     color: #97999c;
 }
+
+
+
+/* POPUP-REVIEW*/
+
+.popupReview{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+    display: none;
+}
+
+.popupReview__body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupReview__block{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 55px rgba(184, 0, 54, 0.1);
+    border-radius: 5px;
+    
+}
+
+.popupReview__podblock{
+    padding: 40px 60px ;
+    text-align: center;
+    position: relative;
+}
+
+.popupReview__close{
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    background-color: transparent;
+}
+
+.popupReview__close .fa-times{
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 18px;
+}
+
+.review__column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.popupReview__link{
+    margin-top: 10px;
+}
+
+.review__link{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #B80036;
+}
+
+.review__link:hover{
+    text-decoration: underline;
+}
+
+.review__select{
+    margin-top: 10px;
+    width: 335px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #D9DFEA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 20px;
+}
+
+
+.review__area{
+    width: 335px;
+    height: 155px;
+    background: #FFFFFF;
+    border: 1px solid #D9DFEA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 20px;
+    outline: none;
+}
+
+.review__button{
+    margin-top: 10px;
+    width: 335px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #B80036;
+    border-radius: 4px;
+}
+
+
+
+/* POPUP-COMPLAINT*/
+
+.popupComplaint{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+    display: none;
+}
+
+.popupComplaint__body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupComplaint__block{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 55px rgba(184, 0, 54, 0.1);
+    border-radius: 5px;
+    
+}
+
+.popupComplaint__podblock{
+    padding: 40px 60px ;
+    text-align: center;
+    position: relative;
+}
+
+.popupComplaint__close{
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    background-color: transparent;
+}
+
+.popupComplaint__close .fa-times{
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 18px;
+}
+
+
+.сomplaint__column{
+    display: flex;
+    flex-direction: column;
+}
+
+.complaint__row{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.complaint__block{
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+
+.complaint__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #212121;
+    margin-left: 10px;
+}
+
+
+
+/* POPUP-VICTORY*/
+
+.popupVictory{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+    display: none;
+}
+
+.popupVictory__body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupVictory__block{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 55px rgba(184, 0, 54, 0.1);
+    border-radius: 5px;
+    
+}
+
+.popupVictory__podblock{
+    padding: 40px 60px ;
+    text-align: center;
+    position: relative;
+}
+
+.popupVictory__close{
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    background-color: transparent;
+}
+
+.popupVictory__close .fa-times{
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 18px;
+}
+
+.victory__block{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.victory__podblock{
+    width: 70px;
+    position: relative;
+}
+
+.fa-certificate{
+    font-size: 74px;
+    color: #54C442;
+    z-index: -10;
+}
+
+.fa-check-circle{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 50px;
+    color:white;
+    z-index: 1;
+}
+
+.victory__text{
+    width: 335px;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #212121;
+}
+
+
+
+
+
+/* POPUP-VICTORY*/
+
+.popupFilter{
+    position: absolute;
+    top: 0;
+    right: -320px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+    visibility: hidden;
+}
+
+.popupFilter__body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.popupFilter__block{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 55px rgba(184, 0, 54, 0.1);
+    border-radius: 5px;
+}
+
+.popupFilter__podblock{
+    width: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+}
+
+.popupFilter__close{
+    padding-bottom: 20px;
+    background-color: transparent;
+}
+
+.popupFilter__close .fa-times{
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 18px;
+}
+
+.filterMenu__block:nth-child(2){
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.filter__main{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.filter__select{
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    background: #FFFFFF;
+    border: 1px solid #D9DFEA;
+    border-radius: 4px;
+    width: 232px;
+    height: 60px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A9B0BE;
+}
+
+

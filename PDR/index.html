@@ -96,8 +96,8 @@
                     <h1 class="content__subtitle">Мы починим!</h1>
     
                     <div class="content__buttons">
-                        <button class="content__button"><a href="#" >Искать по адресу</a></button>
-                        <button class="content__button"><a href="#" >Создать заявку</a></button>
+                        <button class="content__button"><a href="#" id="complaint">Искать по адресу</a></button> <!--id="complaint" потом убрать-->
+                        <button class="content__button"><a href="#" id="victory">Создать заявку</a></button> <!--id="victory" потом убрать-->
                     </div>
                     <!-- /.tabs -->
     
@@ -117,7 +117,7 @@
                             <option value="3">Тип ремонта</option>
                         </select>
     
-                        <button class="content__find">Найти эксперта</button>
+                        <button class="content__find" id="filter">Найти эксперта</button> <!--id="filter" потом убрать-->
     
                     </div>
     
@@ -136,7 +136,6 @@
 
     </header>
     <!-- /.header -->
-
 
     <section class="how">
         <div class="container">
@@ -230,7 +229,6 @@
 
     </section>
     <!-- /.how -->
-
 
     <section class="speed">
         <div class="container">
@@ -801,7 +799,6 @@
     </section>
     <!-- /.master -->
 
-
     <section class="news">
         <div class="container">
 
@@ -1236,19 +1233,323 @@
     <!-- /.popup -->
 
 
+    <!--REVIEWS / ОТЗЫВЫ-->
+
+    <div class="popupReview" id="popupReview">
+
+            <div class="popupReview__body">
+    
+                <div class="popupReview__block">
+    
+                    <div class="popupReview__podblock">
+    
+                        <div class="popupReview__close">
+                            <i class="fas fa-times"></i>
+                        </div>
+    
+                        <div class="popup__text">Оставить отзыв</div>
+    
+                        <div class="popupReview__link">
+                            Для <a href="#" class="review__link">Иван Федоренко</a>
+                        </div>
+
+                        <div class="review__column">
+
+                            <div class="rating" data-total-value="0">
+                                <div class="rating__item" data-item-value="5">★</div>
+                                <div class="rating__item" data-item-value="4">★</div>
+                                <div class="rating__item" data-item-value="3">★</div>
+                                <div class="rating__item" data-item-value="2">★</div>
+                                <div class="rating__item" data-item-value="1">★</div>
+                            </div>
+    
+                            <select class="review__select">
+                                <option value="">Работа по заявке</option>
+                                <option value="">Работа по заявке</option>
+                                <option value="">Работа по заявке</option>
+                            </select>
+
+                            <textarea class="review__area"></textarea>
+
+                            <button class="review__button">Оставить</button>
+
+                        </div>
+
+                        
+                        
+                    </div>
+    
+    
+    
+                </div>
+    
+            </div>
+    
+    </div>
+    <!-- /.popup -->
 
 
 
+    <!--COMPLAINT / ЖАЛОБА-->
+
+    <div class="popupComplaint" id="popupComplaint">
+
+            <div class="popupComplaint__body">
+    
+                <div class="popupComplaint__block">
+    
+                    <div class="popupComplaint__podblock">
+    
+                        <div class="popupComplaint__close">
+                            <i class="fas fa-times"></i>
+                        </div>
+    
+                        <div class="popup__text">Пожаловаться</div>
+    
+                        <div class="popupReview__link">
+                            Для <a href="#" class="review__link">Иван Федоренко</a>
+                        </div>
+
+                        <div class="сomplaint__column">
+
+                            <div class="complaint__row">
+
+                                <div class="complaint__block">
+
+                                    <input type="checkbox">
+
+                                    <div class="complaint__text">Фишинг</div>
+
+                                </div>
+
+                                <div class="complaint__block">
+
+                                    <input type="checkbox">
+
+                                    <div class="complaint__text">Обман</div>
+
+                                </div>
+                                
+                            </div>
+
+                            <div class="complaint__row">
+
+                                <div class="complaint__block">
+
+                                    <input type="checkbox">
+
+                                    <div class="complaint__text">Обман</div>
+
+                                </div>
+
+                                <div class="complaint__block">
+
+                                    <input type="checkbox">
+
+                                    <div class="complaint__text">Мошенничество</div>
+
+                                </div>
+                                
+                            </div>
+
+                            
+
+                            <textarea class="review__area"></textarea>
+
+                            <button class="review__button">Отправить жалобу</button>
+
+                        </div>
+
+                        
+                        
+                    </div>
+    
+    
+    
+                </div>
+    
+            </div>
+    
+    </div>
+    <!-- /.popup -->
 
 
 
+        <!--VICTORY / ПОЗДРАВЛЯЕМ -->
+
+        <div class="popupVictory" id="popupVictory">
+
+            <div class="popupVictory__body">
+    
+                <div class="popupVictory__block">
+    
+                    <div class="popupVictory__podblock">
+    
+                        <div class="popupVictory__close">
+                            <i class="fas fa-times"></i>
+                        </div>
+    
+
+                        <div class="сomplaint__column">
+
+                            <div class="victory__block">
+                                <div class="victory__podblock">
+                                    <i class="fas fa-certificate"></i>
+    
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+
+                            <div class="popup__text">Поздравляем!</div>
+
+
+                            <div class="victory__text">
+                                Ваша заявка успешно создана!
+                            </div>
+
+                            <div class="victory__text">
+                                Дождитесь пока специалисты откликнуться на ваше предложение и выберите подходящего вам мастера
+                            </div>
+
+                            <button class="review__button">Понятно</button>
+
+                        </div>
+
+                        
+                        
+                    </div>
+    
+    
+    
+                </div>
+    
+            </div>
+    
+    </div>
+    <!-- /.popup -->
+
+
+    <!--FILTER / ВСПЛЫВАЮЩИЙ ФИЛЬТР -->
+
+    <div class="popupFilter" id="popupFilter">
+
+        <div class="popupFilter__body">
+
+            <div class="popupVictory__block">
+
+                <div class="popupFilter__podblock">
+
+                    <div class="popupFilter__close">
+                        <i class="fas fa-times"></i>
+                    </div>
+
+                    <div class="filter__title">Фильтр</div>
+                    
+                </div>
+
+                <div class="filter__main">
+
+                    <div class="filterMenu__block">
+                        <div class="filter__subtitle">Категория фильтра 1</div>
+    
+                        <div class="inputs__block">
+    
+                            <input type="checkbox" class="filter__input">
+    
+                            <div class="input__text">По расстоянию</div>
+                        </div>
+        
+                        <div class="inputs__block">
+    
+                            <input type="checkbox" class="filter__input">
+    
+                            <div class="input__text">Только сертифицированные</div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="filterMenu__block">
+                        <div class="filter__subtitle">Категория фильтра 2</div>
+        
+                                <div class="inputs__block">
+    
+                                    <input type="checkbox" class="filter__input">
+    
+                                    <div class="input__text">Удаление вмятин </div>
+                                </div>
+        
+                                <div class="inputs__block">
+    
+                                    <input type="checkbox" class="filter__input">
+    
+                                    <div class="input__text">Чистка кожи </div>
+                                </div>
+        
+                                <div class="inputs__block">
+    
+                                    <input type="checkbox" class="filter__input">
+    
+                                    <div class="input__text">Покраска </div>
+                                </div>
+        
+                                <div class="inputs__block">
+    
+                                    <input type="checkbox" class="filter__input">
+    
+                                    <div class="input__text">Ремонт стекол </div>
+                                </div>
+    
+                                <div class="inputs__block">
+    
+                                    <input type="checkbox" class="filter__input">
+    
+                                    <div class="input__text">Удаление вмятин </div>
+                                </div>
+    
+                                <div class="inputs__block">
+    
+                                    <input type="checkbox" class="filter__input">
+    
+                                    <div class="input__text">Чистка кожи </div>
+                                </div>
+    
+                                <div class="inputs__block">
+    
+                                    <input type="checkbox" class="filter__input">
+    
+                                    <div class="input__text">Покраска </div>
+                                </div>
+        
+                                <div class="inputs__block">
+    
+                                    <input type="checkbox" class="filter__input">
+    
+                                    <div class="input__text">Ремонт стекол </div>
+                                </div>
+                    </div>
+
+                    <div class="filter__subtitle">Радиус отдаленности</div>
+
+                    <select class="filter__select">
+                        <option value="">25км</option>
+                        <option value="">25км</option>
+                        <option value="">25км</option>
+                    </select>
+                    
+                    <div class="filter__button">Применить фильтр</div>
+
+                </div>
+                
+                
+
+            </div>
+
+        </div>
+
+</div>
 
 
 
-
-    <!--<img src="./img/Bg circle.svg" alt="" class="circle">
-
-    <img src="./img/bg circle left.svg" alt="" class="circle__left">-->
 
 
     <!--Подлюкчаем скрипты-->
