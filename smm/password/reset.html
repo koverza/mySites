@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="..\favicon.ico">
+    <link rel="shortcut icon" href="..\favicon.ico">
+    <link rel="apple-touch-icon" href="..\favicon.ico">
+    <meta name="csrf-token" content="ezFXLes3Ckx1lFYTaYdzlkwSZeLTNKMwn72FEujF">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..\css\app.css">
+    <script src="https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit" async="" defer=""></script>
+
+        <link rel="stylesheet" href="..\css\landing-page.css">
+
+
+</head>
+<body>
+<div class="uk-container-expand">
+
+
+
+
+
+<div class="wrapper">
+        <input id="hamburger" class="hamburger" type="checkbox">
+    <label class="hamburger" for="hamburger">
+        <i></i>
+        <text>
+            <open>Меню</open>
+        </text>
+    </label>
+    <section class="drawer-list">
+        <ul>
+            <li><a href="#header">ПОДДЕРЖКА</a></li>
+            <li><a href="#tarif">СООБЩЕНИЯ</a></li>
+            <li><a href="#services">ЗАКАЗЧИК</a></li>
+            <li><a href="#poisk">АВТОР</a></li>
+            <li><a href="#reviews">БАЛАНС</a></li>
+            <li class="green"><a href="#reviews">Регестрация</a></li>
+            <li class="green"><a href="#reviews">Вход</a></li>
+        </ul>
+    </section>
+    <header class="header">
+    <div class="header-menu">
+        <div class="header-container">
+            <div class="header-body">
+                <a href="..\index.htm"> <img src="..\img\landing-page\logo.svg" alt="Лого" class="logo"></a>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="..\news.html" class="menu__link">Новости</a></li>
+                        <li class="menu__item"><a href="..\questions.html" class="menu__link">Вопросы и ответы</a></li>
+                        <li class="menu__item"><a href="..\rules.html" class="menu__link">Правила работы</a></li>
+                        <li class="menu__item"><a href="..\price.html" class="menu__link">Тарифы</a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+
+                    </ul>
+                </nav>
+                <div class="registr">
+                    <span id="locale-span"></span>
+                                                                    <div id="header-register"></div>
+                        <div id="header-login"></div>
+                                                            </div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <div class="uk-section-default uk-padding-remove">
+    <div class="uk-section uk-background-cover uk-padding-remove uk-align-center text-center" uk-height-viewport="expand: true">
+        <div class="uk-container uk-text-justify">
+            <div style="color: #282828; font-weight: 800; padding-top: 30px; font-family: Roboto">
+                <h2>Email</h2>
+            </div>
+            <form class="uk-form-stacked" method="POST" action="http://smm.ua/password/email">
+                <input type="hidden" name="_token" value="ezFXLes3Ckx1lFYTaYdzlkwSZeLTNKMwn72FEujF">                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-text">Email</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input uk-form-small uk-form-width-large uk-border-rounded" id="email" name="email" type="text">
+                    </div>
+                                    </div>
+
+                <button type="submit" class="uk-button uk-button-primary uk-border-rounded">
+                    Отправить</button><br><br>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+</div>
+<script>
+    window.default_locale = "ru";
+    window.fallback_locale = "en";
+</script>
+<script type="text/javascript" src="..\js\app.js"></script>
+<script type="text/javascript" src="..\js\public\app1.js"></script>
+
+
+
+</body>
+</html>
