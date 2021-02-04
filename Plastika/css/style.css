@@ -235,8 +235,87 @@ nav li{
     cursor: pointer;
 }
 
+.mobile__adaptive{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.mobile__burger{
+    width: 50px;
+    height: 34px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.mobile__burger__line{
+    position: relative;
+    width: 29px;
+    height: 2px;
+    background-color: #0C647B;
+}
+
+.mobile__burger__line::before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    width: 20px;
+    height: 1.5px;
+    background-color:#0C647B;
+}
+
+.mobile__burger__line::after{
+    content: '';
+    position: absolute;
+    top: -5px;
+    width: 39px;
+    height: 1.5px;
+    background-color:#0C647B;
+}
+
+.mobile__nav{
+    position: fixed;
+    min-width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 70px;
+    right: -600px;
+    background-color: white;
+    z-index: 4;
+    display: flex;
+    transition: all 400ms ease-in-out;
+}
+
+.mobile__nav__cross{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 
 @media(max-width: 1024px) {
+
+    .mobile__adaptive{
+        display: flex;
+    }
     .header-left{
         width: 100%;
     }
@@ -288,7 +367,7 @@ nav li{
         display: none;
     }
 
-    .adaptive__nav{
+    .mobile__nav{
         width: 100%;
         align-items: center;
         padding-right: 0px;

@@ -27,6 +27,21 @@ cross.addEventListener('click', () => {
     menu.style.right = '-600px'
 })
 
+/* MOBILE BURGER */
+
+let mobile__burger = document.querySelector('.mobile__burger')
+let mobile__menu = document.querySelector('.mobile__nav')
+let mobile__cross = document.querySelector('.mobile__nav__cross')
+
+mobile__burger.addEventListener('click', () => {
+  mobile__menu.style.display = 'flex'
+  mobile__menu.style.right = '0px'
+})
+
+  mobile__cross.addEventListener('click', () => {
+  mobile__menu.style.right = '-600px'
+})
+
 /* SLIDER */
 
 $(document).ready(function() {
