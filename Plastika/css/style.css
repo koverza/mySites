@@ -25,6 +25,8 @@ body {
     margin: 0 auto;
 }
 
+/* 1 CТРАНИЦА ГЛАВНАЯ */
+
 /* HEADER */
 
 .header{
@@ -470,6 +472,12 @@ nav li{
 
 /* SERVICE */
 
+.service-page{
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: red;
+}
+
 .service__inner{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -550,8 +558,10 @@ nav li{
         padding-bottom: 20px;
     }
     .service__text{
-        font-size: 18px;
+        font-size: 12px;
+        margin-right: 0px;
     }
+
 }
 
 /* OFFER */
@@ -1854,4 +1864,107 @@ input[type='checkbox']:checked + label::after{
         margin-bottom: 12px;
     }
 
+}
+
+/* 2 CТРАНИЦА УСЛУГИ (ПЛАСТИКА ЛИЦО И ШЕЯ) */
+
+.service-left{
+    width: 85%;
+    background-color: #EEDCDA;
+}
+
+.service-page{
+    width: 100%;
+}
+
+.service-page__inner{
+    padding: 25px;
+    background-color:  #EEDCDA;
+}
+
+.service-page__title{
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 150%;
+    color: #0C647B;
+    text-transform: uppercase;
+}
+
+.service-page__block{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding-left: 50px;
+    margin-top: 30px;
+}
+
+.service-page__podblock{
+    width: 60%;
+    margin-right: 7px;
+}
+
+.service-page__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 150%;
+    text-transform: lowercase;
+    color: #0C647B;
+}
+
+.service-page__subtext{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0C647B;
+}
+
+.service-page__img{
+    transition: all 400ms ease-in-out;
+    transform: scale(0);
+}
+
+.service-page__block:hover .service-page__img{
+    transform: scale(1);
+}
+
+@media(max-width: 1024px) {
+    .service-left{
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .service-page__block{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        background-color: white;
+        padding-left: 0px;
+    }
+
+    .service-page__img{
+        width: 100%;
+        transform: scale(1);
+    }
+
+    .service-page__podblock{
+        padding: 20px;
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 375px) {
+    .service-page__title{
+        font-size: 24px;
+    }
 }
