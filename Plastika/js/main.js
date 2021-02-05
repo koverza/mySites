@@ -4,11 +4,14 @@ window.onscroll = () => {
 
   const headerAdaptive = document.querySelector('.header__adaptive')
   const Y = window.scrollY
+  const adaptive__nav = document.querySelector('.adaptive__nav')
 
   if(Y > window.innerHeight) {
     headerAdaptive.style.visibility = 'visible'
+    
   } else if (Y < window.innerHeight){
     headerAdaptive.style.visibility = 'hidden'
+  
   }
 }
 
@@ -24,7 +27,7 @@ burger.addEventListener('click', () => {
 })
 
 cross.addEventListener('click', () => {
-    menu.style.right = '-600px'
+    menu.style.right = '-400px'
 })
 
 /* MOBILE BURGER */
