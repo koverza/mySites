@@ -1,6 +1,6 @@
-/** FONTS 
+/* FONTS 
 font-family: 'Montserrat', sans-serif;
-**/
+*/
 
 /* Обнуление */
 *, *:before,*:after {
@@ -1873,12 +1873,14 @@ input[type='checkbox']:checked + label::after{
     background-color: #EEDCDA;
 }
 
-.service-page{
+
+
+.service--page{
     width: 100%;
 }
 
 .service-page__inner{
-    padding: 25px;
+    padding: 50px;
     background-color:  #EEDCDA;
 }
 
@@ -1933,6 +1935,10 @@ input[type='checkbox']:checked + label::after{
     transform: scale(1);
 }
 
+.scrolled{
+    overflow-y: scroll;
+}
+
 @media(max-width: 1024px) {
     .service-left{
         width: 100%;
@@ -1965,6 +1971,14 @@ input[type='checkbox']:checked + label::after{
 
 @media(max-width: 375px) {
     .service-page__title{
-        font-size: 24px;
+        font-size: 20px;
+    }
+
+    .service-page__text{
+        font-size: 21px;
+    }
+
+    .service-page__subtext{
+        font-size: 15px;
     }
 }
