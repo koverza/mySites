@@ -2931,6 +2931,29 @@ input[type='checkbox']:checked + label::after{
     }
 
     .contentBox .label{
-        font-size: 14px;
+        font-size: 13px;
+    }
+}
+
+.eyebrows__row{
+    display: flex;
+    justify-content: center;
+}
+
+.eyebrows__column{
+    margin-right: 15px;
+}
+
+.eyebrows__row{
+    margin-top: 15px;
+}
+
+@media(max-width: 600px) {
+    .eyebrows__row{
+        flex-direction: column;
+    }
+
+    .eyebrows__row:last-child{
+        margin-top: 0px;
     }
 }
