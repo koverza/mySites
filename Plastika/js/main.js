@@ -97,3 +97,61 @@ for (let anchor of anchors) {
         })
     })
 }
+
+/* Accordion */
+
+const accordion = document.getElementsByClassName('contentBox')
+
+for (let i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener('click', function(){
+        this.classList.toggle('active')
+    })
+}
+
+/* SliderType */
+
+$(document).ready(function() {
+  $('.sliderType').slick({
+    arrows: false,
+    slidesToShow: 3,
+    initialSlide: 1,
+    centerMode: true,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1350,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false
+        }
+      }
+    ]
+  })
+})
+
+/* Табы */
+
+let tabHeader = document.getElementsByClassName("tab-header")[0];
+let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
+let tabBody = document.getElementsByClassName("tab-body")[0];
+ 
+let tabsPane = tabHeader.getElementsByTagName("div");
+ 
+for(let i=0;i<tabsPane.length;i++){
+  tabsPane[i].addEventListener("click",function(){
+    tabHeader.getElementsByClassName("active")[0].classList.remove("active");
+    tabsPane[i].classList.add("active");
+    tabBody.getElementsByClassName("active")[0].classList.remove("active");
+    tabBody.getElementsByTagName("div")[i].classList.add("active");
+    
+    tabIndicator.style.left = `calc(calc(100% / 4) * ${i})`;
+  });
+}
+
