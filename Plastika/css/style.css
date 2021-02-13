@@ -1106,6 +1106,7 @@ input[type='checkbox']:checked + label::after{
         padding: 10px 25px;
         margin-right: 10px;
         margin-bottom: 10px;
+        font-size: 16px;
     }
 
     .pages__link{
@@ -2555,7 +2556,7 @@ input[type='checkbox']:checked + label::after{
     }
 
     .tabs .tab-body > div{
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .tabs{
