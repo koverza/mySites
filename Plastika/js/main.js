@@ -151,7 +151,7 @@ for(let i=0;i<tabsPane.length;i++){
     tabBody.getElementsByClassName("active")[0].classList.remove("active");
     tabBody.getElementsByTagName("div")[i].classList.add("active");
     
-    tabIndicator.style.left = `calc(calc(100% / 4) * ${i})`;
+    //tabIndicator.style.left = `calc(calc(100% / 4) * ${i})`;
   });
 }
 

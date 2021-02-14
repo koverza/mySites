@@ -49,7 +49,7 @@ body {
 }
 
 .header__block{
-    width: 70%;
+    width: 80%;
     height: 100%;
     padding-top: 100px;
     padding-left: 15px;
@@ -513,7 +513,7 @@ nav li{
     align-items: center;
     background-color: #DAE4E3;
     justify-content: space-around;
-    padding-left: 20px;
+
 }
 
 .service__column .service__block:nth-child(2) {
@@ -535,7 +535,6 @@ nav li{
 .service__img{
     width: 154px;
     height: 130px;
-    margin-right: 20px;
 }
 
 @media (max-width: 850px) {
@@ -2343,6 +2342,43 @@ input[type='checkbox']:checked + label::after{
     margin-top: 10px;
 }
 
+.type__contentBlock{
+    max-width: 1000px;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.contentBlock__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #0C647B;
+    margin-top: 30px;
+}
+
+.contentBlock__row{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentBlock__box{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #0C647B;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px;
+}
 
 /* ТАБЫ */
 
@@ -2480,6 +2516,15 @@ input[type='checkbox']:checked + label::after{
 
     .face__column{
         width: 100%;
+    }
+
+    .contentBlock__row{
+        flex-direction: column;
+    }
+
+    .contentBlock__box{
+        width: 100%;
+        margin-top: 10px;
     }
 }
 
