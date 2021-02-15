@@ -2027,7 +2027,7 @@ input[type='checkbox']:checked + label::after{
 .logo__title{
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 150%;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -2391,6 +2391,10 @@ input[type='checkbox']:checked + label::after{
     position: relative;
 }
 
+.smallwrapper{
+    height: 550px;
+}
+
 .tabs__container{
     max-width: 1000px;
     margin: 0 auto;
@@ -2417,6 +2421,11 @@ input[type='checkbox']:checked + label::after{
     padding:20px 30px;
     overflow:hidden;
     color: #0C647B;
+}
+
+.smalltabs{
+    top: 63%;
+    height: 550px;
 }
 
 .tabs .tab-header {
@@ -2475,6 +2484,17 @@ input[type='checkbox']:checked + label::after{
     }
 }
 
+@media(max-width: 1050px) {
+
+    .smallwrapper{
+        height: 700px;
+    }
+    .smalltabs{
+        top: 60%;
+        height: 700px;
+    }
+}
+
 @media(max-width: 768px){
     .type__title{
         font-size: 24px;
@@ -2525,6 +2545,11 @@ input[type='checkbox']:checked + label::after{
     .contentBlock__box{
         width: 100%;
         margin-top: 10px;
+    }
+
+    .smalltabs{
+        top: 53%;
+        height: 700px;
     }
 }
 
@@ -2609,6 +2634,213 @@ input[type='checkbox']:checked + label::after{
     }
 }
 
+
+/* IMPLANT */
+
+.implant__inner{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.implant__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0C647B;
+    margin-top: 30px;
+}
+
+.implant__block{
+    margin-top: 30px;
+    padding: 40px;
+    display: flex;
+    background-color: #EEDCDA;
+}
+
+.implant__name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    color: #0C647B;
+    min-width: 130px;
+}
+
+.implant__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0C647B;
+    margin-left: 30px;
+}
+
+.main__row{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.main__title{
+    min-width: 265px;
+    display: flex;
+    align-items: center;
+    background-color: #DAE4E3;
+    padding: 20px;
+    max-height: 80px;
+}
+
+.impl{
+    margin-right: 20px;
+}
+
+.main__block{
+    margin-left: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;
+    color: #0C647B;
+}
+
+.main__block span{
+    font-weight: bold;
+}
+
+.implant__row{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.implant__bl{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EEDCDA;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;
+    color: #0C647B;
+}
+
+.implant__bl:nth-child(2){
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.implant__bl:nth-child(3){
+    margin-right: 20px;
+}
+
+.implant__descr{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;
+    color: #0C647B;
+    margin-top: 30px;
+}
+
+.tabs .accordeon{
+    max-width: 100%;
+    margin-right: 0px;
+}
+
+.tabs .accordeon .contentBox{
+    margin: 0px;
+}
+
+.tabs .accordeon .contentBox .label{
+    border: none;
+    background-color: #EEDCDA;
+}
+
+.tabs .accordeon .contentBox {
+    border: none;
+}
+
+.tabs .accordeon .contentBox.active .content{
+    height: 180px;
+    margin-top: 10px;
+}
+
+.tabs .bigAccor .contentBox.active .content{
+    padding: 0px;
+}
+
+.implant-content__block{
+    background-color: #FFF5F4;
+    padding: 20px;
+}
+
+.implant-content__text{
+    margin-top: 20px;
+}
+
+@media(max-width: 768px) {
+    .implant__inner{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .implant__title{
+        font-size: 26px;
+    }
+
+    .implant__block{
+        flex-direction: column;
+    }
+
+    .implant__name{
+        text-align: center;
+    }
+
+    .implant__text{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .main__row{
+        flex-direction: column;
+    }
+
+    .main__title{
+        margin: 0 auto;
+    }
+
+    .main__block{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .implant__row{
+        flex-direction: column;
+    }
+
+    .implant__bl{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .implant__bl:nth-child(2){
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .implant__bl:nth-child(3){
+        margin-right: 0px;
+    }
+}
 
 
 /* OPARETIONS */
