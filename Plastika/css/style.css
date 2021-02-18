@@ -1,4 +1,4 @@
-/*FONTS 
+/* FONTS 
 font-family: 'Montserrat', sans-serif;
 */
 
@@ -311,6 +311,10 @@ nav li{
     right: 12px;
     background-color: transparent;
     cursor: pointer;
+}
+
+.header__logo{
+    width: 13%;
 }
 
 
@@ -1067,7 +1071,7 @@ input[type='checkbox']:checked + label::after{
 }
 
 .after__row{
-    margin-top: 45px;
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -1075,12 +1079,12 @@ input[type='checkbox']:checked + label::after{
 .after__link{
     border-radius: 4px;
     border: 1px solid white;
-    padding: 15px 45px;
+    padding: 10px 15px;
     margin-right: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 150%;
     color: #0C647B;
     transition: all 400ms ease-in-out;
@@ -1091,12 +1095,15 @@ input[type='checkbox']:checked + label::after{
 }
 
 .after__images{
-    margin-bottom: 40px;
+    margin-bottom: 18px;
 }
 
 .after__img{
+    width: 24%;
+    height: 150px;
     margin-right: 5px;
     margin-bottom: 5px;
+    object-fit: cover;
 }
 
 .pages__link{
@@ -1122,6 +1129,7 @@ input[type='checkbox']:checked + label::after{
 @media(max-width: 1024px) {
     .after__img{
         width: 100%;
+        height: 100%;
     }
 
     .after__img:nth-child(2),
@@ -1931,7 +1939,7 @@ input[type='checkbox']:checked + label::after{
 }
 
 .service-page__inner{
-    padding: 50px;
+    padding: 30px;
     background-color:  #EEDCDA;
 }
 
@@ -2016,6 +2024,10 @@ input[type='checkbox']:checked + label::after{
     .service-page__podblock{
         padding: 20px;
         width: 100%;
+    }
+
+    .service-page__title{
+        margin-top: 30px;
     }
 
 }
@@ -3750,3 +3762,415 @@ input[type='checkbox']:checked + label::after{
     }
 
 }
+
+/* DOCTOR */
+
+
+.doctor__inner{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.doctor__left{
+    padding: 10px;
+    width: 20%;
+}
+
+.doctor-menu{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: sticky;
+    top: 65px;
+    margin-right: 0px;
+}
+
+
+.doctor-menu__item{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150.5%;
+    color: #0C647B;
+}
+
+.doctor-menu__item:hover{
+    font-weight: bold;
+}
+
+.doctor__right{
+    padding: 10px;
+    width: 75%;
+}
+
+.doctor__description{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #0C647B;
+}
+
+.doctor__text{
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #0C647B;
+}
+
+.doctor__block{
+    margin-top: 30px;
+}
+
+.doctor__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #0C647B;
+}
+
+.doctor__podblock{
+    margin-top: 30px;
+    display: flex;
+    padding: 20px;
+    background-color: #EEDCDA;
+}
+
+.doctor__date{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 150%;
+    min-width: 100px;
+    color: #0C647B;
+
+}
+
+.doctor__info{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #0C647B;
+}
+
+.doctor__info span{
+    font-weight: bold;
+}
+
+.doctor__image{
+    margin-top: 30px;
+    width: 100%;
+
+}
+
+.doctor__texts{
+    margin-top: 30px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    background-color: #0C647B;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.doctor__texts span{
+    font-weight: bold;
+}
+
+.doctorDate__row{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.date__item{
+    background-color: #EEDCDA;
+    padding: 20px;
+    width: 31%;
+}
+
+.year{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
+    color: #0C647B;
+}
+
+.year__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #0C647B;
+}
+
+@media(max-width: 1024px) {
+    .doctor__left{
+        display: none;
+    }
+
+    .doctor__right{
+        width: 100%;
+    }
+}
+
+@media(max-width: 678px) {
+
+    .doctor__right{
+        padding: 0px;
+    }
+
+    .doctor__description{
+        font-size: 24px;
+    }
+
+    .doctor__podblock{
+        margin-top: 15px;
+    }
+
+    .doctor__title{
+        font-size: 22px;
+    }
+
+    .doctor__info{
+        font-size: 16px;
+    }
+
+    .doctor__date{
+        font-size: 20px;
+        min-width: 80px;
+    }
+
+    .doctorDate__row{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .date__item{
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+/* COST */
+
+.costOverflow{
+    overflow: hidden;
+}
+
+.costPage{
+    align-items: inherit;
+}
+
+.costPadd{
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.cost__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cost__tel{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #0C647B;
+}
+
+.cost__tel span{
+    font-weight: bold;
+}
+
+.cost__block{
+    width: 100%;
+    background-color: white;
+    padding:  40px 20px;
+    margin-top: 15px;
+}
+
+.cost__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #0C647B;
+    text-align: center;
+}
+
+.cost__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cost__plastica{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: #0C647B;
+    min-width: 83px;
+    text-align: end;
+}
+
+.tae{
+    text-align: left;
+}
+
+.cost__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cost__text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: #0C647B;
+    margin-right: 20px;
+}
+
+.cost__accordeon{
+    width: 100%;
+}
+
+.costAccordeon__block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cost__accordeon .contentBox{
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.cost__accordeon .label{
+    background-color: #EEDCDA;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #0C647B;
+    border-top: none;
+    padding: 20px;
+}
+
+.cost__accordeon .contentBox .content{
+    background-color: white;
+    overflow-y: hidden;
+}
+
+.cost__accordeon .contentBox.active  .content{
+    height: 80px;
+    padding: 10px;
+    border-bottom: 1px solid  #0C647B;
+}
+
+.cost__accordeon .contentBox:last-child{
+    border-bottom: none;
+}
+
+.cost__ps{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #0C647B;
+}
+
+@media(max-width: 1024px) {
+    .costPadd{
+        padding-top: 80px;
+    }
+}
+
+@media(max-width: 768px) {
+    .cost__header{
+        display: none;
+    }
+
+    .cost__block{
+        padding: 20px;
+        margin-top: 0px;
+    }
+}
+
+@media(max-width: 550px) {
+    .cost__accordeon .label{
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .cost__text{
+        font-size: 14px;
+    }
+
+    .cost__plastica{
+        font-size: 14px;
+    }
+
+    .cost__ps{
+        font-size: 14px;
+    }
+
+    .cost__row{
+        margin-top: 13px;
+        margin-bottom: 13px;
+    }
+
+    .cost__title{
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 425px) {
+
+    .cost__accordeon .label{
+        font-size: 13px;
+    }
+
+    .cost__text{
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .cost__plastica{
+        min-width: 60px;
+        font-size: 12px;
+    }
+
+    .cost__ps{
+        font-size: 12px;
+    }
+
+    .cost__accordeon .contentBox.active .content{
+        padding: 5px;
+    }
+}
+
+
