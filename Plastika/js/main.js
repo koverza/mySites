@@ -6,12 +6,12 @@ window.onscroll = () => {
   const Y = window.scrollY
   const adaptive__nav = document.querySelector('.adaptive__nav')
 
+
   if(Y > window.innerHeight) {
     headerAdaptive.style.visibility = 'visible'
     
   } else if (Y < window.innerHeight){
     headerAdaptive.style.visibility = 'hidden'
-  
   }
 }
 
