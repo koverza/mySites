@@ -4398,12 +4398,12 @@ input[type='checkbox']:checked + label::after{
     mix-blend-mode: normal;
     backdrop-filter: blur(80px);
     opacity: 0;
-    transition: all 2s ease-in-out;
+    transition: all 5s ease-in-out;
 }
 
 .popupForm__body{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4438,6 +4438,12 @@ input[type='checkbox']:checked + label::after{
     cursor: pointer;
     transition: all 300ms ease-in-out;
     margin-top: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .popupForm__button:hover{
@@ -4445,9 +4451,5 @@ input[type='checkbox']:checked + label::after{
     color: #0C647B;
 }
 
-@media(max-width: 600px) {
-    .popupForm{
-        opacity: 1;
-    }
-}
+
 

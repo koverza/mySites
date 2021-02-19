@@ -15,10 +15,7 @@ window.onscroll = () => {
   }
 }
 
-if(window.innerWidth === 500) {
-  window.onload = a()
-
-}
+document.addEventListener('DOMContentLoaded',  a)
 
 function a() {
   let popupForm = document.querySelector('.popupForm')
