@@ -4398,7 +4398,7 @@ input[type='checkbox']:checked + label::after{
     mix-blend-mode: normal;
     backdrop-filter: blur(80px);
     opacity: 0;
-    transition: 1s ease-in-out;
+    transition: all 2s ease-in-out;
 }
 
 .popupForm__body{

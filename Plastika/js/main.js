@@ -15,6 +15,17 @@ window.onscroll = () => {
   }
 }
 
+if(window.innerWidth === 500) {
+  window.onload = a()
+
+}
+
+function a() {
+  let popupForm = document.querySelector('.popupForm')
+
+  popupForm.style.opacity = '1'
+}
+
 /* BURGER */
 
 let burger = document.getElementById('burger')
