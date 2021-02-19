@@ -15,14 +15,16 @@ window.onscroll = () => {
   }
 }
 
+/* ANIMATION */
+
 document.addEventListener('DOMContentLoaded',  a)
 
 function a() {
   let popupForm = document.querySelector('.popupForm')
 
-  if(window.innerWidth < 500) {
+  if(window.innerWidth < 520) {
     popupForm.style.opacity = '1'
-  } else if (window.innerWidth > 500) {
+  } else if (window.innerWidth > 520) {
     popupForm.style.opacity = '0'
   }
 
