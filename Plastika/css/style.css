@@ -4566,14 +4566,7 @@ input[type='checkbox']:checked + label::after{
     color: white;
 }
 
-.popupForm__text span{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 150%;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
+
 
 .doctor-logo__item{
     min-width: 130px;
