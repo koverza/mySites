@@ -17,26 +17,29 @@ window.onscroll = () => {
     headerAdaptive.style.visibility = 'hidden'
     consultationButton.style.visibility = 'hidden'
   }
+
 }
 
-let formConsultation = document.querySelector('.formConsultation')
-const consultationButton = document.querySelector('.consultationButton')
-let form__cross = document.querySelector('.form__cross')
-
-consultationButton.addEventListener('click', () => {
-  formConsultation.style.bottom = '0%'
-  consultationButton.style.backgroundColor = 'white'
-  consultationButton.style.color = '#0C647B'
-
+$(document).ready(function() {
+  let formConsultation = document.querySelector('.formConsultation')
+  const consultationButton = document.querySelector('.consultationButton')
+  let form__cross = document.querySelector('.form__cross')
+  
+  consultationButton.addEventListener('click', () => {
+    formConsultation.style.bottom = '0%'
+    consultationButton.style.backgroundColor = 'white'
+    consultationButton.style.color = '#0C647B'
+  
+  })
+  
+  form__cross.addEventListener('click', () => {
+    formConsultation.style.bottom = '-100%'
+    consultationButton.style.backgroundColor = '#0C647B'
+    consultationButton.style.color = 'white'
+  })
 })
 
-form__cross.addEventListener('click', () => {
-  formConsultation.style.bottom = '-100%'
-  consultationButton.style.backgroundColor = '#0C647B'
-  consultationButton.style.color = 'white'
 
-
-})
 
 /* ANIMATION */
 
@@ -192,4 +195,8 @@ for(let i=0;i<tabsPane.length;i++){
     //tabIndicator.style.left = `calc(calc(100% / 4) * ${i})`;
   });
 }
+
+////////
+
+
 
