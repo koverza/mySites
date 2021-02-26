@@ -401,7 +401,21 @@ nav li{
 
 @media(max-width: 520px) {
     .header__podblock{
-        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .header__button{
+        margin-top: -200px;
+    }
+
+    .header__text{
+        font-size: 26px;
     }
 
     .mobile__nav{
@@ -4474,6 +4488,7 @@ input[type='checkbox']:checked + label::after{
     right: 5%;
     cursor: pointer;
     transition: all 400ms ease-in-out;
+    visibility: hidden;
 }
 
 .consultationButton:hover{
@@ -4488,7 +4503,7 @@ input[type='checkbox']:checked + label::after{
     bottom: -100%;
     right: 0;
     transition: all 400ms ease-in-out;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .formConsultation__inner{
