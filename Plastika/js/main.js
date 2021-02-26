@@ -32,22 +32,6 @@ $(document).ready(function() {
 })
 
 
-
-/* ANIMATION */
-
-document.addEventListener('DOMContentLoaded',  a)
-
-function a() {
-  let header__podblock = document.querySelector('.header__podblock')
-
-  if(window.innerWidth < 520) {
-    header__podblock.style.opacity = '1'
-  } else if (window.innerWidth > 520) {
-    header__podblock.style.opacity = '0'
-  }
-
-}
-
 /* BURGER */
 
 let burger = document.getElementById('burger')
