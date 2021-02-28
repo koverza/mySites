@@ -6,31 +6,55 @@ window.onscroll = () => {
   const Y = window.scrollY
   const adaptive__nav = document.querySelector('.adaptive__nav')
 
+  /* Кнопка консультации FIXED */
+  const consultationButton = document.querySelector('.consultationButton')
+
   if(Y > window.innerHeight) {
     headerAdaptive.style.visibility = 'visible'
+    consultationButton.style.visibility = 'visible'
+    
   } else if (Y < window.innerHeight){
     headerAdaptive.style.visibility = 'hidden'
+    consultationButton.style.visibility = 'hidden'
   }
 
 }
 
 $(document).ready(function() {
   let formConsultation = document.querySelector('.formConsultation')
-  const header__button = document.querySelector('.header__button')
+  const consultationButton = document.querySelector('.consultationButton')
   let form__cross = document.querySelector('.form__cross')
   
-  header__button.addEventListener('click', () => {
+  consultationButton.addEventListener('click', () => {
     formConsultation.style.bottom = '0%'
-
+    consultationButton.style.backgroundColor = 'white'
+    consultationButton.style.color = '#0C647B'
   
   })
   
   form__cross.addEventListener('click', () => {
     formConsultation.style.bottom = '-100%'
-
+    consultationButton.style.backgroundColor = '#0C647B'
+    consultationButton.style.color = 'white'
   })
 })
 
+
+
+/* ANIMATION */
+
+document.addEventListener('DOMContentLoaded',  a)
+
+function a() {
+  let popupForm = document.querySelector('.popupForm')
+
+  if(window.innerWidth < 520) {
+    popupForm.style.opacity = '1'
+  } else if (window.innerWidth > 520) {
+    popupForm.style.opacity = '0'
+  }
+
+}
 
 /* BURGER */
 
