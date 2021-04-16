@@ -27,7 +27,7 @@ function cleanDist() {
 
 /* Images */ 
 function images() {
-    return src('app/images/**/*')
+    return src('app/img/**/*')
     .pipe(imagemin(
         [
             imagemin.gifsicle({interlaced: true}),
@@ -41,7 +41,7 @@ function images() {
             })
         ]
     ))
-    .pipe(dest('dist/images'))
+    .pipe(dest('dist/img'))
 }
 
 /* Css */
@@ -62,6 +62,7 @@ function styles() {
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
+        'app/slick/slick.min.js',
         'app/js/script.js'
     ])
     .pipe(concat('main.min.js'))
@@ -74,7 +75,8 @@ function scripts() {
 function build() {
     return src([
         'app/css/style.min.css', // Выбираем папку с минифицированным файлом стилей
-        // Сюда можно добавить папку со шрифтами
+        'app/fonts/**/*', // Выбираем папку со шрифтами
+        'app/slick/**/*', // Выбираем папку слайдера
         'app/js/main.min.js', // Выибираем папку с минифицированным файлом скриптов
         'app/*.html' // Выибираем все файлы html
     ], {base: 'app'})
