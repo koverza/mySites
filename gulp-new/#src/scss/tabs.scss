@@ -1,0 +1,37 @@
+.tabs {
+    max-width: 700px;
+}
+.tabs-nav {
+    display: flex;
+    align-items: center;
+}
+.tabs-nav__button {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 250ms ease;
+    border: 1px solid black;
+}
+.tabs-nav__button.active{
+    background-color: rgb(102, 175, 175);
+}
+.tabs-nav__button:nth-child(1),
+.tabs-nav__button:nth-child(2) {
+    border-right: none;
+}
+.tabs-nav__button:hover{
+    background-color: rgb(228, 228, 228);
+}
+.tabs-content {
+    padding: 10px;
+}
+.tabs-block {
+    display: none;
+}
+.tabs-block.active {
+    display: flex;
+}
