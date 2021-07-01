@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/moonfonts/icomoon.eot?daug5e');
+  src:  url('../fonts/moonfonts/icomoon.eot?daug5e#iefix') format('embedded-opentype'),
+    url('../fonts/moonfonts/icomoon.ttf?daug5e') format('truetype'),
+    url('../fonts/moonfonts/icomoon.woff?daug5e') format('woff'),
+    url('../fonts/moonfonts/icomoon.svg?daug5e#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, 
+[class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-apple-pay:before {
+  content: "\e900";
+}
+.icon-mastercard:before {
+  content: "\e901";
+}
+.icon-paypal:before {
+  content: "\e902";
+}
