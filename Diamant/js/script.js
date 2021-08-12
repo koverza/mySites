@@ -1,3 +1,31 @@
+
+const bottomItems = document.querySelectorAll('.bottom-item')
+const bottomSubMenus = document.querySelectorAll('.bottom-submenu')
+
+
+    for (let i = 0; i < bottomItems.length; i++) {
+        const bottomItem = bottomItems[i];
+        bottomItem.addEventListener('click', ()=> {
+            for (let a = 0; a < bottomSubMenus.length; a++) {
+                const bottomSubMenu = bottomSubMenus[a];
+                bottomSubMenu.classList.toggle('active')
+            }
+        })
+    }
+
+
+
+    
+
+
+let burger = document.querySelector('.burger')
+let headerMain = document.querySelector('.header-main')
+
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active')
+    headerMain.classList.toggle('active')
+});
 /**
  * Swiper 6.8.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -34,7 +62,7 @@ const BestcellerSwiper = new Swiper('.bestsellers-slider', {
         prevEl: '.bestsellers-slide__prev',
     },
     slidesPerView: 3,
-    spaceBetween: 50,
+    spaceBetween: 55,
     loop: true,
     breakpoints: {
         320: {
@@ -212,12 +240,6 @@ tabsBtn.forEach(function (item) {
 })
 
 document.querySelector('.tabs-nav__button:nth-child(1)').click();
-
-let burger = document.querySelector('.burger')
-
-burger.addEventListener('click', () => {
-    burger.classList.toggle('active')
-});
 function testWebP(callback) {
 
     var webP = new Image();
