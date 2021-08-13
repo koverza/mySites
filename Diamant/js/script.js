@@ -1,21 +1,27 @@
-
 const bottomItems = document.querySelectorAll('.bottom-item')
-const bottomSubMenus = document.querySelectorAll('.bottom-submenu')
+const bottomSubMenusAdaptive = document.querySelectorAll('.bottom-submenuAdaptive')
 
+// const submenuAdaptiveBack = document.querySelector('.submenuAdaptive-back')
 
-    for (let i = 0; i < bottomItems.length; i++) {
-        const bottomItem = bottomItems[i];
-        bottomItem.addEventListener('click', ()=> {
-            for (let a = 0; a < bottomSubMenus.length; a++) {
-                const bottomSubMenu = bottomSubMenus[a];
-                bottomSubMenu.classList.toggle('active')
-            }
-        })
-    }
+// submenuAdaptiveBack.addEventListener('click', () => {
+//     // bottomSubMenuAdaptive.classList.remove('active')
+//     console.log('reeee');
+// })
 
+for (let i = 0; i < bottomItems.length; i++) {
+    const bottomItem = bottomItems[i];
+    bottomItem.addEventListener('click', () => {
 
+        for (let a = 0; a < bottomSubMenusAdaptive.length; a++) {
+            const bottomSubMenuAdaptive = bottomSubMenusAdaptive[a];
+            bottomSubMenuAdaptive.classList.add('active')
 
-    
+        }
+
+    })
+
+}
+
 
 
 let burger = document.querySelector('.burger')
@@ -25,7 +31,8 @@ let headerMain = document.querySelector('.header-main')
 burger.addEventListener('click', () => {
     burger.classList.toggle('active')
     headerMain.classList.toggle('active')
-});
+})
+;
 /**
  * Swiper 6.8.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -75,6 +82,18 @@ const BestcellerSwiper = new Swiper('.bestsellers-slider', {
             slidesPerView: 3,
         }
     }
+})
+
+const decorationsSwiper = new Swiper('.decorations-slider', {
+    navigation: {
+        nextEl: '.decorations-slide__next',
+        prevEl: '.decorations-slide__prev',
+    },
+    pagination: {
+        clickable: true,
+        el: ".decorations-pagination",
+    },
+    
 })
 
 /*! nouislider - 14.6.2 - 9/16/2020 */
