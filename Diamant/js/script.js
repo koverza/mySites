@@ -1,28 +1,11 @@
-const bottomItems = document.querySelectorAll('.bottom-item')
-const bottomSubMenusAdaptive = document.querySelectorAll('.bottom-submenuAdaptive')
+// Все поиски, корзины, инпуты и тд
+let searches = document.querySelectorAll('.search')
+let searchInput = document.querySelector('.search__input')
+let users = document.querySelectorAll('.user')
+let favorites = document.querySelectorAll('.favorite')
+let carts = document.querySelectorAll('.cart')
 
-// const submenuAdaptiveBack = document.querySelector('.submenuAdaptive-back')
-
-// submenuAdaptiveBack.addEventListener('click', () => {
-//     // bottomSubMenuAdaptive.classList.remove('active')
-//     console.log('reeee');
-// })
-
-for (let i = 0; i < bottomItems.length; i++) {
-    const bottomItem = bottomItems[i];
-    bottomItem.addEventListener('click', () => {
-
-        for (let a = 0; a < bottomSubMenusAdaptive.length; a++) {
-            const bottomSubMenuAdaptive = bottomSubMenusAdaptive[a];
-            bottomSubMenuAdaptive.classList.add('active')
-
-        }
-
-    })
-
-}
-
-
+// Бургер
 
 let burger = document.querySelector('.burger')
 let headerMain = document.querySelector('.header-main')
@@ -33,6 +16,22 @@ burger.addEventListener('click', () => {
     headerMain.classList.toggle('active')
 })
 ;
+
+// Header
+const bottomItems = document.querySelectorAll('.bottom-item')
+const bottomSubMenusAdaptive = document.querySelectorAll('.bottom-submenuAdaptive')
+
+for (let i = 0; i < bottomItems.length; i++) {
+    const bottomItem = bottomItems[i];
+    bottomItem.addEventListener('click', () => {
+        for (let a = 0; a < bottomSubMenusAdaptive.length; a++) {
+            const bottomSubMenuAdaptive = bottomSubMenusAdaptive[a];
+            bottomSubMenuAdaptive.classList.add('active')
+        }
+    })
+}
+
+// Слайдеры
 /**
  * Swiper 6.8.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -94,6 +93,22 @@ const decorationsSwiper = new Swiper('.decorations-slider', {
         el: ".decorations-pagination",
     },
     
+})
+
+// Включение - выключение сортировки
+let sortSelect = document.querySelector('.sort-select')
+let sortMenu = document.querySelector('.sort-menu ')
+
+sortSelect.addEventListener('click', () => {
+    sortMenu.classList.toggle('active')
+})
+
+// Включение - выключение фильтра
+let filterBtn = document.querySelector('.catalog-filter__button')
+let filterMenu = document.querySelector('.filter-row')
+
+filterBtn.addEventListener('click', () => {
+    filterMenu.classList.toggle('active')
 })
 
 /*! nouislider - 14.6.2 - 9/16/2020 */
