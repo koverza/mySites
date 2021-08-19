@@ -1359,6 +1359,139 @@
   font-size: 16px;
 }
 
+/* Оформление заказа */
+
+.form-main {
+  width: 100%;
+}
+
+.form-main__inner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form-main .form {
+  padding: 0px;
+  background-color: white;
+}
+
+.form-main .form .from-input {
+  width: 50%;
+}
+
+.form-main .form-row .number {
+  width: 100%;
+  margin-top: 0px;
+}
+
+.form-main .form-row .comment {
+  width: 100%;
+  margin-top: 0px;
+}
+
+.radiobuttons__title {
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.radiobuttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.radiobuttons .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.radiobuttons .group:nth-child(2) {
+  margin-left: 30px;
+}
+
+.radiobuttons input[type="checkbox"] {
+  display: none;
+}
+
+.radiobuttons label {
+  position: relative;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.radiobuttons label::before {
+  content: "";
+  background-color: black;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: -38px;
+  top: 2px;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+  -o-transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+  transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+
+.radiobuttons input[type="checkbox"]:checked + label::before {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.radiobuttons label::after {
+  margin-top: 4px;
+  content: "";
+  border: 1px solid #CCCCCC;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -42px;
+  top: -6px;
+}
+
+.bucket-texts {
+  margin-top: 30px;
+}
+
+.bucket__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bucket-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.bucket-text {
+  width: 300px;
+  margin-right: 30px;
+}
+
+.bucket-bold {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bucket-texts .button {
+  margin: 20px 0px;
+}
+
+/* Корзина */
+
 /* Обнуление */
 
 /* Обнуление */
@@ -11017,6 +11150,15 @@ input[type=number] {
     margin-bottom: 15px;
   }
 
+  .form-main .form-row {
+    margin-top: 0px;
+  }
+
+  .form-main .form .from-input {
+    width: 100%;
+    margin-top: 15px;
+  }
+
   .phone {
     margin-right: 8px;
   }
@@ -11810,6 +11952,31 @@ input[type=number] {
 
   .reviews-texts {
     padding: 0;
+  }
+
+  .form-main__inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .bucket-row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .bucket-text {
+    width: 60%;
+    margin-right: 15px;
+    font-size: 16px;
+  }
+
+  .bucket-bold {
+    font-size: 16px;
+  }
+
+  .bucket-texts .button {
+    margin: 10px auto;
   }
 
   .title {
