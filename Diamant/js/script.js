@@ -1,3 +1,36 @@
+document.querySelector('.quantity-minus').setAttribute('disabled', 'disabled');
+
+let valueCount
+
+document.querySelector('.quantity-plus').addEventListener('click', function() {
+    valueCount = document.querySelector('.quantity-input').value;
+
+    valueCount++
+
+    document.querySelector('.quantity-input').value = valueCount
+
+    
+if (valueCount > 1 ) {
+    document.querySelector('.quantity-minus').removeAttribute('disabled')
+    document.querySelector('.quantity-minus').classList.remove('disabled')
+
+}
+
+})
+
+document.querySelector('.quantity-minus').addEventListener('click', function() {
+    valueCount = document.querySelector('.quantity-input').value;
+
+    valueCount--
+
+    document.querySelector('.quantity-input').value = valueCount
+
+    if (valueCount == 1 ) {
+        document.querySelector('.quantity-minus').setAttribute('disabled', 'disabled')
+    }
+})
+
+;
 const accordionItemHeaders = document.querySelectorAll('.accordion-item-header')
 
 accordionItemHeaders.forEach(accordionItemHeader => {
@@ -39,6 +72,7 @@ tabsBtn.forEach(function (item) {
 })
 
 document.querySelector('.tabs-nav__button:nth-child(1)').click();
+
 // Все поиски, корзины, инпуты и тд
 let searches = document.querySelectorAll('.search')
 let searchInput = document.querySelector('.search__input')
@@ -256,36 +290,3 @@ function testWebP(callback) {
     document.querySelector('body').classList.add('no-webp');
     }
 });;
-document.querySelector('.quantity-minus').setAttribute('disabled', 'disabled');
-
-let valueCount
-
-document.querySelector('.quantity-plus').addEventListener('click', function() {
-    valueCount = document.querySelector('.quantity-input').value;
-
-    valueCount++
-
-    document.querySelector('.quantity-input').value = valueCount
-
-    
-if (valueCount > 1 ) {
-    document.querySelector('.quantity-minus').removeAttribute('disabled')
-    document.querySelector('.quantity-minus').classList.remove('disabled')
-
-}
-
-})
-
-document.querySelector('.quantity-minus').addEventListener('click', function() {
-    valueCount = document.querySelector('.quantity-input').value;
-
-    valueCount--
-
-    document.querySelector('.quantity-input').value = valueCount
-
-    if (valueCount == 1 ) {
-        document.querySelector('.quantity-minus').setAttribute('disabled', 'disabled')
-    }
-})
-
-;
