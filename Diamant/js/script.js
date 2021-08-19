@@ -1,3 +1,16 @@
+const accordionItemHeaders = document.querySelectorAll('.accordion-item-header')
+
+accordionItemHeaders.forEach(accordionItemHeader => {
+    accordionItemHeader.addEventListener('click', event => {
+        accordionItemHeader.classList.toggle('active')
+        const accordionItemBody = accordionItemHeader.nextElementSibling
+        if (accordionItemHeader.classList.contains('active')) {
+            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + 'px'
+        } else {
+            accordionItemBody.style.maxHeight = 0
+        }
+    })
+});
 let tabsBtn = document.querySelectorAll('.tabs-nav__button')
 let tabsItems = document.querySelectorAll('.tabs-block')
 
@@ -124,19 +137,24 @@ const decorationsSwiper = new Swiper('.decorations-slider', {
 })
 
 
-const productSwiper = new Swiper('.product-slider', {
+const productSwiper = new Swiper('.sliderProduct', {
     loop: true,
-    navigation: {
-        nextEl: '.product-slider__next',
-        prevEl: '.product-slider__prev',
+    effect: 'flip',
+    autoHeight: true,
+    pagination: {
+        clickable: false,
+        el: ".sliderProduct__paggination",
     },
 })
 
-const productSmallSwiper = new Swiper('.productSmall-slider', {
+const productSmallSwiper = new Swiper('.sliderSmallProduct', {
     slidesPerView: 3,
+    watchOverflow: true,
+    spaceBetween: 0,
+    slideToClickedSlide: true,
     grabCursor: true,
-    centerMode: true,
 })
+
 
 productSwiper.controller.control = productSmallSwiper;
 productSmallSwiper.controller.control = productSwiper;
@@ -221,19 +239,6 @@ window.onclick = function(e) {
         }
     }
 };
-const accordionItemHeaders = document.querySelectorAll('.accordion-item-header')
-
-accordionItemHeaders.forEach(accordionItemHeader => {
-    accordionItemHeader.addEventListener('click', event => {
-        accordionItemHeader.classList.toggle('active')
-        const accordionItemBody = accordionItemHeader.nextElementSibling
-        if (accordionItemHeader.classList.contains('active')) {
-            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + 'px'
-        } else {
-            accordionItemBody.style.maxHeight = 0
-        }
-    })
-});
 function testWebP(callback) {
 
     var webP = new Image();

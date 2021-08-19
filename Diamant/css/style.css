@@ -803,30 +803,43 @@
           justify-content: space-between;
 }
 
-.product-slider__block {
-  width: 58%;
+.productSliders-block {
+  width: 60%;
 }
 
-.product-slider {
+.sliderProduct {
   width: 100%;
 }
 
-.productSmall-slider {
-  margin-top: 20px;
-  background-color: red;
+.sliderProduct__img {
+  width: 100%;
 }
 
-.productSmall-slider__slide {
-  width: 120px;
+.sliderProduct__paggination {
+  display: none;
+  bottom: -20px;
 }
 
-.productSmall-photo {
-  width: 100px;
-  height: 100px;
+.sliderProduct__paggination .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: #000;
+  opacity: 1;
 }
 
-.productSmall-photo__img {
-  width: 100px;
+.sliderProduct__paggination .swiper-pagination-bullet-active {
+  background-color: #dcdcdc;
+  border: 1px solid black;
+  opacity: 1;
+}
+
+.sliderSmallProduct {
+  width: 400px;
+  margin-top: 10px;
+}
+
+.sliderProduct .sliderProduct__slide {
+  width: 100%;
 }
 
 .product-information {
@@ -837,9 +850,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1182,6 +1195,11 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-right: 15px;
+}
+
+.recomendation__img {
+  width: 85px;
 }
 
 .recomendation-texts {
@@ -1219,7 +1237,34 @@
 
 .recomendation-oldCost {
   color: #a8a8a8;
-  font-size: 15px;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.recomendationMain-cost {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.recomendationMain-cost__newCost {
+  font-weight: 700;
+  color: #000;
+  font-size: 24px;
+  margin-right: 30px;
+}
+
+.recomendationMain-cost__oldCost {
+  color: #a8a8a8;
+  font-size: 20px;
   text-decoration: line-through;
 }
 
@@ -8965,19 +9010,15 @@ input[type=number] {
 /* Аккордеон */
 
 .accordion {
-  background-color: #34495e;
-  color: white;
-  width: 90%;
-  padding: 30px;
+  color: black;
+  width: 100%;
+  display: none;
 }
 
 .accordion-item {
-  background-color: #fff;
-  color: #111;
+  background-color: black;
+  color: white;
   margin: 1rem 0;
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
 .accordion-item-header {
@@ -9002,6 +9043,12 @@ input[type=number] {
   right: 1rem;
 }
 
+.accordion-item-header.active {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
 .accordion-item-header.active::after {
   content: "\2212";
 }
@@ -9017,10 +9064,8 @@ input[type=number] {
 .accordion-item-body__content {
   padding: 1rem;
   line-height: 1.5rem;
-  border-top: 1px solid;
-  -o-border-image: -o-linear-gradient(left, transparent, #34495e, transparent) 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#34495e), to(transparent)) 1;
-     border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  background-color: #fff;
+  color: black;
 }
 
 /* Бургер меню */
@@ -10919,6 +10964,45 @@ input[type=number] {
     display: flex;
   }
 
+  .product-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .productSliders-block {
+    width: 100%;
+  }
+
+  .sliderProduct__paggination {
+    display: block;
+  }
+
+  .sliderSmallProduct {
+    display: none;
+  }
+
+  .product-information {
+    width: 100%;
+  }
+
+  .product-form .from-input {
+    margin-right: 20px;
+  }
+
+  .recomendation-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .recomendation-item {
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+
   .reviews-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -10935,6 +11019,10 @@ input[type=number] {
 
   .phone {
     margin-right: 8px;
+  }
+
+  .tabs {
+    width: 100%;
   }
 
   .footer-row {
@@ -11156,6 +11244,16 @@ input[type=number] {
 
   .delivery-column {
     width: 100%;
+  }
+
+  .product .textAlignLeft {
+    text-align: left;
+    font-size: 32px;
+  }
+
+  .product .textAlignRight {
+    text-align: left;
+    font-size: 32px;
   }
 
   .reviews-texts {
@@ -11641,6 +11739,52 @@ input[type=number] {
     padding-bottom: 10px;
   }
 
+  .product-information__title {
+    font-size: 24px;
+  }
+
+  .product-information__subtitle {
+    font-size: 16px;
+  }
+
+  .product-favorite {
+    width: 40px;
+  }
+
+  .product-favorite .favorite {
+    margin-right: 0px;
+  }
+
+  .product-favorite__text {
+    display: none;
+  }
+
+  .product-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .product-description__block {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .product .textAlignLeft {
+    font-size: 24px;
+  }
+
+  .product .textAlignRight {
+    font-size: 24px;
+  }
+
+  .recomendation-item {
+    width: 100%;
+  }
+
   .about-inner {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -11669,7 +11813,7 @@ input[type=number] {
   }
 
   .title {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .button {
@@ -11683,6 +11827,23 @@ input[type=number] {
 
   .bread-crumbs__text {
     font-size: 12px;
+  }
+
+  .accordion {
+    display: block;
+  }
+
+  .tabs {
+    display: none;
+  }
+
+  .tab-box__title {
+    margin-top: 10px;
+    color: black;
+  }
+
+  .tab__text {
+    color: black;
   }
 
   .pages {
