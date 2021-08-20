@@ -1,97 +1,3 @@
-document.querySelector('.quantity-minus').setAttribute('disabled', 'disabled');
-
-let valueCount
-
-document.querySelector('.quantity-plus').addEventListener('click', function() {
-    valueCount = document.querySelector('.quantity-input').value;
-
-    valueCount++
-
-    document.querySelector('.quantity-input').value = valueCount
-
-    
-if (valueCount > 1 ) {
-    document.querySelector('.quantity-minus').removeAttribute('disabled')
-    document.querySelector('.quantity-minus').classList.remove('disabled')
-
-}
-
-})
-
-document.querySelector('.quantity-minus').addEventListener('click', function() {
-    valueCount = document.querySelector('.quantity-input').value;
-
-    valueCount--
-
-    document.querySelector('.quantity-input').value = valueCount
-
-    if (valueCount == 1 ) {
-        document.querySelector('.quantity-minus').setAttribute('disabled', 'disabled')
-    }
-})
-
-;
-const accordionItemHeaders = document.querySelectorAll('.accordion-item-header')
-
-accordionItemHeaders.forEach(accordionItemHeader => {
-    accordionItemHeader.addEventListener('click', event => {
-        accordionItemHeader.classList.toggle('active')
-        const accordionItemBody = accordionItemHeader.nextElementSibling
-        if (accordionItemHeader.classList.contains('active')) {
-            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + 'px'
-        } else {
-            accordionItemBody.style.maxHeight = 0
-        }
-    })
-});
-let tabsBtn = document.querySelectorAll('.tabs-nav__button')
-let tabsItems = document.querySelectorAll('.tabs-block')
-
-
-tabsBtn.forEach(function (item) {
-    let currentBtn = item
-    currentBtn.addEventListener('click', () => {
-
-        let tabId = currentBtn.getAttribute("data-tab")
-        let currentTab = document.querySelector(tabId)
-
-        if( ! currentBtn.classList.contains('active') ) {
-            tabsBtn.forEach(function (btn) {
-                btn.classList.remove('active')
-            })
-    
-            tabsItems.forEach(function (tab) {
-                tab.classList.remove('active')
-            })
-    
-            currentBtn.classList.add('active')
-            currentTab.classList.add('active')
-
-        }
-    })
-})
-
-document.querySelector('.tabs-nav__button:nth-child(1)').click();
-
-// Все поиски, корзины, инпуты и тд
-let searches = document.querySelectorAll('.search')
-let searchInput = document.querySelector('.search__input')
-let users = document.querySelectorAll('.user')
-let favorites = document.querySelectorAll('.favorite')
-let carts = document.querySelectorAll('.cart')
-
-// Бургер
-
-let burger = document.querySelector('.burger')
-let headerMain = document.querySelector('.header-main')
-
-
-burger.addEventListener('click', () => {
-    burger.classList.toggle('active')
-    headerMain.classList.toggle('active')
-})
-;
-
 // Header
 const bottomItems = document.querySelectorAll('.bottom-item')
 const bottomSubMenusAdaptive = document.querySelectorAll('.bottom-submenuAdaptive')
@@ -129,14 +35,11 @@ const DiamantSwiper = new Swiper('.diamant-slider', {
         prevEl: '.diamant-slide__prev',
     },
 })
-
 const TextSwiper = new Swiper('.text-slider', {
     loop: true,
 })
-
 DiamantSwiper.controller.control = TextSwiper;
 TextSwiper.controller.control = DiamantSwiper;
-
 const BestcellerSwiper = new Swiper('.bestsellers-slider', {
     navigation: {
         nextEl: '.bestsellers-slide__next',
@@ -157,7 +60,6 @@ const BestcellerSwiper = new Swiper('.bestsellers-slider', {
         }
     }
 })
-
 const decorationsSwiper = new Swiper('.decorations-slider', {
     navigation: {
         nextEl: '.decorations-slide__next',
@@ -169,8 +71,6 @@ const decorationsSwiper = new Swiper('.decorations-slider', {
     },
     
 })
-
-
 const productSwiper = new Swiper('.sliderProduct', {
     loop: true,
     effect: 'flip',
@@ -180,7 +80,6 @@ const productSwiper = new Swiper('.sliderProduct', {
         el: ".sliderProduct__paggination",
     },
 })
-
 const productSmallSwiper = new Swiper('.sliderSmallProduct', {
     slidesPerView: 3,
     watchOverflow: true,
@@ -188,10 +87,20 @@ const productSmallSwiper = new Swiper('.sliderSmallProduct', {
     slideToClickedSlide: true,
     grabCursor: true,
 })
-
-
 productSwiper.controller.control = productSmallSwiper;
 productSmallSwiper.controller.control = productSwiper;
+
+
+let burger = document.querySelector('.burger')
+let headerMain = document.querySelector('.header-main')
+
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active')
+    headerMain.classList.toggle('active')
+})
+;
+
 
 // Включение - выключение сортировки
 let sortSelect = document.querySelector('.sort-select')
@@ -199,6 +108,13 @@ let sortMenu = document.querySelector('.sort-menu ')
 
 sortSelect.addEventListener('click', () => {
     sortMenu.classList.toggle('active')
+})
+
+let sortAdaptiveSelect = document.querySelector('.sortAdaptive-select')
+let sortAdaptiveMenu = document.querySelector('.sortAdaptive-menu ')
+
+sortAdaptiveSelect.addEventListener('click', () => {
+    sortAdaptiveMenu.classList.toggle('active')
 })
 
 // Включение - выключение фильтра
@@ -247,32 +163,82 @@ if (rangeSlider) {
 		});
 	});
 };
-let buttons = document.querySelectorAll('*[data-popup-btn]')
 
-for (let index = 0; index < buttons.length; index++) {
-    buttons[index].addEventListener('click', function() {
-        let name = buttons[index].getAttribute('data-popup-btn')
-        let popup = document.querySelector("[data-popup-window='"+name+"']")
-        popup.style.opacity = '1'
-        popup.style.visibility = 'visible'
+let tabsBtn = document.querySelectorAll('.tabs-nav__button')
+let tabsItems = document.querySelectorAll('.tabs-block')
 
-        let popupClose = popup.querySelector('.popup__close')
-        popupClose.addEventListener('click', function() {
-            popup.style.opacity = '0'
-            popup.style.visibility = 'hidden'
-        })
+
+tabsBtn.forEach(function (item) {
+    let currentBtn = item
+    currentBtn.addEventListener('click', () => {
+
+        let tabId = currentBtn.getAttribute("data-tab")
+        let currentTab = document.querySelector(tabId)
+
+        if( ! currentBtn.classList.contains('active') ) {
+            tabsBtn.forEach(function (btn) {
+                btn.classList.remove('active')
+            })
+    
+            tabsItems.forEach(function (tab) {
+                tab.classList.remove('active')
+            })
+    
+            currentBtn.classList.add('active')
+            currentTab.classList.add('active')
+
+        }
     })
+})
+
+document.querySelector('.tabs-nav__button:nth-child(1)').click(); // !!!!
+const accordionItemHeaders = document.querySelectorAll('.accordion-item-header')
+
+accordionItemHeaders.forEach(accordionItemHeader => {
+    accordionItemHeader.addEventListener('click', event => {
+        accordionItemHeader.classList.toggle('active')
+        const accordionItemBody = accordionItemHeader.nextElementSibling
+        if (accordionItemHeader.classList.contains('active')) {
+            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + 'px'
+        } else {
+            accordionItemBody.style.maxHeight = 0
+        }
+    })
+}); // !!!!
+
+document.querySelector('.quantity-minus').setAttribute('disabled', 'disabled');
+
+let valueCount
+
+document.querySelector('.quantity-plus').addEventListener('click', function() {
+    valueCount = document.querySelector('.quantity-input').value;
+
+    valueCount++
+
+    document.querySelector('.quantity-input').value = valueCount
+
+    
+if (valueCount > 1 ) {
+    document.querySelector('.quantity-minus').removeAttribute('disabled')
+    document.querySelector('.quantity-minus').classList.remove('disabled')
+
 }
 
-window.onclick = function(e) {
-    if (e.target.hasAttribute('data-popup-window')) {
-        let popups = document.querySelectorAll("*[data-popup-window]")
-        for (let index = 0; index < popups.length; index++) {
-            popups[index].style.opacity = '0'
-            popups[index].style.visibility = 'hidden'
-        }
+})
+
+document.querySelector('.quantity-minus').addEventListener('click', function() {
+    valueCount = document.querySelector('.quantity-input').value;
+
+    valueCount--
+
+    document.querySelector('.quantity-input').value = valueCount
+
+    if (valueCount == 1 ) {
+        document.querySelector('.quantity-minus').setAttribute('disabled', 'disabled')
     }
-};
+})
+
+; // !!!!
 function testWebP(callback) {
 
     var webP = new Image();
