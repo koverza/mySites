@@ -12,6 +12,16 @@ for (let i = 0; i < bottomItems.length; i++) {
     })
 }
 
+let spoiler = document.getElementsByClassName('category-spoiler__title')
+let i;
+
+for (let i = 0; i < spoiler.length; i++) {
+    spoiler[i].onclick = function () {
+        this.nextElementSibling.classList.toggle('active')
+    }
+    
+}
+
 // Слайдеры
 /**
  * Swiper 6.8.0
