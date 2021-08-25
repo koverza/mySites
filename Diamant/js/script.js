@@ -1,26 +1,69 @@
-// Header
+// Меню на Главной (Desktop)
+// const bottomItems = document.querySelectorAll('.bottom-item')
+// const bottomSubMenusAdaptive = document.querySelectorAll('.bottom-submenuAdaptive')
+
+// for (let i = 0; i < bottomItems.length; i++) {
+//     const bottomItem = bottomItems[i];
+//     bottomItem.addEventListener('click', () => {
+//         for (let a = 0; a < bottomSubMenusAdaptive.length; a++) {
+//             const bottomSubMenuAdaptive = bottomSubMenusAdaptive[a];
+//             bottomSubMenuAdaptive.classList.add('active')
+//         }
+
+
+//     })
+// }
+// const backs = document.querySelectorAll('.submenuAdaptive-back')
+
+// for (let e = 0; e < backs.length; e++) {
+//     const back = backs[e];
+//     back.addEventListener('click', () => {
+//         bottomSubMenuAdaptive.classList.remove('active')
+//     })
+// }
+
 const bottomItems = document.querySelectorAll('.bottom-item')
-const bottomSubMenusAdaptive = document.querySelectorAll('.bottom-submenuAdaptive')
 
-for (let i = 0; i < bottomItems.length; i++) {
-    const bottomItem = bottomItems[i];
+bottomItems.forEach(bottomItem => {
+
     bottomItem.addEventListener('click', () => {
-        for (let a = 0; a < bottomSubMenusAdaptive.length; a++) {
-            const bottomSubMenuAdaptive = bottomSubMenusAdaptive[a];
-            bottomSubMenuAdaptive.classList.add('active')
-        }
-    })
-}
 
+        const bottomSubMenusAdaptive = document.querySelectorAll('.bottom-submenuAdaptive')
+        bottomSubMenusAdaptive.forEach(bottomSubMenuAdaptive => {
+            
+            bottomSubMenuAdaptive.classList.add('active')
+
+            const backs = document.querySelectorAll('.submenuAdaptive-back')
+
+            for (let index = 0; index < backs.length; index++) {
+                const back = backs[index];
+            }
+
+            back.addEventListener('click', () => {
+                bottomSubMenuAdaptive.classList.remove('active')
+            })
+        })
+    })
+
+})
+
+// Категории на Главной
 let spoiler = document.getElementsByClassName('category-spoiler__title')
-let i;
 
 for (let i = 0; i < spoiler.length; i++) {
     spoiler[i].onclick = function () {
         this.nextElementSibling.classList.toggle('active')
     }
-    
+
 }
+
+// Search
+let search = document.querySelector('.search')
+let searchInput = document.querySelector('.search__input')
+
+search.addEventListener('click', () => {
+    searchInput.classList.toggle('active')
+})
 
 // Слайдеры
 /**
@@ -79,7 +122,7 @@ const decorationsSwiper = new Swiper('.decorations-slider', {
         clickable: true,
         el: ".decorations-pagination",
     },
-    
+
 })
 const productSwiper = new Swiper('.sliderProduct', {
     loop: true,
@@ -115,7 +158,6 @@ burger.addEventListener('click', () => {
 let tabsButton = document.querySelectorAll('.tabs-nav__button');
 let tabsBlocks = document.querySelectorAll('.tabs-block');
 
-
 tabsButton.forEach(function (item) {
     let currentBtn = item
     currentBtn.addEventListener('click', () => {
@@ -123,22 +165,21 @@ tabsButton.forEach(function (item) {
         let tabId = currentBtn.getAttribute("data-tab")
         let currentTab = document.querySelector(tabId)
 
-        if( ! currentBtn.classList.contains('active') ) {
+        if (!currentBtn.classList.contains('active')) {
             tabsButton.forEach(function (btn) {
                 btn.classList.remove('active')
             })
-    
+
             tabsBlocks.forEach(function (tab) {
                 tab.classList.remove('active')
             })
-    
+
             currentBtn.classList.add('active')
             currentTab.classList.add('active')
 
         }
     })
 })
-
 document.querySelector('.tabs-nav__button:nth-child(1)').click();
 
 
@@ -193,7 +234,7 @@ accordionItemHeaders.forEach(accordionItemHeader => {
             accordionItemBody.style.maxHeight = 0
         }
     })
-}); 
+});
 document.querySelector('.quantity-minus').setAttribute('disabled', 'disabled');
 
 let valueCount
@@ -226,7 +267,7 @@ document.querySelector('.quantity-minus').addEventListener('click', function() {
     }
 })
 
-; 
+;
 function testWebP(callback) {
 
     var webP = new Image();

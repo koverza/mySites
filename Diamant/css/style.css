@@ -1781,10 +1781,6 @@
   border: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   list-style: none;
   outline: none;
   text-decoration: none;
@@ -10072,6 +10068,48 @@ input[type=number] {
   position: relative;
 }
 
+.header-adaptive__block .search {
+  margin-right: 8px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header-adaptive__block .search__input {
+  -webkit-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.header-adaptive__block .search__input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: white;
+  opacity: 0.5;
+}
+
+.header-adaptive__block .search__input::-moz-placeholder {
+  font-size: 16px;
+  color: white;
+  opacity: 0.5;
+}
+
+.header-adaptive__block .search__input:-ms-input-placeholder {
+  font-size: 16px;
+  color: white;
+  opacity: 0.5;
+}
+
+.header-adaptive__block .search__input::-ms-input-placeholder {
+  font-size: 16px;
+  color: white;
+  opacity: 0.5;
+}
+
+.header-adaptive__block .search__input::placeholder {
+  font-size: 16px;
+  color: white;
+  opacity: 0.5;
+}
+
 .adaptive-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10249,7 +10287,7 @@ input[type=number] {
           align-items: center;
 }
 
-.search {
+.header-search .search {
   margin-right: 8px;
   background-color: transparent;
   cursor: pointer;
@@ -10265,12 +10303,15 @@ input[type=number] {
   margin-right: 8px;
 }
 
-.search__input {
+.header-search .search__input {
   width: 70%;
   border-bottom: 1px solid #000;
   font-size: 14px;
   font-family: 'Montserrat';
   background-color: transparent;
+  -webkit-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
 }
 
 .search__input::-webkit-input-placeholder {
@@ -10469,7 +10510,6 @@ input[type=number] {
 }
 
 .submenuAdaptive-top {
-  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10481,11 +10521,13 @@ input[type=number] {
 
 .submenuAdaptive__text {
   margin-left: 10px;
+  font-size: 13px;
 }
 
 .submenuAdaptive__title {
   margin-top: 10px;
   padding-left: 20px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -10502,8 +10544,13 @@ input[type=number] {
 }
 
 .submenuAdaptive-links__link {
-  margin-top: 10px;
+  margin-top: 6px;
   color: black;
+  font-size: 13px;
+}
+
+.icon-left:before {
+  font-size: 13px;
 }
 
 .bottom-nav__link {
@@ -11683,10 +11730,6 @@ input[type=number] {
         flex-wrap: wrap;
   }
 
-  .search__input {
-    font-size: 12px;
-  }
-
   .search__input::-webkit-input-placeholder {
     font-size: 12px;
   }
@@ -11940,6 +11983,26 @@ input[type=number] {
     display: flex;
   }
 
+  .header-adaptive__block .search__input {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid white;
+    background-color: #403D43;
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    z-index: 10;
+  }
+
+  .header-adaptive__block .search__input.active {
+    top: 120%;
+  }
+
   .header-top__info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11987,9 +12050,6 @@ input[type=number] {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-
-  .header-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -12603,6 +12663,45 @@ input[type=number] {
 
   .icon-cart:before {
     font-size: 16px;
+  }
+
+  .header-nav {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .header-nav__link {
+    font-size: 12px;
+  }
+
+  .header-nav > li:nth-child(1),
+  .header-nav > li:nth-child(2),
+  .header-nav > li:nth-child(3),
+  .header-nav > li:nth-child(4),
+  .header-nav > li:nth-child(5) {
+    margin-top: 6px;
+  }
+
+  .header-nav > li:nth-child(6) {
+    padding: 7px;
+  }
+
+  .header-middle {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .header-main__bottom {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .bottom-nav__link-text {
+    font-size: 12px;
+  }
+
+  .bottom-nav__link .icon-right {
+    font-size: 12px;
   }
 
   .category-inner {
