@@ -26,6 +26,7 @@ bottomItems.forEach(bottomItem => {
 
 })
 
+
 // Категории на Главной
 let spoiler = document.getElementsByClassName('category-spoiler__title')
 
