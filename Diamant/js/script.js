@@ -1,47 +1,26 @@
 // Меню на Главной (Desktop)
-// const bottomItems = document.querySelectorAll('.bottom-item')
-// const bottomSubMenusAdaptive = document.querySelectorAll('.bottom-submenuAdaptive')
 
-// for (let i = 0; i < bottomItems.length; i++) {
-//     const bottomItem = bottomItems[i];
-//     bottomItem.addEventListener('click', () => {
-//         for (let a = 0; a < bottomSubMenusAdaptive.length; a++) {
-//             const bottomSubMenuAdaptive = bottomSubMenusAdaptive[a];
-//             bottomSubMenuAdaptive.classList.add('active')
-//         }
-
-
-//     })
-// }
-// const backs = document.querySelectorAll('.submenuAdaptive-back')
-
-// for (let e = 0; e < backs.length; e++) {
-//     const back = backs[e];
-//     back.addEventListener('click', () => {
-//         bottomSubMenuAdaptive.classList.remove('active')
-//     })
-// }
-
-const bottomItems = document.querySelectorAll('.bottom-item')
+const bottomItems = document.querySelectorAll('.bottom-item') // пункты
 
 bottomItems.forEach(bottomItem => {
 
     bottomItem.addEventListener('click', () => {
 
-        const bottomSubMenusAdaptive = document.querySelectorAll('.bottom-submenuAdaptive')
+        const bottomSubMenusAdaptive = document.querySelectorAll('.bottom-submenuAdaptive') // меню в каждом пункте
         bottomSubMenusAdaptive.forEach(bottomSubMenuAdaptive => {
             
             bottomSubMenuAdaptive.classList.add('active')
 
-            const backs = document.querySelectorAll('.submenuAdaptive-back')
+            const backs = document.querySelectorAll('.submenuAdaptive-back') // стрелки
 
             for (let index = 0; index < backs.length; index++) {
                 const back = backs[index];
+                
+                back.addEventListener('click', () => {
+                    bottomSubMenuAdaptive.classList.remove('active')
+                })
             }
 
-            back.addEventListener('click', () => {
-                bottomSubMenuAdaptive.classList.remove('active')
-            })
         })
     })
 
