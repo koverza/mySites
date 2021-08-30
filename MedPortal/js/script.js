@@ -15,6 +15,15 @@ topSearch.addEventListener('click', () => {
     topInput.classList.toggle('active')
 })
 
+// SPOILER
+let spoiler = document.getElementsByClassName('spoiler__title')
+
+for (let i = 0; i < spoiler.length; i++) {
+    spoiler[i].onclick = function () {
+        this.nextElementSibling.classList.toggle('active')
+    }
+}
+
 // SLIDERS
 /**
  * Swiper 6.8.0
@@ -127,7 +136,23 @@ tabsBtn.forEach(function (item) {
     })
 })
 
-document.querySelector('.tabs-nav__button:nth-child(2)').click()
+document.querySelector('.tabs-nav__button:nth-child(6)').click()
+
+
+
+
+// SORT
+
+let reviewsButton = document.querySelector('.reviews-button')
+let reviewsMenu = document.querySelector('.reviews-menu')
+
+reviewsButton.addEventListener('click', () => {
+    reviewsButton.classList.toggle('active')
+    reviewsMenu.classList.toggle('active')
+})
+
+
+
 
 let buttons = document.querySelectorAll('*[data-popup-btn]')
 
