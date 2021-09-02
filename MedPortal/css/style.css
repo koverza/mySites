@@ -7948,6 +7948,7 @@ input[type=number] {
   line-height: 28px;
   color: #394159;
   opacity: 0.7;
+  position: relative;
 }
 
 .tabs-nav__button.active {
@@ -7969,6 +7970,10 @@ input[type=number] {
   display: flex;
 }
 
+.tabs .tabs-block:nth-child(5) {
+  min-width: 0;
+}
+
 /* Пагинация */
 
 .pages {
@@ -7976,15 +7981,22 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
 }
 
 .pages-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -7992,12 +8004,33 @@ input[type=number] {
 }
 
 .pages-list__link {
-  color: black;
-  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #85A0BA;
+}
+
+.pages-list__link.active {
+  font-weight: bold;
+  color: #0059AB;
 }
 
 .pages-list__link:hover {
   text-decoration: underline;
+}
+
+.pagination-prev {
+  cursor: pointer;
+  margin-right: 15px;
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.pagination-next {
+  cursor: pointer;
+  margin-left: 15px;
 }
 
 /* Footer */
@@ -9002,6 +9035,10 @@ input[type=number] {
   display: none;
 }
 
+.clinic-spoiler .spoiler__body {
+  margin-top: 20px;
+}
+
 .tabs .login-noRegist__text {
   margin-right: 0px;
 }
@@ -9108,6 +9145,17 @@ input[type=number] {
   color: #60636C;
   opacity: 0.7;
   margin-right: 10px;
+}
+
+.review__count {
+  position: absolute;
+  right: 7px;
+  top: 3px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #3EAB97;
 }
 
 .reviews-button {
@@ -9468,6 +9516,81 @@ input[type=number] {
   height: 45px;
 }
 
+.gallery {
+  width: 100%;
+}
+
+.galleryBig-slide {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #DAE8F3;
+}
+
+.gallerySmall-slider {
+  width: 90%;
+  margin-top: 20px;
+}
+
+.gallerySmall-slide {
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+  background-color: #DAE8F3;
+}
+
+.gallerySmall-slider .gallerySmall-next::after {
+  font-size: 14px;
+  width: 35px;
+  height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background-color: #094174;
+  color: #ffffff;
+}
+
+.gallerySmall-slider .gallerySmall-prev::after {
+  font-size: 14px;
+  width: 35px;
+  height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background-color: #094174;
+  color: #ffffff;
+}
+
 /* Лекарства */
 
 .medicine-box {
@@ -9585,6 +9708,12 @@ ul.medicine-list {
   width: 100%;
 }
 
+.spoiler__title .review__count {
+  position: absolute;
+  top: -7px;
+  left: 67px;
+}
+
 .spoiler___arrow {
   width: 12px;
   height: 8px;
@@ -9592,6 +9721,110 @@ ul.medicine-list {
 
 .spoiler___arrow {
   display: none;
+}
+
+/* Статьи */
+
+.articles {
+  width: 100%;
+  background-color: #F2FBFF;
+  padding-top: 80px;
+}
+
+.articles-top {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.articles-row {
+  width: 100%;
+  margin-top: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.article {
+  width: 49.7%;
+  min-height: 500px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 20px 50px rgba(3, 121, 187, 0.1);
+          box-shadow: 0px 20px 50px rgba(3, 121, 187, 0.1);
+}
+
+.article__title {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  color: #394159;
+}
+
+.article__subtitle {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #394159;
+}
+
+.article-watch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.article-watch__date {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #73798A;
+}
+
+.article-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article-count__count {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #73798A;
+  margin-left: 5px;
 }
 
 /* Begin */
@@ -10209,6 +10442,7 @@ ul.medicine-list {
 
   .adress__text {
     margin-top: 10px;
+    font-size: 14px;
   }
 
   .reviews-left {
@@ -10228,6 +10462,11 @@ ul.medicine-list {
 
   .login-noRegist-block {
     margin-top: 10px;
+  }
+
+  .gallerySmall-slider .gallerySmall-prev::after,
+  .gallerySmall-slider .gallerySmall-next::after {
+    display: none;
   }
 
   .right .medicine__title {
@@ -10260,6 +10499,7 @@ ul.medicine-list {
         -ms-flex-pack: justify;
             justify-content: space-between;
     color: #072D51;
+    position: relative;
   }
 
   .spoiler___arrow {
@@ -10272,6 +10512,10 @@ ul.medicine-list {
 
   .spoiler__body.active {
     display: block;
+  }
+
+  .articles {
+    padding-top: 50px;
   }
 
   .begin__title {

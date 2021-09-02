@@ -107,6 +107,37 @@ const stone = new Swiper('.stone-slider', {
     }
 })
 
+const galleryBig = new Swiper('.galleryBig-slider', {
+    slidesPerView: 1,
+    loop: true,
+})
+
+const gallerySmall = new Swiper('.gallerySmall-slider', {
+    slidesPerView: 5,
+    loop: true,
+    spaceBetween: 25,
+    breakpoints: {
+        320: {
+            slidesPerView: 1.5,
+        },
+        575: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 4,
+        },
+        992: {
+            slidesPerView: 5,
+        },
+    },
+    navigation: {
+        nextEl: '.gallerySmall-next',
+        prevEl: '.gallerySmall-prev',
+    },
+})
+
+
+
 
 // TABS
 let tabsBtn = document.querySelectorAll('.tabs-nav__button')
@@ -136,9 +167,7 @@ tabsBtn.forEach(function (item) {
     })
 })
 
-document.querySelector('.tabs-nav__button:nth-child(6)').click()
-
-
+document.querySelector('.tabs-nav__button:nth-child(2)').click()
 
 
 // SORT
