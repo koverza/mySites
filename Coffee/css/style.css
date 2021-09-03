@@ -8304,39 +8304,25 @@ input[type=number] {
 }
 
 .intro-slide {
-  width: 100%;
-  height: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  position: relative;
-}
-
-.intro-slide__inner {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.intro-slide__img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  height: 650px;
+  background: url(../img/intro.webp) center no-repeat;
+  background-position: center center;
+  background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: -1;
+  padding-left: 160px;
+  padding-top: 150px;
 }
 
-.intro-slide__block {
-  padding-left: 30px;
+.slideImg1 {
+  height: 650px;
+  background: url(../img/intro2.webp) center no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-left: 160px;
+  padding-top: 150px;
 }
 
 .intro__title {
@@ -8345,11 +8331,16 @@ input[type=number] {
   font-size: 50px;
   line-height: 76px;
   color: white;
-  white-space: nowrap;
 }
 
 .intro__subtitle {
   margin-top: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 30px;
 }
 
 .intro__button {
@@ -8360,6 +8351,14 @@ input[type=number] {
   font-size: 18px;
   line-height: 21px;
   color: white;
+}
+
+.intro-slider .swiper-button-prev {
+  left: 125px;
+}
+
+.intro-slider .swiper-button-next {
+  right: 125px;
 }
 
 .intro-slider .swiper-button-prev::after {
@@ -8378,6 +8377,10 @@ input[type=number] {
 
 .intro-slider .swiper-pagination-bullet-active {
   background-color: white;
+}
+
+.intro-pagination {
+  display: none;
 }
 
 .brands {
@@ -8820,23 +8823,17 @@ input[type=number] {
   }
 
   .intro__title {
-    font-size: 40px;
+    font-size: 33px;
     line-height: 50px;
   }
 
-  .intro__title {
-    font-size: 24px;
-    line-height: 30px;
+  .intro__subtitle {
+    width: 80%;
   }
 
   .intro__button {
+    width: 220px;
     height: 50px;
-  }
-
-  .intro__button {
-    width: 200px;
-    height: 40px;
-    font-size: 16px;
   }
 
   .brand__img {
@@ -9062,6 +9059,38 @@ input[type=number] {
     margin-top: 15px;
   }
 
+  .intro-slide {
+    height: 450px;
+    padding: 50px;
+    background-position: 83%;
+  }
+
+  .slideImg1 {
+    height: 450px;
+    padding: 50px;
+    background-position: 83%;
+  }
+
+  .intro__subtitle {
+    width: 100%;
+  }
+
+  .intro__button {
+    height: 40px;
+  }
+
+  .intro-slider .swiper-button-prev {
+    display: none;
+  }
+
+  .intro-slider .swiper-button-next {
+    display: none;
+  }
+
+  .intro-pagination {
+    display: block;
+  }
+
   .brand-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -9228,9 +9257,40 @@ input[type=number] {
     font-size: 14px;
   }
 
-  .intro-slide__img {
-    -o-object-position: -550px;
-       object-position: -550px;
+  .intro-slide {
+    padding: 25px;
+  }
+
+  .slideImg1 {
+    padding: 25px;
+  }
+
+  .intro-slide__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .intro__title {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .intro__subtitle {
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   .header-subtitle {
@@ -9308,6 +9368,26 @@ input[type=number] {
     font-size: 16px;
     margin-top: 15px;
     padding-left: 15px;
+  }
+
+  .form__input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+
+  .form__input::-moz-placeholder {
+    font-size: 16px;
+  }
+
+  .form__input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  .form__input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  .form__input::placeholder {
+    font-size: 16px;
   }
 
   .form__button {
