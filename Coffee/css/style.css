@@ -8664,6 +8664,168 @@ input[type=number] {
   width: 100%;
 }
 
+.reparatur {
+  height: 650px;
+  background: url(../img/reparatur.webp) center no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.reparatur__title {
+  margin-top: 100px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 76px;
+  color: white;
+}
+
+.reparatur__subtitle {
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: white;
+}
+
+.reparatur .buttons {
+  width: 450px;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reparatur-button {
+  width: 150px;
+  height: 65px;
+  border: 2px solid white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FDFDFD;
+  background-color: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.reparatur-button:nth-child(2) {
+  width: 280px;
+  height: 65px;
+}
+
+.reparatur-button.active {
+  background-color: #B41A1F;
+  border: 2px solid transparent;
+  color: white;
+}
+
+.reparatur-button:hover {
+  background: #871417;
+  border: 2px solid transparent;
+  color: white;
+}
+
+.cost {
+  width: 100%;
+}
+
+.cost-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cost-photo {
+  width: 55%;
+}
+
+.cost-photo__img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 750px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cost-block {
+  width: 45%;
+  padding: 40px;
+}
+
+.cost-block .head {
+  width: 75%;
+}
+
+.cost-head__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cost-text {
+  width: 70%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+}
+
+.cost-textBold {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: black;
+  text-align: right;
+}
+
+.cost-description {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: black;
+}
+
 /* Main page */
 
 .intro {
@@ -9272,6 +9434,42 @@ input[type=number] {
             transform: scale(0.6);
   }
 
+  .reparatur__title {
+    margin-top: 70px;
+    font-size: 50px;
+    line-height: 62px;
+  }
+
+  .reparatur__subtitle {
+    width: 100%;
+    line-height: 26px;
+  }
+
+  .reparatur .buttons {
+    margin-top: 40px;
+  }
+
+  .reparatur-button {
+    height: 55px;
+  }
+
+  .reparatur-button:nth-child(2) {
+    height: 55px;
+  }
+
+  .cost-photo__img {
+    -o-object-position: -310px;
+       object-position: -310px;
+  }
+
+  .cost-block {
+    padding: 25px;
+  }
+
+  .cost-block .head {
+    width: 100%;
+  }
+
   .intro__title {
     font-size: 33px;
     line-height: 50px;
@@ -9560,6 +9758,40 @@ input[type=number] {
     padding-right: 0px;
   }
 
+  .reparatur-button {
+    height: 50px;
+  }
+
+  .reparatur-button:nth-child(2) {
+    height: 50px;
+  }
+
+  .cost-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .cost-photo {
+    width: 100%;
+  }
+
+  .cost-photo__img {
+    width: 100%;
+    height: 100%;
+    -o-object-position: 0px;
+       object-position: 0px;
+  }
+
+  .cost-block {
+    width: 100%;
+  }
+
+  .cost-block .head__button {
+    width: 100%;
+  }
+
   .intro-slide {
     height: 450px;
     padding: 50px;
@@ -9815,6 +10047,61 @@ input[type=number] {
     -webkit-transform: scale(0.4);
         -ms-transform: scale(0.4);
             transform: scale(0.4);
+  }
+
+  .reparatur__title {
+    margin-top: 30px;
+    font-size: 25px;
+    line-height: 36px;
+  }
+
+  .reparatur__subtitle {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 15px;
+  }
+
+  .reparatur .buttons {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .reparatur-button {
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .reparatur-button:nth-child(2) {
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .cost-block {
+    padding: 15px;
+  }
+
+  .cost-head__row {
+    margin-top: 0px;
+  }
+
+  .cost-text {
+    margin-top: 10px;
+  }
+
+  .cost-textBold {
+    margin-top: 10px;
+  }
+
+  .cost-description {
+    font-size: 14px;
   }
 
   .intro-slide {
