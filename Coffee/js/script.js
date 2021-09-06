@@ -39,6 +39,45 @@ const intro = new Swiper('.intro-slider', {
         el: '.intro-pagination',
     },
 })
+
+const recomendation = new Swiper('.recomendation-slider', {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 70,
+    navigation: {
+        nextEl: '.recomendation-next',
+        prevEl: '.recomendation-prev',
+    },
+    centeredSlides: true,
+    breakpoints:{
+        320: {
+            slidesPerView: 1.2,
+            spaceBetween: 15,
+            centeredSlides: false,
+        },
+        767: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+        },
+        1100: {
+            spaceBetween: 70,
+        }
+    }
+})
+
+
+// Спойлер в coffeemachine.html
+let spoiler = document.getElementsByClassName('spoiler__title')
+
+for (let i = 0; i < spoiler.length; i++) {
+    spoiler[i].onclick = function () {
+        this.nextElementSibling.classList.toggle('active')
+    }
+}
 const ratings = document.querySelectorAll('.rating')
 
 if(ratings.length > 0) {
