@@ -25,6 +25,17 @@
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  margin: 2px;
+  background-color: #797878;
+  border-radius: 9em;
+}
+
 /* Обнуление */
 
 /* Шаблоны */
@@ -133,7 +144,7 @@ body {
 }
 
 .head {
-  width: 60%;
+  width: 100%;
 }
 
 .head__title {
@@ -8986,9 +8997,6 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -9255,7 +9263,6 @@ input[type=number] {
 .spoiler__body {
   display: none;
   background-color: white;
-  border: 2px solid #B41A1F;
   padding: 10px;
 }
 
@@ -9502,7 +9509,7 @@ input[type=number] {
 }
 
 .coffee-photo {
-  width: 60.47%;
+  width: 61%;
 }
 
 .coffee-photo__img {
@@ -9526,7 +9533,7 @@ input[type=number] {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-left: 30px;
+  padding-left: 60px;
 }
 
 .flex-end {
@@ -9536,7 +9543,7 @@ input[type=number] {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-right: 30px;
+  padding-left: 60px;
 }
 
 .work {
@@ -9781,10 +9788,6 @@ input[type=number] {
     height: 45px;
   }
 
-  .head {
-    width: 90%;
-  }
-
   .head__title {
     font-size: 28px;
     line-height: 28px;
@@ -10020,6 +10023,15 @@ input[type=number] {
 
   .coffee-photo {
     height: 450px;
+    width: 62.5%;
+  }
+
+  .flex-start {
+    padding: 40px;
+  }
+
+  .flex-end {
+    padding: 40px;
   }
 
   .work-block {
@@ -10066,10 +10078,6 @@ input[type=number] {
   .title {
     font-size: 30px;
     line-height: 44px;
-  }
-
-  .head {
-    width: 100%;
   }
 
   .head__title {
@@ -10740,13 +10748,14 @@ input[type=number] {
 
   .rent-photo {
     width: 100px;
-    height: auto;
+    height: 130px;
   }
 
   .rent-item__text {
     margin-top: 15px;
     font-size: 14px;
     line-height: 26px;
+    height: 40px;
   }
 
   .rent-item__cost {
