@@ -133,6 +133,11 @@ body {
   color: rgba(255, 255, 255, 0.95);
 }
 
+.bread-crumbs__text span {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
 .row-reverse {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,6 +146,10 @@ body {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.greyBg {
+  background-color: #F3F3F3;
 }
 
 .head {
@@ -8953,16 +8962,16 @@ input[type=number] {
 
 .recomendation-prev.swiper-button-prev:after,
 .recomendation-next.swiper-button-next:after {
-  font-size: 24px;
+  font-size: 20px;
   color: black;
 }
 
 .recomendation-slider .swiper-button-prev {
-  left: 320px;
+  left: 340px;
 }
 
 .recomendation-slider .swiper-button-next {
-  right: 320px;
+  right: 340px;
 }
 
 .rent {
@@ -9777,6 +9786,16 @@ input[type=number] {
   color: #333333;
 }
 
+@media (max-width: 1100px) {
+  .recomendation-slider .swiper-button-prev {
+    left: 318px;
+  }
+
+  .recomendation-slider .swiper-button-next {
+    right: 318px;
+  }
+}
+
 @media (max-width: 991px) {
   .padding {
     padding-top: 60px;
@@ -9982,9 +10001,9 @@ input[type=number] {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: auto;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     min-height: 50px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -10592,7 +10611,7 @@ input[type=number] {
   }
 
   .header-photo {
-    width: auto;
+    width: 113px;
   }
 
   .header-photo__img {
