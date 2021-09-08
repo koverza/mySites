@@ -14,6 +14,7 @@ langBlock.addEventListener('click', () => {
     langMenu.classList.toggle('active')
 })
 
+// SLIDERS
 /**
  * Swiper 6.8.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -69,7 +70,6 @@ const recomendation = new Swiper('.recomendation-slider', {
     }
 })
 
-
 // Спойлер в coffeemachine.html
 let spoiler = document.getElementsByClassName('spoiler__title')
 
@@ -78,6 +78,7 @@ for (let i = 0; i < spoiler.length; i++) {
         this.nextElementSibling.classList.toggle('active')
     }
 }
+
 const ratings = document.querySelectorAll('.rating')
 
 if(ratings.length > 0) {
@@ -135,6 +136,37 @@ function initRatings() {
         }
     }
 };
+
+// TABS
+let tabsBtn = document.querySelectorAll('.tabs-nav__button')
+let tabsItems = document.querySelectorAll('.tabs-block')
+
+
+tabsBtn.forEach(function (item) {
+    let currentBtn = item
+    currentBtn.addEventListener('click', () => {
+
+        let tabId = currentBtn.getAttribute("data-tab")
+        let currentTab = document.querySelector(tabId)
+
+        if( ! currentBtn.classList.contains('active') ) {
+            tabsBtn.forEach(function (btn) {
+                btn.classList.remove('active')
+            })
+    
+            tabsItems.forEach(function (tab) {
+                tab.classList.remove('active')
+            })
+    
+            currentBtn.classList.add('active')
+            currentTab.classList.add('active')
+
+        }
+    })
+})
+
+document.querySelector('.tabs-nav__button:nth-child(1)').click()
+
 document.querySelector('.quantity-minus').setAttribute('disabled', 'disabled');
 
 let valueCount
@@ -168,34 +200,6 @@ document.querySelector('.quantity-minus').addEventListener('click', function() {
 })
 
 ;
-// let tabsBtn = document.querySelectorAll('.tabs-nav__button')
-let tabsItems = document.querySelectorAll('.tabs-block')
-
-
-tabsBtn.forEach(function (item) {
-    let currentBtn = item
-    currentBtn.addEventListener('click', () => {
-
-        let tabId = currentBtn.getAttribute("data-tab")
-        let currentTab = document.querySelector(tabId)
-
-        if( ! currentBtn.classList.contains('active') ) {
-            tabsBtn.forEach(function (btn) {
-                btn.classList.remove('active')
-            })
-    
-            tabsItems.forEach(function (tab) {
-                tab.classList.remove('active')
-            })
-    
-            currentBtn.classList.add('active')
-            currentTab.classList.add('active')
-
-        }
-    })
-})
-
-document.querySelector('.tabs-nav__button:nth-child(1)').click();
 function testWebP(callback) {
 
     var webP = new Image();
