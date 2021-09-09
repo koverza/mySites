@@ -165,7 +165,7 @@ tabsBtn.forEach(function (item) {
     })
 })
 
-document.querySelector('.tabs-nav__button:nth-child(1)').click()
+document.querySelector('.tabs-nav__button:nth-child(5)').click()
 
 document.querySelector('.quantity-minus').setAttribute('disabled', 'disabled');
 
