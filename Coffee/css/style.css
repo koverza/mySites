@@ -9437,7 +9437,73 @@ input[type=number] {
 
 .product-left {
   width: 39%;
-  background-color: red;
+}
+
+.productBig-slider {
+  width: 100%;
+  z-index: 100000;
+  overflow: hidden;
+  position: relative;
+}
+
+.zoom {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  -webkit-transform: translate(50%, 10%);
+      -ms-transform: translate(50%, 10%);
+          transform: translate(50%, 10%);
+}
+
+.productBig-slide__photo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.productBig__img {
+  width: 100%;
+}
+
+.productSmall-slider {
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 15px;
+}
+
+.productSmall-slide__photo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.productSmall__img {
+  width: 80%;
+}
+
+.productSmall-slider .swiper-button-prev:after {
+  font-size: 18px;
+  color: black;
+}
+
+.productSmall-slider .swiper-button-next:after {
+  font-size: 18px;
+  color: black;
 }
 
 .product-right {
@@ -9646,6 +9712,157 @@ input[type=number] {
 .product-button:hover {
   background: #871417;
   color: white;
+}
+
+.setup {
+  width: 100%;
+}
+
+.setup-block {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.setup-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.setup__texts {
+  width: 53%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: black;
+}
+
+.setup-photo {
+  width: 45%;
+}
+
+.setup-photo__img {
+  width: 100%;
+}
+
+.setup__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: black;
+}
+
+.about {
+  width: 100%;
+}
+
+.about-block {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  color: black;
+  text-align: center;
+}
+
+.about-row__block {
+  margin-top: 30px;
+}
+
+.about__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: black;
+  margin-top: 10px;
+}
+
+.about-row {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.about-row__text {
+  width: 100%;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: black;
+  margin-left: 10px;
+}
+
+.about__img {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.mistake {
+  width: 100%;
+  background: url(../img/404.webp) center no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mistake-inner {
+  padding-top: 230px;
+  padding-bottom: 230px;
+}
+
+.mistake__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 144px;
+  color: white;
+  text-align: center;
+}
+
+.mistake__subtitle {
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 32px;
+  color: white;
+  text-align: center;
+}
+
+.mistake__button {
+  width: 280px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 32px;
+  color: white;
+  margin: 70px auto;
 }
 
 /* Main page */
@@ -10390,6 +10607,52 @@ input[type=number] {
     font-size: 28px;
   }
 
+  .setup-block {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .setup-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .setup__texts {
+    width: 100%;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .setup-photo {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .setup__text {
+    width: 100%;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .about-block {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .mistake-inner {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+
+  .mistake__button {
+    font-size: 26px;
+  }
+
   .intro__title {
     font-size: 33px;
     line-height: 50px;
@@ -10843,6 +11106,56 @@ input[type=number] {
 
   .product-right {
     width: 100%;
+    margin-top: 20px;
+  }
+
+  .setup-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .setup-photo {
+    width: 100%;
+  }
+
+  .about-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .about-row__block {
+    margin-top: 15px;
+  }
+
+  .about__text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .about-row {
+    width: 100%;
+  }
+
+  .about-row__text {
+    line-height: 22px;
+  }
+
+  .mistake-inner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .mistake__title {
+    font-size: 112px;
+  }
+
+  .mistake__subtitle {
+    margin-top: 20px;
+    font-size: 26px;
+  }
+
+  .mistake__button {
+    margin: 40px auto;
   }
 
   .intro-slide {
@@ -11349,6 +11662,34 @@ input[type=number] {
   .product-button {
     margin-top: 10px;
     width: 100%;
+  }
+
+  .setup-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .about-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .mistake-inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .mistake__title {
+    font-size: 70px;
+  }
+
+  .mistake__subtitle {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+
+  .mistake__button {
+    margin: 20px auto;
   }
 
   .intro-slide {

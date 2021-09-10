@@ -40,7 +40,6 @@ const intro = new Swiper('.intro-slider', {
         el: '.intro-pagination',
     },
 })
-
 const recomendation = new Swiper('.recomendation-slider', {
     loop: true,
     slidesPerView: 3,
@@ -70,6 +69,30 @@ const recomendation = new Swiper('.recomendation-slider', {
     }
 })
 
+const productBig = new Swiper('.productBig-slider', {
+    slidesPerView: 1,
+    zoom: true,
+    effect: "cube",
+    cubeEffect: {
+        shadow: false,
+        slideShadows: false,
+        shadowOffset: 0,
+        shadowScale: 0,
+    },
+
+})
+const productSmall = new Swiper('.productSmall-slider', {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    clickable: true,
+    grabCursor: true,
+    navigation: {
+        nextEl: '.productSmall-next',
+        prevEl: '.productSmall-prev',
+    },
+})
+productBig.controller.control = productSmall;
+productSmall.controller.control = productBig;
 // Спойлер в coffeemachine.html
 let spoiler = document.getElementsByClassName('spoiler__title')
 
@@ -141,7 +164,6 @@ function initRatings() {
 let tabsBtn = document.querySelectorAll('.tabs-nav__button')
 let tabsItems = document.querySelectorAll('.tabs-block')
 
-
 tabsBtn.forEach(function (item) {
     let currentBtn = item
     currentBtn.addEventListener('click', () => {
@@ -164,8 +186,7 @@ tabsBtn.forEach(function (item) {
         }
     })
 })
-
-document.querySelector('.tabs-nav__button:nth-child(5)').click()
+document.querySelector('.tabs-nav__button:nth-child(1)').click()
 
 document.querySelector('.quantity-minus').setAttribute('disabled', 'disabled');
 
