@@ -9675,6 +9675,317 @@ input[type=number] {
   margin-top: 10px;
 }
 
+.form-page {
+  width: 100%;
+}
+
+.form-page__row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-page__left {
+  width: 55%;
+}
+
+.form-page__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 29px;
+  line-height: 46px;
+  color: black;
+}
+
+.form-page__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: black;
+  margin-top: 20px;
+}
+
+.form2 {
+  margin-top: 30px;
+}
+
+.form-input__block {
+  margin-top: 25px;
+}
+
+.form-input__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: black;
+}
+
+.form-input {
+  padding: 20px;
+  width: 100%;
+  border: 1px solid rgba(19, 19, 19, 0.5);
+  border-radius: 20px;
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(19, 19, 19, 0.5);
+}
+
+.form-input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(19, 19, 19, 0.5);
+}
+
+.form-input::-moz-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(19, 19, 19, 0.5);
+}
+
+.form-input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(19, 19, 19, 0.5);
+}
+
+.form-input::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(19, 19, 19, 0.5);
+}
+
+.form-input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(19, 19, 19, 0.5);
+}
+
+.form-page__right {
+  width: 42%;
+}
+
+.payment {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.payment-radio {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.payment-radio__block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.payment-radio__block label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: black;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.payment-photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 15px;
+}
+
+.payment-photos__img {
+  margin-right: 5px;
+}
+
+.payment-pay {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #F3F3F3;
+  margin-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.payment-pay__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(19, 19, 19, 0.5);
+}
+
+.payment-pay__title {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+}
+
+.card-data {
+  background: #FDFDFD;
+  border-radius: 8px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+}
+
+.card-data__number {
+  width: 100%;
+  margin-left: 15px;
+  margin-right: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(19, 19, 19, 0.2);
+  background-color: transparent;
+}
+
+.card-data__month {
+  width: 30px;
+  margin-left: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(19, 19, 19, 0.2);
+  background-color: transparent;
+}
+
+.card-data__year {
+  width: 23px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(19, 19, 19, 0.2);
+  background-color: transparent;
+}
+
+.card-data__cvc {
+  width: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(19, 19, 19, 0.2);
+  background-color: transparent;
+}
+
+.card-data__number::-webkit-input-placeholder, .card-data__month::-webkit-input-placeholder, .card-data__year::-webkit-input-placeholder, .card-data__cvc::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(19, 19, 19, 0.2);
+  background-color: transparent;
+}
+
+.card-data__number::-moz-placeholder, .card-data__month::-moz-placeholder, .card-data__year::-moz-placeholder, .card-data__cvc::-moz-placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(19, 19, 19, 0.2);
+  background-color: transparent;
+}
+
+.card-data__number:-ms-input-placeholder, .card-data__month:-ms-input-placeholder, .card-data__year:-ms-input-placeholder, .card-data__cvc:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(19, 19, 19, 0.2);
+  background-color: transparent;
+}
+
+.card-data__number::-ms-input-placeholder, .card-data__month::-ms-input-placeholder, .card-data__year::-ms-input-placeholder, .card-data__cvc::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(19, 19, 19, 0.2);
+  background-color: transparent;
+}
+
+.card-data__number::placeholder,
+.card-data__month::placeholder,
+.card-data__year::placeholder,
+.card-data__cvc::placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(19, 19, 19, 0.2);
+  background-color: transparent;
+}
+
+.card-checkbox {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-checkbox label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(19, 19, 19, 0.5);
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.card-checkbox__input {
+  margin-top: 2px;
+  display: block;
+}
+
 .productCoffee-photo {
   width: 100%;
   display: -webkit-box;
@@ -10952,6 +11263,26 @@ input[type=number] {
     margin: 20px auto;
   }
 
+  .form-page__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .form-page__left {
+    width: 100%;
+  }
+
+  .form-page__right {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .payment {
+    margin-top: 20px;
+  }
+
   .product-right__title {
     font-size: 28px;
   }
@@ -11478,6 +11809,13 @@ input[type=number] {
   .buckets-photo .buckets-photo__img {
     width: 45px;
     height: 100px;
+  }
+
+  .payment-pay {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .productCoffee-column {
@@ -12080,11 +12418,69 @@ input[type=number] {
   }
 
   .buckets__text {
-    font-size: 14px;
+    font-size: 16px;
   }
 
-  .buckets__text {
-    font-size: 12px;
+  .form-page__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-page__subtitle {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 10px;
+  }
+
+  .form-input__block {
+    margin-top: 15px;
+  }
+
+  .form-input__title {
+    font-size: 16px;
+  }
+
+  .form-input__title {
+    line-height: 30px;
+  }
+
+  .form-input {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .form-input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+
+  .form-input::-moz-placeholder {
+    font-size: 16px;
+  }
+
+  .form-input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  .form-input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  .form-input::placeholder {
+    font-size: 16px;
+  }
+
+  .payment-radio__block label {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .card-data {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card-data__number {
+    margin-left: 10px;
   }
 
   .product-right__title {
