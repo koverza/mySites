@@ -119,6 +119,7 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  color: #F3F3F3;
 }
 
 .bread-crumbs__link {
@@ -126,7 +127,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #F3F3F3;
 }
 
 .bread-crumbs__text {
@@ -134,7 +135,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  color: rgba(255, 255, 255, 0.95);
+  color: #F3F3F3;
 }
 
 .bread-crumbs__text span {
@@ -8649,6 +8650,10 @@ input[type=number] {
      object-fit: cover;
 }
 
+.coffee-intro .bread-crumbs__link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .coffee-intro__inner {
   padding-top: 30px;
 }
@@ -8988,6 +8993,10 @@ input[type=number] {
      object-fit: cover;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.reparatur .bread-crumbs__link {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .reparatur__title {
@@ -9570,7 +9579,13 @@ input[type=number] {
   width: 100%;
 }
 
+.buckets-inner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .buckets-row {
+  margin-top: 30px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9740,7 +9755,13 @@ input[type=number] {
   width: 100%;
 }
 
+.form-page__inner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .form-page__row {
+  margin-top: 30px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10289,6 +10310,12 @@ input[type=number] {
 
 .product {
   width: 100%;
+}
+
+.product-inner .bread-crumbs {
+  color: #F3F3F3;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .product-row {
@@ -11227,6 +11254,14 @@ input[type=number] {
   font-size: 18px;
   line-height: 32px;
   color: #333333;
+}
+
+.crumbsGrey {
+  color: grey;
+}
+
+.crumbsBlack {
+  color: black;
 }
 
 @media (max-width: 1199px) {
