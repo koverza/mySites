@@ -55,7 +55,7 @@ const recomendation = new Swiper('.recomendation-slider', {
             centeredSlides: false,
         },
         767: {
-            slidesPerView: 2,
+            slidesPerView: 2.3,
             spaceBetween: 30,
         },
         992: {
