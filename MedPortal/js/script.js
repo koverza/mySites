@@ -24,6 +24,64 @@ for (let i = 0; i < spoiler.length; i++) {
     }
 }
 
+const ratings = document.querySelectorAll('.rating')
+
+if(ratings.length > 0) {
+    initRatings()
+}
+
+function initRatings() {
+    let ratingActive, ratingValue;
+
+    for (let index = 0; index < ratings.length; index++) {
+        const rating = ratings[index];
+        initRating(rating);
+    }
+
+    function initRating(rating) {
+        initRatingVars(rating);
+        setRatingActiveWidth();
+
+        if(rating.classList.contains('rating_set')) {
+            setRating(rating)
+        }
+    }
+
+    function initRatingVars(rating) {
+        ratingActive = rating.querySelector('.rating__active')
+        ratingValue = rating.querySelector('.rating__value')
+    }
+
+    function setRatingActiveWidth(index = ratingValue.innerHTML) {
+        const ratingActiveWidth = index / 0.05;
+        ratingActive.style.width = `${ratingActiveWidth}%`;
+    }
+
+    function setRating(rating) {
+        const ratingItems = rating.querySelectorAll('.rating__item')
+
+        for (let index = 0; index < ratingItems.length; index++) {
+            const ratingItem = ratingItems[index];
+            ratingItem.addEventListener("mouseenter", function(e) {
+                initRatingVars(rating)
+                setRatingActiveWidth(ratingItem.value)
+            })
+            ratingItem.addEventListener("mouseleave", function(e) {
+                setRatingActiveWidth()
+            })
+            ratingItem.addEventListener("click", function(e) {
+                initRatingVars(rating)
+                if(rating.dataset.ajax) {
+                    setRatingValue(ratingItem.value, rating)
+                } else {
+                    ratingValue.innerHTML = index + 1
+                    setRatingActiveWidth()
+                }
+            })
+        }
+    }
+};
+
 // SLIDERS
 /**
  * Swiper 6.8.0
@@ -137,8 +195,6 @@ const gallerySmall = new Swiper('.gallerySmall-slider', {
 })
 
 
-
-
 // TABS
 let tabsBtn = document.querySelectorAll('.tabs-nav__button')
 let tabsItems = document.querySelectorAll('.tabs-block')
@@ -170,8 +226,8 @@ tabsBtn.forEach(function (item) {
 document.querySelector('.tabs-nav__button:nth-child(2)').click()
 
 
-// SORT
 
+// SORT
 let reviewsButton = document.querySelector('.reviews-button')
 let reviewsMenu = document.querySelector('.reviews-menu')
 
@@ -182,8 +238,7 @@ reviewsButton.addEventListener('click', () => {
 
 
 
-
-let buttons = document.querySelectorAll('*[data-popup-btn]')
+// let buttons = document.querySelectorAll('*[data-popup-btn]')
 
 for (let index = 0; index < buttons.length; index++) {
     buttons[index].addEventListener('click', function() {
@@ -209,7 +264,7 @@ window.onclick = function(e) {
         }
     }
 };
-const accordionItemHeaders = document.querySelectorAll('.accordion-item-header')
+// const accordionItemHeaders = document.querySelectorAll('.accordion-item-header')
 
 accordionItemHeaders.forEach(accordionItemHeader => {
     accordionItemHeader.addEventListener('click', event => {
@@ -222,63 +277,6 @@ accordionItemHeaders.forEach(accordionItemHeader => {
         }
     })
 });
-const ratings = document.querySelectorAll('.rating')
-
-if(ratings.length > 0) {
-    initRatings()
-}
-
-function initRatings() {
-    let ratingActive, ratingValue;
-
-    for (let index = 0; index < ratings.length; index++) {
-        const rating = ratings[index];
-        initRating(rating);
-    }
-
-    function initRating(rating) {
-        initRatingVars(rating);
-        setRatingActiveWidth();
-
-        if(rating.classList.contains('rating_set')) {
-            setRating(rating)
-        }
-    }
-
-    function initRatingVars(rating) {
-        ratingActive = rating.querySelector('.rating__active')
-        ratingValue = rating.querySelector('.rating__value')
-    }
-
-    function setRatingActiveWidth(index = ratingValue.innerHTML) {
-        const ratingActiveWidth = index / 0.05;
-        ratingActive.style.width = `${ratingActiveWidth}%`;
-    }
-
-    function setRating(rating) {
-        const ratingItems = rating.querySelectorAll('.rating__item')
-
-        for (let index = 0; index < ratingItems.length; index++) {
-            const ratingItem = ratingItems[index];
-            ratingItem.addEventListener("mouseenter", function(e) {
-                initRatingVars(rating)
-                setRatingActiveWidth(ratingItem.value)
-            })
-            ratingItem.addEventListener("mouseleave", function(e) {
-                setRatingActiveWidth()
-            })
-            ratingItem.addEventListener("click", function(e) {
-                initRatingVars(rating)
-                if(rating.dataset.ajax) {
-                    setRatingValue(ratingItem.value, rating)
-                } else {
-                    ratingValue.innerHTML = index + 1
-                    setRatingActiveWidth()
-                }
-            })
-        }
-    }
-};
 function testWebP(callback) {
 
     var webP = new Image();
