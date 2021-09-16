@@ -10469,6 +10469,173 @@ ul.medicine-list {
   display: none;
 }
 
+/* Болезни */
+
+.ills {
+  width: 100%;
+  background-color: #F2FBFF;
+  padding-top: 80px;
+}
+
+.ills-block {
+  margin-top: 30px;
+}
+
+.ills-row {
+  margin-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ills-row__column {
+  width: 23%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.ills-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.ill-letter {
+  min-width: 25px;
+  height: 25px;
+  background-color: #094174;
+  color: #ffffff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.ill-word {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ill-word__main {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #394159;
+}
+
+.ill-word__name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #73798A;
+  margin-top: 7px;
+}
+
+.limited {
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.limited.l-200 {
+  max-height: 500px;
+}
+
+.limited.l-300 {
+  max-height: 300px;
+}
+
+.limited .bottom {
+  position: absolute;
+  bottom: 0;
+  background-color: #F2FBFF;
+  border-top: 1px solid #DAE8F3;
+  width: 100%;
+  height: 10px;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.read-more {
+  opacity: 0;
+  position: absolute;
+}
+
+.read-more:checked ~ .limited {
+  max-height: none;
+}
+
+.read-more:checked ~ .limited .bottom {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.read-more-button {
+  width: 100%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.more__icon {
+  width: 16px;
+}
+
 /* Begin */
 
 .begin {
@@ -10807,6 +10974,10 @@ ul.medicine-list {
 
   .medicine-list__item {
     font-size: 14px;
+  }
+
+  .ills-row__column {
+    width: 30%;
   }
 }
 
@@ -11339,6 +11510,14 @@ ul.medicine-list {
     display: block;
   }
 
+  .ills {
+    padding-top: 50px;
+  }
+
+  .ills-row__column {
+    width: 50%;
+  }
+
   .begin__title {
     font-size: 16px;
     line-height: 27px;
@@ -11593,6 +11772,18 @@ ul.medicine-list {
     margin-top: 20px;
   }
 
+  .ills-row__column {
+    margin-bottom: 30px;
+  }
+
+  .ill-word__main {
+    font-size: 14px;
+  }
+
+  .ill-word__name {
+    font-size: 14px;
+  }
+
   .begin-city {
     margin-top: 10px;
     font-size: 22px;
@@ -11610,6 +11801,10 @@ ul.medicine-list {
 
 @media (max-width: 425px) {
   .doctors-row__column {
+    width: 100%;
+  }
+
+  .ills-row__column {
     width: 100%;
   }
 }
