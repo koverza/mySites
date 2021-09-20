@@ -26,6 +26,17 @@
   color: black;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  margin: 2px;
+  background-color: #072D51;
+  border-radius: 9em;
+}
+
 /* Обнуление */
 
 /* Шаблоны */
@@ -7870,25 +7881,133 @@ input[type=number] {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.6);
+  background: rgba(115, 121, 138, 0.5);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
   opacity: 0;
   visibility: hidden;
+  overflow-y: scroll;
   -webkit-transition: all .8 ease;
   -o-transition: all .8 ease;
   transition: all .8 ease;
+  padding: 10px;
 }
 
 .popup-content {
-  background-color: #fefefe;
-  margin: 15% auto;
+  background: #FAFCFD;
+  margin: 20px auto;
   padding: 20px;
-  border: 1ox solid #888;
-  width: 80%;
+  max-width: 960px;
+  width: 100%;
   z-index: 9999;
+  border-radius: 12px;
 }
 
-.popup-inner {
+.popupTop {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popupTop .popup-search {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup-input {
+  width: 100%;
+  height: 40px;
+  background: #DAE8F3;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding-left: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: black;
+}
+
+.popup-search .icon-search {
+  font-size: 24px;
+  color: #094174;
+  width: 40px;
+  height: 40px;
+  background-color: #DAE8F3;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.filter-button {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.icon-filter:before {
+  color: #0059AB;
+}
+
+.popupFilter .popupTabs {
+  margin-top: 15px;
+}
+
+.popupFilter .tabs-content {
+  padding: 0px;
+}
+
+.popupRecomendation {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.popupRecomendation-result {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+  color: #072D51;
+}
+
+.popupRecomendation-item {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 30px;
+  margin-top: 15px;
+}
+
+.popupRecomendation-item__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7898,19 +8017,163 @@ input[type=number] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 15px;
 }
 
-.popup__title {
-  font-size: 25px;
-  font-weight: bold;
+.popupRecomendation-item__top-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #394159;
 }
 
-.popup__close {
-  color: grey;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
+.popupRecomendation-item__top-cost {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  color: #3EAB97;
+}
+
+.popupRecomendation-item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.popupRecomendation-item__content-img {
+  width: 100px;
+}
+
+.popupRecomendation-item__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 15px;
+}
+
+.popupRecomendation-item__column-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #73798A;
+}
+
+.popupRecomendation-item__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.popupRecomendation-item__bottom-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #072D51;
+  margin-left: 5px;
+}
+
+.tabs-block .clinics2-block {
+  width: 100%;
+}
+
+.tabs-block .doctors2-block {
+  width: 100%;
+}
+
+.tabs-block .recomendation2-block {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.services-result {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+  color: #072D51;
+}
+
+.tabs-block .medicine2-block {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.medicine2-result {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+  color: #072D51;
+}
+
+.medicine2-item {
+  margin-top: 15px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.medicine2-item__photo {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.medecine-content__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  color: #394159;
+}
+
+.medecine-content__description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #394159;
+  opacity: 0.7;
+}
+
+.medecine-cost {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  color: #3EAB97;
 }
 
 /* Табы */
@@ -11018,6 +11281,93 @@ ul.medicine-list {
     display: flex;
   }
 
+  .popup-content {
+    margin: 15px auto;
+    padding: 15px;
+  }
+
+  .popupFilter .popupTabs {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .popupFilter .tabs-nav,
+  .popupFilter .tabs-nav__button {
+    height: auto;
+  }
+
+  .popupRecomendation {
+    margin-top: 20px;
+  }
+
+  .popupRecomendation-item {
+    padding: 20px;
+  }
+
+  .popupRecomendation-item__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .popupRecomendation-item__top-title {
+    font-size: 18px;
+  }
+
+  .popupRecomendation-item__top-cost {
+    font-size: 18px;
+  }
+
+  .popupRecomendation-item__bottom-text {
+    font-size: 18px;
+  }
+
+  .tabs-block .clinics2-block {
+    margin-top: 20px;
+  }
+
+  .tabs-block .doctors2-block {
+    margin-top: 20px;
+  }
+
+  .tabs-block .recomendation2-block {
+    margin-top: 20px;
+  }
+
+  .medicine2-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+
+  .medicine2-item__photo {
+    width: auto;
+  }
+
+  .medecine-content__name {
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .medecine-content__description {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .medecine-cost {
+    margin-top: 15px;
+    text-align: center;
+  }
+
   .tabs {
     display: none;
   }
@@ -11533,6 +11883,31 @@ ul.medicine-list {
 
   .border {
     border-radius: 20px;
+  }
+
+  .popup-content {
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .popupRecomendation-item {
+    padding: 10px;
+  }
+
+  .popupRecomendation-item__top-title {
+    font-size: 14px;
+  }
+
+  .popupRecomendation-item__top-cost {
+    font-size: 14px;
+  }
+
+  .popupRecomendation-item__bottom-text {
+    font-size: 14px;
+  }
+
+  .medicine2-item {
+    padding: 10px;
   }
 
   .intro {
