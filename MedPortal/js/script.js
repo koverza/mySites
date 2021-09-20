@@ -26,6 +26,62 @@ window.onclick = function(e) {
     }
 };
 
+// Включение - выключение фильтра
+let filterButton = document.querySelector('.filter-button')
+let filterMenu = document.querySelector('.filter')
+
+filterButton.addEventListener('click', () => {
+    filterMenu.classList.toggle('active')
+})
+
+// Выбор страны
+let country = document.querySelector('.country')
+let countryMenu = document.querySelector('.country-menu')
+
+country.addEventListener('click', () => {
+    countryMenu.classList.toggle('active')
+})
+
+// Выбор города
+let cityF = document.querySelector('.cityF')
+let cityFMenu = document.querySelector('.cityF-menu')
+
+cityF.addEventListener('click', () => {
+    cityFMenu.classList.toggle('active')
+})
+
+// Выбор стоимости
+let costF = document.querySelector('.costF')
+let costFMenu = document.querySelector('.costF-menu')
+
+costF.addEventListener('click', () => {
+    costFMenu.classList.toggle('active')
+})
+
+// Выбор валюты
+let moneyF = document.querySelector('.moneyF')
+let moneyFMenu = document.querySelector('.moneyF-menu')
+
+moneyF.addEventListener('click', () => {
+    moneyFMenu.classList.toggle('active')
+})
+
+// Отзывы desctop
+let reviewsF = document.querySelector('.reviewsF')
+let reviewsFMenu = document.querySelector('.reviewsF-menu')
+
+reviewsF.addEventListener('click', () => {
+    reviewsFMenu.classList.toggle('active')
+})
+
+// Отзывы mobile
+let reviewsSpoilerF = document.querySelector('.reviewsSpoilerF')
+let reviewsSpoilerFFMenu = document.querySelector('.reviewsSpoilerF-menu')
+
+reviewsSpoilerF.addEventListener('click', () => {
+    reviewsSpoilerFFMenu.classList.toggle('active')
+})
+
 // HEADER
 
 let burger = document.querySelector('.burger')
@@ -251,22 +307,10 @@ tabsBtn.forEach(function (item) {
     })
 })
 
-document.querySelector('.tabs-nav__button:nth-child(2)').click()
+document.querySelector('.tabs-nav__button:nth-child(5)').click()
 
 
-
-// SORT
-let reviewsButton = document.querySelector('.reviews-button')
-let reviewsMenu = document.querySelector('.reviews-menu')
-
-reviewsButton.addEventListener('click', () => {
-    reviewsButton.classList.toggle('active')
-    reviewsMenu.classList.toggle('active')
-})
-
-
-
-// const accordionItemHeaders = document.querySelectorAll('.accordion-item-header')
+const accordionItemHeaders = document.querySelectorAll('.accordion-item-header')
 
 accordionItemHeaders.forEach(accordionItemHeader => {
     accordionItemHeader.addEventListener('click', event => {
