@@ -34,138 +34,6 @@ filterButton.addEventListener('click', () => {
     filterMenu.classList.toggle('active')
 })
 
-// Выбор страны
-let country = document.querySelector('.country')
-let countryMenu = document.querySelector('.country-menu')
-
-country.addEventListener('click', () => {
-    countryMenu.classList.toggle('active')
-})
-
-// Выбор города
-let cityF = document.querySelector('.cityF')
-let cityFMenu = document.querySelector('.cityF-menu')
-
-cityF.addEventListener('click', () => {
-    cityFMenu.classList.toggle('active')
-})
-
-// Выбор стоимости
-let costF = document.querySelector('.costF')
-let costFMenu = document.querySelector('.costF-menu')
-
-costF.addEventListener('click', () => {
-    costFMenu.classList.toggle('active')
-})
-
-// Выбор валюты
-let moneyF = document.querySelector('.moneyF')
-let moneyFMenu = document.querySelector('.moneyF-menu')
-
-moneyF.addEventListener('click', () => {
-    moneyFMenu.classList.toggle('active')
-})
-
-// Отзывы desctop
-let reviewsF = document.querySelector('.reviewsF')
-let reviewsFMenu = document.querySelector('.reviewsF-menu')
-
-reviewsF.addEventListener('click', () => {
-    reviewsFMenu.classList.toggle('active')
-})
-
-// Отзывы mobile
-let reviewsSpoilerF = document.querySelector('.reviewsSpoilerF')
-let reviewsSpoilerFFMenu = document.querySelector('.reviewsSpoilerF-menu')
-
-reviewsSpoilerF.addEventListener('click', () => {
-    reviewsSpoilerFFMenu.classList.toggle('active')
-})
-
-// HEADER
-
-let burger = document.querySelector('.burger')
-let headerNav = document.querySelector('.header-nav')
-
-burger.addEventListener('click', () => {
-    headerNav.classList.toggle('active')
-    burger.classList.toggle('active')
-});
-
-let topSearch = document.querySelector('.search-icon')
-let topInput = document.querySelector('.top-input')
-
-topSearch.addEventListener('click', () => {
-    topInput.classList.toggle('active')
-})
-
-// SPOILER
-let spoiler = document.getElementsByClassName('spoiler__title')
-
-for (let i = 0; i < spoiler.length; i++) {
-    spoiler[i].onclick = function () {
-        this.nextElementSibling.classList.toggle('active')
-    }
-}
-
-const ratings = document.querySelectorAll('.rating')
-
-if(ratings.length > 0) {
-    initRatings()
-}
-
-function initRatings() {
-    let ratingActive, ratingValue;
-
-    for (let index = 0; index < ratings.length; index++) {
-        const rating = ratings[index];
-        initRating(rating);
-    }
-
-    function initRating(rating) {
-        initRatingVars(rating);
-        setRatingActiveWidth();
-
-        if(rating.classList.contains('rating_set')) {
-            setRating(rating)
-        }
-    }
-
-    function initRatingVars(rating) {
-        ratingActive = rating.querySelector('.rating__active')
-        ratingValue = rating.querySelector('.rating__value')
-    }
-
-    function setRatingActiveWidth(index = ratingValue.innerHTML) {
-        const ratingActiveWidth = index / 0.05;
-        ratingActive.style.width = `${ratingActiveWidth}%`;
-    }
-
-    function setRating(rating) {
-        const ratingItems = rating.querySelectorAll('.rating__item')
-
-        for (let index = 0; index < ratingItems.length; index++) {
-            const ratingItem = ratingItems[index];
-            ratingItem.addEventListener("mouseenter", function(e) {
-                initRatingVars(rating)
-                setRatingActiveWidth(ratingItem.value)
-            })
-            ratingItem.addEventListener("mouseleave", function(e) {
-                setRatingActiveWidth()
-            })
-            ratingItem.addEventListener("click", function(e) {
-                initRatingVars(rating)
-                if(rating.dataset.ajax) {
-                    setRatingValue(ratingItem.value, rating)
-                } else {
-                    ratingValue.innerHTML = index + 1
-                    setRatingActiveWidth()
-                }
-            })
-        }
-    }
-};
-
 // SLIDERS
 /**
  * Swiper 6.8.0
@@ -279,6 +147,92 @@ const gallerySmall = new Swiper('.gallerySmall-slider', {
 })
 
 
+// HEADER
+
+let burger = document.querySelector('.burger')
+let headerNav = document.querySelector('.header-nav')
+
+burger.addEventListener('click', () => {
+    headerNav.classList.toggle('active')
+    burger.classList.toggle('active')
+});
+
+let topSearch = document.querySelector('.search-icon')
+let topInput = document.querySelector('.top-input')
+
+topSearch.addEventListener('click', () => {
+    topInput.classList.toggle('active')
+})
+
+
+// SPOILER
+let spoiler = document.getElementsByClassName('spoiler__title')
+
+for (let i = 0; i < spoiler.length; i++) {
+    spoiler[i].onclick = function () {
+        this.nextElementSibling.classList.toggle('active')
+    }
+}
+
+const ratings = document.querySelectorAll('.rating')
+
+if(ratings.length > 0) {
+    initRatings()
+}
+
+function initRatings() {
+    let ratingActive, ratingValue;
+
+    for (let index = 0; index < ratings.length; index++) {
+        const rating = ratings[index];
+        initRating(rating);
+    }
+
+    function initRating(rating) {
+        initRatingVars(rating);
+        setRatingActiveWidth();
+
+        if(rating.classList.contains('rating_set')) {
+            setRating(rating)
+        }
+    }
+
+    function initRatingVars(rating) {
+        ratingActive = rating.querySelector('.rating__active')
+        ratingValue = rating.querySelector('.rating__value')
+    }
+
+    function setRatingActiveWidth(index = ratingValue.innerHTML) {
+        const ratingActiveWidth = index / 0.05;
+        ratingActive.style.width = `${ratingActiveWidth}%`;
+    }
+
+    function setRating(rating) {
+        const ratingItems = rating.querySelectorAll('.rating__item')
+
+        for (let index = 0; index < ratingItems.length; index++) {
+            const ratingItem = ratingItems[index];
+            ratingItem.addEventListener("mouseenter", function(e) {
+                initRatingVars(rating)
+                setRatingActiveWidth(ratingItem.value)
+            })
+            ratingItem.addEventListener("mouseleave", function(e) {
+                setRatingActiveWidth()
+            })
+            ratingItem.addEventListener("click", function(e) {
+                initRatingVars(rating)
+                if(rating.dataset.ajax) {
+                    setRatingValue(ratingItem.value, rating)
+                } else {
+                    ratingValue.innerHTML = index + 1
+                    setRatingActiveWidth()
+                }
+            })
+        }
+    }
+};
+
+
 // TABS
 let tabsBtn = document.querySelectorAll('.tabs-nav__button')
 let tabsItems = document.querySelectorAll('.tabs-block')
@@ -307,7 +261,7 @@ tabsBtn.forEach(function (item) {
     })
 })
 
-document.querySelector('.tabs-nav__button:nth-child(5)').click()
+document.querySelector('.tabs-nav__button:nth-child(2)').click()
 
 
 const accordionItemHeaders = document.querySelectorAll('.accordion-item-header')
@@ -340,3 +294,79 @@ function testWebP(callback) {
     document.querySelector('body').classList.add('no-webp');
     }
 });;
+
+// Выбор страны
+let country = document.querySelector('.country')
+let countryMenu = document.querySelector('.country-menu')
+
+country.addEventListener('click', () => {
+    countryMenu.classList.toggle('active')
+})
+
+// Выбор города
+let cityF = document.querySelector('.cityF')
+let cityFMenu = document.querySelector('.cityF-menu')
+
+cityF.addEventListener('click', () => {
+    cityFMenu.classList.toggle('active')
+})
+
+// Выбор стоимости
+let costF = document.querySelector('.costF')
+let costFMenu = document.querySelector('.costF-menu')
+
+costF.addEventListener('click', () => {
+    costFMenu.classList.toggle('active')
+})
+
+// Выбор валюты
+let moneyF = document.querySelector('.moneyF')
+let moneyFMenu = document.querySelector('.moneyF-menu')
+
+moneyF.addEventListener('click', () => {
+    moneyFMenu.classList.toggle('active')
+})
+
+// Отзывы desctop
+let reviewsF = document.querySelector('.reviewsF')
+let reviewsFMenu = document.querySelector('.reviewsF-menu')
+
+reviewsF.addEventListener('click', () => {
+    reviewsFMenu.classList.toggle('active')
+})
+
+// Отзывы mobile
+let reviewsSpoilerF = document.querySelector('.reviewsSpoilerF')
+let reviewsSpoilerFFMenu = document.querySelector('.reviewsSpoilerF-menu')
+
+reviewsSpoilerF.addEventListener('click', () => {
+    reviewsSpoilerFFMenu.classList.toggle('active')
+})
+
+// Опыт работы доктора
+let doctors2 = document.querySelector('.filter-doctors2')
+let doctors2Menu = document.querySelector('.filter-doctors2-menu')
+
+doctors2.addEventListener('click', () => {
+    doctors2Menu.classList.toggle('active')
+})
+
+// Статьи
+let articles = document.querySelector('.filter-articles')
+let articlesMenu = document.querySelector('.filter-articles-menu')
+
+articles.addEventListener('click', () => {
+    articlesMenu.classList.toggle('active')
+})
+
+// Специализация
+let clinics2FF = document.querySelector('.clinics2FF')
+let clinics2FFMenu = document.querySelector('.clinics2FF-menu')
+
+clinics2FF.addEventListener('click', () => {
+    clinics2FFMenu.classList.toggle('active')
+})
+
+
+
+
