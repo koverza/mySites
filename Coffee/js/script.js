@@ -1,10 +1,10 @@
 
 let burger = document.querySelector('.burger')
-let headerNav = document.querySelector('.header-nav ')
+let headerTabs = document.querySelector('.header-tabs')
 
 burger.addEventListener('click', () => {
     burger.classList.toggle('active')
-    headerNav.classList.toggle('active')
+    headerTabs.classList.toggle('active')
 });
 
 let langMenu = document.querySelector('.lang-menu')
