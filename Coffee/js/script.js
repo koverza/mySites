@@ -14,6 +14,7 @@ langBlock.addEventListener('click', () => {
     langMenu.classList.toggle('active')
 })
 
+
 // SLIDERS
 /**
  * Swiper 6.8.0
@@ -91,6 +92,8 @@ const productSmall = new Swiper('.productSmall-slider', {
 })
 productBig.controller.control = productSmall;
 productSmall.controller.control = productBig;
+
+
 
 // Спойлер в coffeemachine.html
 let spoiler = document.getElementsByClassName('spoiler__title')

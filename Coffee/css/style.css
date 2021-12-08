@@ -93,6 +93,10 @@ body {
   background: #B41A1F;
 }
 
+.button.active:hover {
+  background: #871417;
+}
+
 .title {
   font-style: normal;
   font-weight: bold;
@@ -10082,7 +10086,7 @@ input[type=number] {
 .form-input {
   padding: 20px;
   width: 100%;
-  border: 1px solid rgba(19, 19, 19, 0.5);
+  border: 2px solid rgba(19, 19, 19, 0.5);
   border-radius: 20px;
   margin-top: 5px;
   font-style: normal;
@@ -10090,6 +10094,10 @@ input[type=number] {
   font-size: 18px;
   line-height: 32px;
   color: rgba(19, 19, 19, 0.5);
+}
+
+.form-input:focus {
+  border: 2px solid #B41A1F;
 }
 
 .form-input::-webkit-input-placeholder {
@@ -11147,6 +11155,10 @@ input[type=number] {
   font-size: 50px;
   line-height: 76px;
   color: white;
+}
+
+.referenzen-inner .head__title {
+  font-size: 18px;
 }
 
 .intro__subtitle {
@@ -12473,10 +12485,6 @@ input[type=number] {
     line-height: 24px;
   }
 
-  .referenzen-block {
-    margin-top: 30px;
-  }
-
   .referenzen-item {
     width: 33%;
   }
@@ -13250,7 +13258,7 @@ input[type=number] {
 
   .referenzen-item {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 0px;
   }
 
   .referenzen-item:nth-child(2) {
@@ -13822,6 +13830,12 @@ input[type=number] {
     text-align: center;
   }
 
+  .referenzen-title {
+    width: 100%;
+    text-align: left;
+    margin-top: 50px;
+  }
+
   .intro__subtitle {
     text-align: center;
     font-size: 16px;
@@ -13946,10 +13960,6 @@ input[type=number] {
     line-height: 20px;
   }
 
-  .referenzen-block {
-    margin-top: 15px;
-  }
-
   .referenzen-crumbs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -13968,9 +13978,5 @@ input[type=number] {
     text-align: left;
     width: 100%;
     margin-left: 0px;
-  }
-
-  .referenzen-item {
-    margin-top: 0px;
   }
 }
