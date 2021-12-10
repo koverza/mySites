@@ -9979,8 +9979,10 @@ input[type=number] {
 }
 
 .buckets-photo .buckets-photo__img {
-  width: 60px;
+  max-width: 140px;
   height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .buckets-right {
@@ -11158,7 +11160,7 @@ input[type=number] {
 }
 
 .referenzen-inner .head__title {
-  font-size: 18px;
+  font-size: 32px;
 }
 
 .intro__subtitle {
@@ -12370,6 +12372,10 @@ input[type=number] {
     line-height: 50px;
   }
 
+  .referenzen-inner .head__title {
+    font-size: 28px;
+  }
+
   .intro__subtitle {
     width: 80%;
     text-align: center;
@@ -13082,6 +13088,10 @@ input[type=number] {
 
   .intro__title {
     font-size: 33px;
+  }
+
+  .referenzen-inner .head__title {
+    font-size: 24px;
   }
 
   .intro__subtitle {
@@ -13834,6 +13844,10 @@ input[type=number] {
     width: 100%;
     text-align: left;
     margin-top: 50px;
+  }
+
+  .referenzen-inner .head__title {
+    font-size: 18px;
   }
 
   .intro__subtitle {

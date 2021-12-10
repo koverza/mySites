@@ -14,7 +14,6 @@ langBlock.addEventListener('click', () => {
     langMenu.classList.toggle('active')
 })
 
-
 // SLIDERS
 /**
  * Swiper 6.8.0
@@ -223,6 +222,7 @@ document.querySelector('.quantity-minus').addEventListener('click', function() {
 })
 
 ;
+
 function testWebP(callback) {
 
     var webP = new Image();
