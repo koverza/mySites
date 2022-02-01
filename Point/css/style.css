@@ -42,7 +42,7 @@ body {
 /* Шаблоны */
 
 .max-w {
-  max-width: 1920px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
@@ -76,7 +76,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 21px;
   color: #6DA4CD;
@@ -88,8 +87,6 @@ body {
 
 .button.active {
   font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
   background: #226699;
@@ -7293,6 +7290,7 @@ button.swiper-pagination-bullet {
 /* Хедер */
 
 .header {
+  width: 100%;
   border-bottom: 1px solid #E1F0EE;
   position: relative;
 }
@@ -7383,7 +7381,7 @@ button.swiper-pagination-bullet {
   font-weight: normal;
   font-size: 25px;
   line-height: 34px;
-  color: #226699;
+  color: #093636;
 }
 
 .intro-buttons {
@@ -7411,8 +7409,8 @@ button.swiper-pagination-bullet {
 
 .intro-video video {
   width: 100%;
-  border-bottom-left-radius: 44%;
-  border-bottom-right-radius: 44%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 35%;
 }
 
 .video-icon {
@@ -7479,6 +7477,7 @@ button.swiper-pagination-bullet {
 
 .simple {
   position: relative;
+  padding-top: 80px;
 }
 
 .first-vector {
@@ -7639,7 +7638,7 @@ button.swiper-pagination-bullet {
   font-size: 18px;
   line-height: 22px;
   margin-top: 20px;
-  color: #226699;
+  color: #093636;
   text-align: center;
 }
 
@@ -7731,7 +7730,7 @@ button.swiper-pagination-bullet {
 
 .four-vector {
   position: absolute;
-  left: 5%;
+  left: 0%;
   top: 15%;
   z-index: -1;
 }
@@ -7790,6 +7789,11 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.try-bold {
+  color: #226699;
+  font-weight: bold;
 }
 
 .online {
@@ -7929,7 +7933,7 @@ button.swiper-pagination-bullet {
   position: absolute;
   top: 7%;
   left: 0;
-  height: 100%;
+  height: 90%;
   z-index: -1;
   width: 100%;
 }
@@ -7987,6 +7991,44 @@ button.swiper-pagination-bullet {
 .garant-item {
   width: 49%;
   margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.garant-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.garant-item__img {
+  margin-right: 15px;
+}
+
+.garant-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #093636;
+}
+
+.garant-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #00325A;
+  margin-top: 10px;
 }
 
 .specialist-slider {
@@ -8027,6 +8069,7 @@ button.swiper-pagination-bullet {
 
 .specialist-check__text {
   margin-left: 10px;
+  font-size: 14px;
 }
 
 .specialist-money {
@@ -8133,9 +8176,14 @@ button.swiper-pagination-bullet {
   bottom: -5px;
 }
 
-.specialist-button {
+.specialists-button {
   width: 250px;
   height: 60px;
+  margin: 15px auto;
+}
+
+.ask-title {
+  padding-top: 80px;
 }
 
 .support-inner {
@@ -8174,6 +8222,11 @@ button.swiper-pagination-bullet {
 
 .support-text {
   margin-left: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 107.9%;
+  color: #093636;
 }
 
 @media (max-width: 1350px) {
@@ -8287,7 +8340,6 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 20px;
   }
 
   .simple-description {
@@ -8423,7 +8475,8 @@ button.swiper-pagination-bullet {
   }
 
   .our-button {
-    margin: 30px auto;
+    margin-top: 30px;
+    height: 40px;
   }
 
   .specialist-paggination {
@@ -8463,7 +8516,11 @@ button.swiper-pagination-bullet {
   }
 
   .footer-block {
-    width: 49%;
+    width: 60%;
+  }
+
+  .footer-block:last-child {
+    width: 40%;
   }
 
   .footer-copy {
@@ -8539,7 +8596,7 @@ button.swiper-pagination-bullet {
 
   .third-vector {
     width: 85%;
-    bottom: 3%;
+    bottom: 11%;
   }
 
   .simple-description .simple-phone__img {
@@ -8547,13 +8604,13 @@ button.swiper-pagination-bullet {
   }
 
   .simple-description .simple-phone__img {
-    width: 150px;
+    width: 160px;
   }
 
   .simple-subtitle {
     font-size: 22px;
     line-height: 24px;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   .simple-text {
@@ -8569,6 +8626,19 @@ button.swiper-pagination-bullet {
 
   .point-item {
     width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .point-img {
+    width: 240px;
+  }
+
+  .point-text {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 16px;
   }
 
   .best-block {
@@ -8624,6 +8694,8 @@ button.swiper-pagination-bullet {
 
   .our {
     border-radius: 60px;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 
   .our-text {
@@ -8662,6 +8734,17 @@ button.swiper-pagination-bullet {
 
   .garant-item {
     width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .garant-box {
+    margin-top: 15px;
   }
 
   .support-block {
@@ -8687,15 +8770,19 @@ button.swiper-pagination-bullet {
     padding-bottom: 20px;
   }
 
-  .title {
-    font-size: 22px;
-  }
-
   .accordion-item-header {
     font-size: 18px;
     margin-top: 7px;
     margin-bottom: 7px;
     line-height: 24px;
+  }
+
+  .footer-copy {
+    font-size: 13px;
+  }
+
+  .footer-support {
+    font-size: 15px;
   }
 
   .footer-links {
@@ -8721,13 +8808,16 @@ button.swiper-pagination-bullet {
     padding-bottom: 20px;
   }
 
+  .intro-block {
+    margin-top: 30px;
+  }
+
   .intro-title {
-    font-size: 26px;
     text-align: left;
   }
 
   .intro-subtitle {
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 15px;
     line-height: 22px;
     text-align: left;
@@ -8740,7 +8830,10 @@ button.swiper-pagination-bullet {
   }
 
   .intro-button {
+    width: 232px;
+    height: 40px;
     margin-bottom: 10px;
+    font-size: 15px;
   }
 
   .intro-block__video .video-icon {
@@ -8750,15 +8843,20 @@ button.swiper-pagination-bullet {
 
   .first-vector {
     width: 90%;
-    top: 150px;
+    top: 250px;
   }
 
   .second-vector {
     top: 42%;
   }
 
+  .simple-block {
+    margin-top: 20px;
+    bottom: 3%;
+  }
+
   .simple-subtitle {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .simple-text {
@@ -8777,6 +8875,11 @@ button.swiper-pagination-bullet {
 
   .point-button {
     width: 300px;
+    height: 40px;
+  }
+
+  .point-button__text {
+    font-size: 13px;
   }
 
   .best-block {
@@ -8813,12 +8916,25 @@ button.swiper-pagination-bullet {
     font-size: 18px;
   }
 
+  .garant-item__img {
+    width: 80px;
+  }
+
+  .garant-name {
+    font-size: 18px;
+  }
+
   .specialist-button {
     width: 100%;
+    font-size: 16px;
+  }
+
+  .specialists-button {
+    height: 40px;
   }
 
   .support-item {
-    padding: 7px 15px;
+    padding: 7px 35px;
   }
 
   .support-img {
@@ -8833,7 +8949,7 @@ button.swiper-pagination-bullet {
   }
 
   .first-vector {
-    top: 240px;
+    top: 15%;
   }
 
   .second-vector {
@@ -8842,7 +8958,6 @@ button.swiper-pagination-bullet {
 
   .third-vector {
     width: 95%;
-    bottom: 11%;
   }
 
   .five-vector {
