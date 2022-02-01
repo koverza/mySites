@@ -1,9 +1,32 @@
+const video1 = document.querySelector('.intro-video video')
+const volume1 = document.querySelector('.intro-video .video-icon ')
+
+volume1.onclick = function() {
+    if (!video1.muted) {
+      video1.muted = true;
+    } else {
+        video1.muted = false;
+    }
+  };
+
+  const video2 = document.querySelector('.intro-block__video video')
+const volume2 = document.querySelector('.intro-block__video .video-icon ')
+
+volume2.onclick = function() {
+    if (!video2.muted) {
+      video2.muted = true;
+    } else {
+        video2.muted = false;
+    }
+  };
 
 
 let burger = document.querySelector('.burger')
+let nav = document.querySelector('.header-nav')
 
 burger.addEventListener('click', () => {
     burger.classList.toggle('active')
+    nav.classList.toggle('active')
 });
 /**
  * Swiper 6.8.0
@@ -49,6 +72,21 @@ const swiper = new Swiper('.specialist-slider', {
         },
     }
   });
+
+  /* Плавный скролл к блокам */
+
+let anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+    anchor.addEventListener('click', function(event) {
+        event.preventDefault()
+        const blockID = anchor.getAttribute('href')
+        document.querySelector(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+}
 
 const accordionItemHeaders = document.querySelectorAll('.accordion-item-header')
 
