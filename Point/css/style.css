@@ -7497,14 +7497,14 @@ button.swiper-pagination-bullet {
 .first-vector {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 7%;
   z-index: -1;
 }
 
 .second-vector {
   position: absolute;
   left: 0;
-  top: 33%;
+  top: 37%;
   z-index: -1;
 }
 
@@ -7525,16 +7525,23 @@ button.swiper-pagination-bullet {
           align-items: center;
 }
 
+.simple-block:nth-child(1) .simple-subtitle {
+  text-align: left;
+}
+
+.simple-block:nth-child(2) {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .simple-block:nth-child(2) .simple-phone {
   -webkit-transform: scale(-1, 1);
       -ms-transform: scale(-1, 1);
           transform: scale(-1, 1);
-}
-
-.simple-block:nth-child(2) .simple-description .simple-phone__img {
-  -webkit-transform: scale(-1, 1);
-      -ms-transform: scale(-1, 1);
-          transform: scale(-1, 1);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .simple-block:last-child {
@@ -7553,7 +7560,7 @@ button.swiper-pagination-bullet {
 .simple-subtitle {
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 34px;
   color: #00325A;
   margin-top: 30px;
@@ -7594,8 +7601,8 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -ms-flex-preferred-size: 55%;
-      flex-basis: 55%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
   z-index: 2;
 }
 
@@ -8173,7 +8180,7 @@ button.swiper-pagination-bullet {
   padding: 5px;
   border: 2px solid #E1E5F0;
   border-radius: 2px;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
 }
 
 .specialist-button {
@@ -8342,15 +8349,19 @@ button.swiper-pagination-bullet {
   }
 
   .first-vector {
-    top: 200px;
+    top: 10%;
   }
 
   .second-vector {
-    top: 37%;
+    top: 42%;
   }
 
   .third-vector {
     bottom: 5%;
+    -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+    left: 0;
   }
 
   .simple-block {
@@ -8436,8 +8447,8 @@ button.swiper-pagination-bullet {
   }
 
   .five-vector {
-    width: 80%;
-    top: 0%;
+    width: 75%;
+    top: 10%;
   }
 
   .six-vector {
@@ -8495,6 +8506,33 @@ button.swiper-pagination-bullet {
   .our-button {
     margin-top: 30px;
     height: 40px;
+  }
+
+  .specialist-min span {
+    font-size: 22px;
+  }
+
+  .specialist-min__text {
+    font-size: 12px;
+  }
+
+  .specialist-max span {
+    font-size: 22px;
+  }
+
+  .specialist-max__text {
+    font-size: 12px;
+  }
+
+  .specialist-tags {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .specialist-tag {
+    font-size: 13px;
+    margin-right: 5px;
   }
 
   .specialist-paggination {
@@ -8609,7 +8647,7 @@ button.swiper-pagination-bullet {
 
   .first-vector {
     width: 70%;
-    top: 140px;
+    top: 13%;
   }
 
   .second-vector {
@@ -8617,8 +8655,8 @@ button.swiper-pagination-bullet {
   }
 
   .third-vector {
-    width: 85%;
-    bottom: 11%;
+    width: 80%;
+    bottom: 4%;
   }
 
   .simple-description .simple-phone__img {
@@ -8705,13 +8743,22 @@ button.swiper-pagination-bullet {
   }
 
   .five-vector {
-    width: 80%;
-    top: 15%;
+    width: 95%;
+    top: 9%;
+    right: 0;
+    left: unset;
+    -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
   }
 
   .six-vector {
     width: 80%;
-    bottom: 5%;
+    bottom: 12%;
+    left: 0;
+    -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
   }
 
   .our {
@@ -8767,6 +8814,17 @@ button.swiper-pagination-bullet {
 
   .garant-box {
     margin-top: 15px;
+  }
+
+  .specialist-tags {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .specialist-button {
+    width: 100%;
+    font-size: 16px;
   }
 
   .support-block {
@@ -8922,6 +8980,10 @@ button.swiper-pagination-bullet {
     width: 130px;
   }
 
+  .six-vector {
+    bottom: 5%;
+  }
+
   .online-block {
     margin-top: 15px;
   }
@@ -8950,9 +9012,9 @@ button.swiper-pagination-bullet {
     font-size: 18px;
   }
 
-  .specialist-button {
-    width: 100%;
-    font-size: 16px;
+  .specialist-slide {
+    padding: 12px;
+    border-radius: 25px;
   }
 
   .specialists-button {
@@ -8983,15 +9045,17 @@ button.swiper-pagination-bullet {
   }
 
   .second-vector {
-    width: 95%;
+    width: 100%;
   }
 
   .third-vector {
+    bottom: 11%;
     width: 95%;
   }
 
   .five-vector {
     width: 100%;
+    top: 13%;
   }
 
   .six-vector {
