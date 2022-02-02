@@ -1,24 +1,26 @@
-const video1 = document.querySelector('.intro-video video')
-const volume1 = document.querySelector('.intro-video .video-icon ')
+// const video1 = document.querySelector('.intro-video video')
+// const volume1 = document.querySelector('.intro-video .video-icon ')
 
-volume1.onclick = function() {
-    if (!video1.muted) {
-      video1.muted = true;
-    } else {
-        video1.muted = false;
-    }
-  };
+// volume1.onclick = function() {
+//     if (!video1.muted) {
+//       video1.muted = true;
+//     } else {
+//         video1.muted = false;
+//     }
+//   };
 
-  const video2 = document.querySelector('.intro-block__video video')
-const volume2 = document.querySelector('.intro-block__video .video-icon ')
+//   const video2 = document.querySelector('.intro-block__video video')
+// const volume2 = document.querySelector('.intro-block__video .video-icon ')
 
-volume2.onclick = function() {
-    if (!video2.muted) {
-      video2.muted = true;
-    } else {
-        video2.muted = false;
-    }
-  };
+// volume2.onclick = function() {
+//     if (!video2.muted) {
+//       video2.muted = true;
+//     } else {
+//         video2.muted = false;
+//     }
+//   };
+
+
 
 
 let burger = document.querySelector('.burger')
