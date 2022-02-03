@@ -7409,15 +7409,15 @@ button.swiper-pagination-bullet {
 
 .intro-video video {
   width: 100%;
-  border-bottom-left-radius: 35%;
-  border-bottom-right-radius: 35%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
 }
 
 .intro-video iframe {
   width: 100%;
   height: 300px;
-  border-bottom-left-radius: 35%;
-  border-bottom-right-radius: 35%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
 }
 
 .video-icon {
@@ -7457,15 +7457,15 @@ button.swiper-pagination-bullet {
 
 .intro-block__video video {
   width: 100%;
-  border-bottom-left-radius: 44%;
-  border-bottom-right-radius: 44%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
 }
 
 .intro-block__video iframe {
   width: 100%;
   min-height: 450px;
-  border-bottom-left-radius: 44%;
-  border-bottom-right-radius: 44%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
 }
 
 .intro-block__video .video-icon {
@@ -7497,27 +7497,29 @@ button.swiper-pagination-bullet {
 
 .first-vector {
   position: absolute;
-  right: 0;
+  right: -16%;
   top: 7%;
   z-index: -1;
+  width: 70%;
 }
 
 .second-vector {
   position: absolute;
-  left: 0;
+  left: -21%;
   top: 37%;
   z-index: -1;
+  width: 70%;
 }
 
 .third-vector {
   position: absolute;
-  right: 0;
-  bottom: 0%;
+  right: -16%;
+  bottom: 0;
+  width: 70%;
   z-index: -1;
 }
 
 .simple-block {
-  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7534,24 +7536,19 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 .simple-block:nth-child(2) .simple-phone {
-  -webkit-transform: scale(-1, 1);
-      -ms-transform: scale(-1, 1);
-          transform: scale(-1, 1);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.simple-block:last-child {
-  margin-bottom: 30px;
-}
-
 .simple-description {
-  -ms-flex-preferred-size: 44%;
-      flex-basis: 44%;
+  -ms-flex-preferred-size: 41%;
+      flex-basis: 41%;
 }
 
 .simple-description .simple-phone__img {
@@ -7843,16 +7840,18 @@ button.swiper-pagination-bullet {
 }
 
 .five-vector {
+  width: 60%;
   position: absolute;
-  top: 14%;
-  left: 0;
+  top: 19%;
+  left: -9%;
   z-index: -1;
 }
 
 .six-vector {
   position: absolute;
-  bottom: 20%;
-  right: 0;
+  bottom: 24%;
+  right: -9%;
+  width: 60%;
   z-index: -1;
 }
 
@@ -7866,7 +7865,7 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 90px;
 }
 
 .online-box {
@@ -7893,7 +7892,7 @@ button.swiper-pagination-bullet {
   font-size: 32px;
   line-height: 38px;
   color: #093636;
-  margin-top: 35px;
+  margin-top: 65px;
   text-align: center;
 }
 
@@ -8278,13 +8277,9 @@ button.swiper-pagination-bullet {
   color: #093636;
 }
 
-@media (max-width: 1350px) {
-  .five-vector {
-    width: 50%;
-  }
-
-  .six-vector {
-    width: 50%;
+@media (max-width: 1680px) {
+  .max-w {
+    overflow-x: hidden;
   }
 }
 
@@ -8293,15 +8288,13 @@ button.swiper-pagination-bullet {
     width: 97%;
     left: 0%;
   }
-}
 
-@media (max-width: 1100px) {
   .five-vector {
-    top: 20%;
+    top: 16%;
   }
 
   .six-vector {
-    bottom: 20%;
+    bottom: 28%;
   }
 }
 
@@ -8367,6 +8360,10 @@ button.swiper-pagination-bullet {
     display: none;
   }
 
+  .intro-video .video-icon {
+    display: none;
+  }
+
   .intro-block__video {
     display: block;
     width: 100%;
@@ -8378,18 +8375,17 @@ button.swiper-pagination-bullet {
 
   .first-vector {
     top: 10%;
+    width: 100%;
   }
 
   .second-vector {
-    top: 42%;
+    top: 38%;
+    width: 100%;
   }
 
   .third-vector {
     bottom: 5%;
-    -webkit-transform: scale(-1, 1);
-        -ms-transform: scale(-1, 1);
-            transform: scale(-1, 1);
-    left: 0;
+    width: 100%;
   }
 
   .simple-block {
@@ -8397,6 +8393,16 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .simple-block:nth-child(2) {
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+
+  .simple-block:nth-child(2) {
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 
   .simple-description {
@@ -8479,13 +8485,13 @@ button.swiper-pagination-bullet {
   }
 
   .five-vector {
-    width: 75%;
+    width: 80%;
     top: 10%;
   }
 
   .six-vector {
     width: 80%;
-    bottom: 0%;
+    bottom: 10%;
   }
 
   .online-block {
@@ -8678,17 +8684,15 @@ button.swiper-pagination-bullet {
   }
 
   .first-vector {
-    width: 70%;
-    top: 13%;
+    top: 9%;
   }
 
   .second-vector {
-    width: 83%;
+    top: 41%;
   }
 
   .third-vector {
-    width: 80%;
-    bottom: 4%;
+    bottom: 7%;
   }
 
   .simple-description .simple-phone__img {
@@ -8772,22 +8776,16 @@ button.swiper-pagination-bullet {
   }
 
   .five-vector {
-    width: 95%;
+    width: 100%;
     top: 9%;
-    right: 0;
+    right: -20%;
     left: unset;
-    -webkit-transform: scale(-1, 1);
-        -ms-transform: scale(-1, 1);
-            transform: scale(-1, 1);
   }
 
   .six-vector {
-    width: 80%;
-    bottom: 12%;
-    left: 0;
-    -webkit-transform: scale(-1, 1);
-        -ms-transform: scale(-1, 1);
-            transform: scale(-1, 1);
+    width: 100%;
+    bottom: 10%;
+    left: -15%;
   }
 
   .online-img:nth-child(2) {
@@ -8804,7 +8802,7 @@ button.swiper-pagination-bullet {
   }
 
   .top {
-    top: -10.2%;
+    top: -9.4%;
   }
 
   .our-text {
@@ -8965,12 +8963,11 @@ button.swiper-pagination-bullet {
   }
 
   .first-vector {
-    width: 90%;
     top: 250px;
   }
 
   .second-vector {
-    top: 42%;
+    top: 46%;
   }
 
   .simple-block {
@@ -9020,7 +9017,7 @@ button.swiper-pagination-bullet {
   }
 
   .six-vector {
-    bottom: 5%;
+    bottom: 10%;
   }
 
   .online-block {
@@ -9081,24 +9078,29 @@ button.swiper-pagination-bullet {
 
   .first-vector {
     top: 15%;
+    width: 110%;
+    height: 10%;
   }
 
   .second-vector {
-    width: 100%;
+    width: 115%;
+    height: 13%;
   }
 
   .third-vector {
-    bottom: 11%;
-    width: 95%;
+    bottom: 10%;
+    width: 115%;
+    height: 15%;
   }
 
   .five-vector {
-    width: 100%;
-    top: 13%;
+    width: 113%;
+    top: 12%;
   }
 
   .six-vector {
-    width: 100%;
-    bottom: 15%;
+    width: 134%;
+    bottom: 14%;
+    left: -36%;
   }
 }

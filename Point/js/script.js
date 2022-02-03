@@ -1,27 +1,28 @@
-// const video1 = document.querySelector('.intro-video video')
-// const volume1 = document.querySelector('.intro-video .video-icon ')
+/* Включить / Выключить звук на видео */
+const video1 = document.querySelector('.intro-video video')
+const volume1 = document.querySelector('.intro-video .video-icon ')
 
-// volume1.onclick = function() {
-//     if (!video1.muted) {
-//       video1.muted = true;
-//     } else {
-//         video1.muted = false;
-//     }
-//   };
+volume1.onclick = function() {
+    if (!video1.muted) {
+      video1.muted = true;
+    } else {
+        video1.muted = false;
+    }
+  };
 
-//   const video2 = document.querySelector('.intro-block__video video')
-// const volume2 = document.querySelector('.intro-block__video .video-icon ')
+  const video2 = document.querySelector('.intro-block__video video')
+const volume2 = document.querySelector('.intro-block__video .video-icon ')
 
-// volume2.onclick = function() {
-//     if (!video2.muted) {
-//       video2.muted = true;
-//     } else {
-//         video2.muted = false;
-//     }
-//   };
+volume2.onclick = function() {
+    if (!video2.muted) {
+      video2.muted = true;
+    } else {
+        video2.muted = false;
+    }
+  };
 
 
-
+/* Бургер меню */
 
 let burger = document.querySelector('.burger')
 let nav = document.querySelector('.header-nav')
@@ -30,6 +31,8 @@ burger.addEventListener('click', () => {
     burger.classList.toggle('active')
     nav.classList.toggle('active')
 });
+
+/* Swiper слайдер */
 /**
  * Swiper 6.8.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -75,8 +78,7 @@ const swiper = new Swiper('.specialist-slider', {
     }
   });
 
-  /* Плавный скролл к блокам */
-
+/* Плавный скролл к блокам */
 let anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
@@ -103,23 +105,6 @@ accordionItemHeaders.forEach(accordionItemHeader => {
         }
     })
 });
-function testWebP(callback) {
-
-    var webP = new Image();
-    webP.onload = webP.onerror = function () {
-    callback(webP.height == 2);
-    };
-    webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-    }
-    
-    testWebP(function (support) {
-    
-    if (support == true) {
-    document.querySelector('body').classList.add('webp');
-    }else{
-    document.querySelector('body').classList.add('no-webp');
-    }
-});;
 
 
 
