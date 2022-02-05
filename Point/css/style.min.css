@@ -8744,11 +8744,18 @@ button.swiper-pagination-bullet {
 @media (max-width: 991px) {
   .specialist-paggination {
     display: block;
+    width: 100%;
+    margin-top: 20px;
   }
 }
 
 .specialist-paggination .swiper-pagination-bullets {
-  bottom: -5px;
+  bottom: -10px;
+}
+
+.specialist-paggination .swiper-pagination-bullet:nth-child(2) {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .specialists-button {
