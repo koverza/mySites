@@ -1,0 +1,33 @@
+
+/* Light */
+@font-face {
+    font-family: 'Jura';
+    src: local('../fonts/Jura-Light'), local('../fonts/Jura-Light'),
+        url('../fonts/Jura-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+/* Regular */
+@font-face {
+    font-family: 'Jura';
+    src: local('../fonts/Jura-Regular'), local('../fonts/Jura-Regular'),
+        url('../fonts/Jura-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+/* Medium */
+@font-face {
+    font-family: 'Jura';
+    src: local('../fonts/Jura-Medium'), local('../fonts/Jura-Medium'),
+        url('../fonts/Jura-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+/* Bold */
+@font-face {
+    font-family: 'Jura';
+    src: local('../fonts/Jura-Bold'), local('../fonts/Jura-Bold'),
+        url('../fonts/Jura-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
