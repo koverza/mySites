@@ -1,0 +1,426 @@
+/* All Scss files*/
+@import 'files';
+
+/********************************/
+
+// Content
+
+.content {
+    width: 100%;
+    margin-top: 15px;
+    border: 2px solid rosybrown;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+.content-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+.search-block {
+    width: 600px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    @media (max-width: 767px) {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+}
+.search-input {
+    width: 100%;
+    margin-right: 15px;
+    height: 35px;
+    border: 2px solid orange;
+    padding-left: 5px;
+    font-size: 14px;
+}
+.search-input:focus{
+    border: 2px solid red;
+    box-shadow: 0px 0px 2px #000;
+}
+.search-button {
+    width: 120px;
+}
+.button-add {
+    width: 150px;
+    @media (max-width: 767px) {
+        margin: 0 auto;
+    }
+}
+.content-courses {
+    margin-top: 15px;
+}
+.course {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 2px solid green;
+    cursor: pointer;
+    margin-top: 15px;
+    color: #000;
+    transition: all 250ms ease;
+    &:hover{
+        box-shadow: 0px 0px 8px rgb(60, 57, 57);
+    }
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+.content-courses + .course{
+    margin-top: 0px;
+}
+.course-text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+.course-title {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    @media (max-width: 574px) {
+        font-size: 22px;
+    }
+}
+.course-subtitle {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    @media (max-width: 574px) {
+        font-size: 15px;
+    }
+}
+.course-information {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 767px) {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+.information-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.information-title {
+    width: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 15px;
+    @media (max-width: 574px) {
+        font-size: 15px;
+    }
+}
+.information-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @media (max-width: 574px) {
+        font-size: 15px;
+    }
+}
+.show-course {
+    width: 150px;
+    @media (max-width: 574px) {
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+// Add
+
+.add-top {
+}
+.add-title {
+    
+		&__block {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+            margin-top: 5px;
+            @media (max-width: 564px) {
+                width: 100%;
+                flex-direction: column;
+                margin-right: 0px;
+            }
+		}
+}
+.add-input {
+    width: 100%;
+}
+.update {
+    width: 135px;
+    @media (max-width: 564px) {
+        margin-top: 15px;
+    }
+}
+.add-description {
+    margin-top: 15px;
+		&__title {
+		}
+}
+.textarea {
+    margin-top: 5px;
+    height: 350px;
+    max-height: 350px;
+    padding: 15px;
+    @media (max-width: 564px) {
+        height: 200px;
+        max-height: 200px;
+    }
+}
+.add-main {
+    margin-top: 15px;
+    border: 2px solid grey;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+.add-left {
+    width: 33%;
+		&__block {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+		}
+
+		&__title {
+            margin-top: 15px;
+            text-align: left;
+		}
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+}
+.add-authors {
+    text-align: center;
+}
+.create-author {
+    width: 150px;
+    margin: 15px auto;
+		&__input {
+            margin-top: 5px;
+		}
+}
+.duration-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    @media (max-width: 564px) {
+        margin-top: 20px;
+    }
+}
+.duration {
+    width: 100%;
+}
+.duration-block__title {
+    text-align: center;
+}
+.duration-left__block{
+    margin-top: 15px;
+}
+.duration{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.duration-result {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.add-right {
+    width: 48%;
+    @media (max-width: 767px) {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+.authors-box {
+}
+.authors {
+    text-align: center;
+}
+.authors-block {
+    width: 320px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 564px) {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+.author {
+    width: 120px;
+    @media (max-width: 564px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+.add-author {
+    width: 150px;
+    @media (max-width: 564px) {
+        margin-top: 15px;
+    }
+}
+.course-authors {
+    margin-top: 40px;
+}
+.delete-author {
+    width: 150px;
+    @media (max-width: 564px) {
+        margin-top: 15px;
+    }
+}
+
+
+// Registration
+.registration{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registration-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+.registration-block {
+    margin-top: 15px;
+		&__title {
+		}
+
+		&__input {
+            margin-top: 5px;
+		}
+}
+.registration-button {
+    width: 200px;
+    margin: 15px auto;
+}
+.registration-link {
+    font-size: 14px;
+    color: blue;
+}
+
+// Login
+
+.login {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+.login-block {
+    margin-top: 15px;
+		&__title {
+		}
+
+		&__input {
+            margin-top: 5px;
+		}
+}
+.registration-button {
+    width: 200px;
+    margin: 15px auto;
+}
+.registration-link {
+    font-size: 14px;
+    color: blue;
+}
+
+// Card
+
+.card {
+    width: 100%;
+}
+.back {
+    color: black;
+}
+.card-title {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.card-row{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+        flex-direction: column-reverse;
+    }
+}
+.card-text {
+    width: 60%;
+    font-size: 20px;
+    line-height: 1.5;
+    @media (max-width: 767px) {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+.card-box {
+    width: 30%;
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+.card-block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+		&__title {
+            font-weight: bold;
+            text-align: left;
+            font-size: 18px;
+		}
+
+		&__text {
+            font-size: 18px;
+            margin-left: 7px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+		}
+}
+
+
+
+
+
+
+
