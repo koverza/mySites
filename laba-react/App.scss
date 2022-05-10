@@ -24,10 +24,14 @@
 
 /* Обнуление */
 
+body{
+    padding: 15px;
+    margin-right: calc(-1 * (100vw - 100%));
+    overflow-x: hidden;
+}
 .main{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 .input {
     width: 100%;
