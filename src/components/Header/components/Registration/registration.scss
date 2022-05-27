@@ -1,0 +1,39 @@
+.registration{
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 574px) {
+        padding: 0px;
+        margin-top: 30px;
+    }
+}
+.registration .button{
+    margin: 15px auto;
+}
+.registration .input{
+    margin-top: 5px;
+}
+.registration-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+.registration-block {
+    margin-top: 15px;
+		&__title {
+		}
+		&__input {
+            margin-top: 5px;
+		}
+}
+.registration-link {
+    font-size: 14px;
+    color: blue;
+}
+.registration-box span{
+    @media (max-width: 574px) {
+        font-size: 14px;
+    }
+}

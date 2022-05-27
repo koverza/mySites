@@ -1,0 +1,160 @@
+.add-wrapper {
+    margin-top: 15px;
+}
+.add-title {
+    
+		&__block {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+            margin-top: 5px;
+            @media (max-width: 564px) {
+                width: 100%;
+                flex-direction: column;
+                margin-right: 0px;
+            }
+		}
+}
+.add-input {
+    width: 100%;
+}
+.update {
+    width: 135px;
+    @media (max-width: 564px) {
+        margin-top: 15px;
+    }
+}
+.add-description {
+    margin-top: 15px;
+		&__title {
+		}
+}
+.textarea {
+    margin-top: 5px;
+    height: 120px;
+    max-height: 120px;
+    padding: 15px;
+    @media (max-width: 564px) {
+        height: 200px;
+        max-height: 200px;
+    }
+}
+.add-main {
+    margin-top: 15px;
+    border: 2px solid grey;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+.add-left {
+    width: 33%;
+		&__block {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+		}
+
+		&__title {
+            margin-top: 15px;
+            text-align: left;
+		}
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+}
+.add-authors {
+    text-align: center;
+}
+.add-authors .button{
+    margin: 7px auto;
+}
+.create-author {
+    width: 150px;
+    margin: 15px auto;
+		&__input {
+            margin-top: 5px;
+		}
+}
+.duration-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    @media (max-width: 564px) {
+        margin-top: 20px;
+    }
+}
+.duration {
+    width: 100%;
+}
+.duration-block__title {
+    text-align: center;
+}
+.duration-left__block{
+    margin-top: 15px;
+}
+.duration{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.duration-result {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.add-right {
+    width: 48%;
+    @media (max-width: 767px) {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+.authors-box {
+}
+.authors {
+    text-align: center;
+}
+.authors-block {
+    width: 320px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 564px) {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+.author {
+    width: 125px;
+    @media (max-width: 564px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+.add-author {
+    width: 150px;
+    @media (max-width: 564px) {
+        margin-top: 15px;
+    }
+}
+.course-authors {
+    margin-top: 40px;
+}
+.delete-author {
+    width: 150px;
+    @media (max-width: 564px) {
+        margin-top: 15px;
+    }
+}
+.empty{
+    text-align: center;
+    margin-top: 20px;
+}
