@@ -1,0 +1,57 @@
+<app-header-component></app-header-component>
+<div class="courses-title-block">
+  <p class="courses-write">Courses</p>
+</div>
+<div *ngIf="addCourse !== true">
+  <div class="search-block">
+    <input id="input" type="text" placeholder="Type to search" class="search-input" [(ngModel)]="filterText">
+    <button class="search-btn">Search</button>
+  </div>
+  <div class="add-course-block">
+    <button class="add-course-btn" (click)="onAddClick()" routerLink="/Courses/new">Add course</button>
+  </div>
+<div *ngIf="courseList$  | async as courseList">
+  <div class="course-card"
+       *ngFor="let course of courseList
+   | filterCourse: filterText
+ | orderBy: filterText
+
+ index as i  " [ngStyle]="{
+border: course.creationDate >= myDate  ? 'solid 2px blue' : 'solid 2px green'
+}">
+
+
+    <div class="course-first-row">
+      <h1> {{course.title}}
+        <div *ngIf="course.topRated == true"
+             [ngClass]="{favouriteClass: true}"
+        >★
+        </div>
+      </h1>
+      <div class="course-first-row-row">
+        <p style="color: #8a8997">{{course.duration
+        // | date:("hh'h'  mm'min'")
+}}&nbsp;min</p>
+        <p style="color: #8a8997">{{course.creationDate | date:"d MMMM, y"}}</p>
+      </div>
+    </div>
+    <div class="course-second-row">
+      <p>{{course.description}}</p>
+      <div class="btn-block">
+        <button class="course-btn1" (click)="onEditClick(course.id)">Edit</button>
+        <button class="course-btn2" (click)="onRemoveClick(course.id, i)">Delete</button>
+      </div>
+    </div>
+
+
+  </div>
+  <div *ngIf="courseList.length !== 0" class="load-more-block">
+    <a class="load-more-link">LOAD MORE</a>
+  </div>
+  <div *ngIf="courseList.length == 0" class="load-more-block">
+    <div class="load-more-link">No DATA. Feel free to add new course</div>
+  </div>
+</div>
+</div>
+
+<app-footer-component></app-footer-component>

@@ -1,0 +1,62 @@
+.form-container {
+  width: 800px;
+  display: flex;
+  padding: 30px 30px;
+  align-items: center;
+  border: solid 2px black;
+  border-radius: 5%;
+
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+}
+
+/*.form {*/
+/*  margin-top: 50px;*/
+/*  margin-bottom: 50px;*/
+/*}*/
+
+.form-input {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 40px;
+  border: 2px solid gray;
+  border-radius: 3%;
+  font-size: 16px;
+}
+
+.form-label {
+  font-size: 22px;
+}
+
+.form-textarea {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 2px solid gray;
+  border-radius: 3%;
+  font-size: 16px;
+}
+
+.cancel-btn {
+  width: 70px;
+  height: 40px;
+  border: solid 2px transparent;
+  border-radius: 15%;
+  margin-right: 30px;
+  color: #9ea1a8;
+  background-color: #d0d0d2 ;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.submit-btn {
+  width: 70px;
+  height: 40px;
+  border: solid 2px transparent;
+  border-radius: 15%;
+  margin-right: 30px;
+  color: white;
+  background-color: #66a300 ;
+  font-size: 16px;
+  font-weight: bold;
+}

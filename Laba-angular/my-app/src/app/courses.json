@@ -1,0 +1,28 @@
+{
+  "courses" : [
+    {
+    "id": 1,
+    "title": "React",
+    "topRated": true,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, aut corporis dolores doloribus eaque",
+    "duration": 120,
+    "creationDate": "12/12/2022"
+  } ,
+    {
+      "id": 2,
+      "title": "Angular",
+      "topRated": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, aut corporis dolores doloribus eaque",
+      "duration": 150,
+      "creationDate": "12/12/2012"
+    },
+    {
+      "id": 3,
+      "title": "Vue",
+      "topRated": true,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, aut corporis dolores doloribus eaque",
+      "duration": 200,
+      "creationDate": "12/12/2020"
+    }
+  ]
+}

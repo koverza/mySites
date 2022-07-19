@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/epam-lab-angular-app.iml" filepath="$PROJECT_DIR$/.idea/epam-lab-angular-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../epam-lab-courses-app/.idea/epam-lab-courses-app.iml" filepath="$PROJECT_DIR$/../epam-lab-courses-app/.idea/epam-lab-courses-app.iml" />
+    </modules>
+  </component>
+</project>
