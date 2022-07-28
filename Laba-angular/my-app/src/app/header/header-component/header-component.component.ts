@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {UserService} from "../../user.service";
+import {UserService} from "../../services/user.service";
 import {Router} from "@angular/router";
-import {AuthService} from "../../auth.service";
+import {AuthService} from "../../services/auth.service";
 
 @Component({
   selector: 'app-header-component',
@@ -14,7 +14,8 @@ export class HeaderComponentComponent implements OnInit {
   constructor(private userService: UserService, private route: Router, private authService: AuthService) {}
 
   logoutClick() {
-    this.authService.logout()
+    // this.authService.logout()
+    // this.route.navigate(['/login'])
     return  this.userService.logout()
 
   }

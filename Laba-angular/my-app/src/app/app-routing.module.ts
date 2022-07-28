@@ -8,11 +8,12 @@ import {EditPageComponent} from "./edit-page/edit-page.component";
 import {CourseGuardService} from "./course-guard.service";
 
 const routes: Routes = [
-  {path: 'Login', component: LoginPageComponent},
-  {path: 'Courses', component: CoursesComponentComponent, canActivate: [CourseGuardService]},
-  {path: 'Courses/new', component: AddCourseComponent},
-  {path: 'Courses/edit/:id', component: EditPageComponent},
-  {path: '**', component: NotFoundPageComponent},
+  {path: 'login', component: LoginPageComponent},
+  {path: 'courses', component: CoursesComponentComponent, canActivate: [CourseGuardService]},
+  {path: 'courses/new', component: AddCourseComponent},
+  {path: 'courses/edit/:id', component: EditPageComponent},
+  { path: '**', redirectTo: 'login' }
+  // {path: '**', component: NotFoundPageComponent},
 ];
 
 @NgModule({

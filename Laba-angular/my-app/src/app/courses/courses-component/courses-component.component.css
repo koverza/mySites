@@ -212,3 +212,7 @@ button:hover:after {
 .fill-field {
   color: #b00020;
 }
+
+.course-list {
+  margin-bottom: 30px;
+}

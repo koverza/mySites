@@ -8,16 +8,16 @@ import {FooterComponentComponent} from './footer/footer-component/footer-compone
 import {LogoComponentComponent} from './logo/logo-component/logo-component.component';
 import {CoursesComponentComponent} from './courses/courses-component/courses-component.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {FilterPipe} from "./filter.pipe";
-import {OrderByPipe} from "./orderBy.pipe";
+import {FilterPipe} from "./pipes/filter.pipe";
+import {OrderByPipe} from "./pipes/orderBy.pipe";
 import { LoginPageComponent } from './login-page/login-page.component';
 import { AddCourseComponent } from './add-course/add-course.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { EditPageComponent } from './edit-page/edit-page.component';
-import {CartService} from "./cart.service";
+import {CartService} from "./services/cart.service";
 import {CourseGuardService} from "./course-guard.service";
-import {UserService} from "./user.service";
-import {AuthService} from "./auth.service";
+import {UserService} from "./services/user.service";
+import {AuthService} from "./services/auth.service";
 
 @NgModule({
   declarations: [

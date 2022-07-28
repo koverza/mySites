@@ -1,6 +1,6 @@
 <div class="add-course-form" >
   <div class="form-container">
-    <form class="form" [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+    <form class="form" [formGroup]="reactiveForm" >
       <h1 class="newCourseTitle">New course</h1>
       <label for="title" class="form-label title-label">Title</label><br>
       <input id="title" type="text" placeholder="Text input" class="form-input" formControlName="title" name="first">
@@ -14,24 +14,21 @@
       <div>
       <span style="color: red" *ngIf ="!reactiveForm.get('description').valid">The description you entered is not a valid</span>
     </div>
-<!--      <b *ngIf="description.length < 1" class="fill-field">&nbsp;*fill this field</b><br>-->
       <label for="duration" class="form-label duration-label">Duration</label><br>
       <input id="duration" type="number" placeholder="minutes" class="form-input " formControlName="duration" name="first">
       <div>
       <span style="color: red" *ngIf ="!reactiveForm.get('duration').valid">The duration you entered is not a valid</span>
     </div>
-<!--      <b *ngIf="duration.length < 1" class="fill-field">&nbsp;*fill this field</b><br>-->
       <label for="date" class="form-label date-label">Date</label><br>
-      <input id="date" type="text" class="form-input" formControlName="creationDate" name="first"><br>
-<!--      <b *ngIf="creationDate.length < 1" class="fill-field">&nbsp;*fill this field</b><br>-->
-      <label for="authors" class="form-label">authors</label><br>
-      <input id="authors" type="text" placeholder="Start typing" class="form-input"><br>
-<!--      <b *ngIf="title.length < 1" class="fill-field">&nbsp;*fill this field</b><br>-->
+      <input id="date" type="text" class="form-input" formControlName="creationDate" name="first">
       <div>
-
+        <span style="color: red" *ngIf ="!reactiveForm.get('creationDate').valid">The creation date you entered is not a valid</span>
+      </div><br>
+<!--      <label for="authors" class="form-label">authors</label><br>-->
+<!--      <input id="authors" type="text" placeholder="Start typing" class="form-input"><br>-->
+      <div>
         <button class="cancel-btn" (click)="onCancelNewCourseClick()">Cancel</button>
         <button class="submit-btn"  (click)="navToCourses()" >Save</button>
-<!--        <input type="submit" class="submit-btn" (click)="navToCourses()" value="Save">-->
       </div>
     </form>
   </div>

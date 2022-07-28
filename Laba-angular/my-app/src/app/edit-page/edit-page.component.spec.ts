@@ -2,8 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { EditPageComponent } from './edit-page.component';
 import {RouterModule} from "@angular/router";
-import {AuthService} from "../auth.service";
-import {UserService} from "../user.service";
+import {AuthService} from "../services/auth.service";
+import {UserService} from "../services/user.service";
 
 describe('EditPageComponent', () => {
   let component: EditPageComponent;

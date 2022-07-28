@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {CartService} from "../cart.service";
+import {CartService} from "../services/cart.service";
 import {Router} from "@angular/router";
-import {FormControl, FormGroup,  Validators} from "@angular/forms";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-add-course',
@@ -18,43 +18,27 @@ export class AddCourseComponent implements OnInit {
 
   }
 
-
-  onSaveNewCourseClick() {
-
-
-  }
-
   onCancelNewCourseClick() {
-
+    this.route.navigate(['/courses'])
   }
-
 
   ngOnInit(): void {
     this.reactiveForm = new FormGroup({
       id: new FormControl(Math.random()),
-      title: new FormControl(null,  Validators.required),
+      title: new FormControl(null, Validators.required),
       topRated: new FormControl(false),
       description: new FormControl(null, Validators.required),
-      duration: new FormControl(null,  Validators.required),
-      creationDate: new FormControl(new Date()),
+      duration: new FormControl(null, Validators.required),
+      creationDate: new FormControl(new Date(), Validators.required),
     })
-
-    this.cartService.courseList$.subscribe(arr => {
-      this.coursesList = arr
-    })
-
-
   }
 
   navToCourses() {
-    this.cartService.addCourse( this.reactiveForm.value);
-    this.route.navigate(['/Courses'],
-      {state: {data: this.reactiveForm.value }})
+    this.cartService.addCourse(this.reactiveForm.value);
+    this.route.navigate(['/courses'])
   }
 
 
-  onSubmit() {
-    console.log(this.reactiveForm)
-  }
+
 
 }

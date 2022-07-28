@@ -1,8 +1,8 @@
 import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot} from "@angular/router";
 import {Observable} from "rxjs";
 import {Injectable} from "@angular/core";
-import {UserService} from "./user.service";
-import {AuthService} from "./auth.service";
+import {UserService} from "./services/user.service";
+import {AuthService} from "./services/auth.service";
 
 @Injectable()
 export class CourseGuardService implements CanActivate {
@@ -11,7 +11,7 @@ export class CourseGuardService implements CanActivate {
 
   }
 
-  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
+  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): any {
     // return true;
 
     if (this.userService.isAuthenticated()) {
@@ -19,8 +19,8 @@ export class CourseGuardService implements CanActivate {
       return true
     } else {
       console.log(this.userService.isAuthenticated())
-      // this.router.navigate(['/Login'])
-      return false;
+      this.router.navigate(['/login'])
+      // return false;
     }
   }
 
