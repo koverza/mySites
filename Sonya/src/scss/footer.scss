@@ -350,6 +350,7 @@
     width: 100%;
     height: 85px;
     background: #343240;
+    padding: 15px;
 
     @media (max-width: $ipod + px) {
         display: flex;
@@ -357,7 +358,6 @@
         justify-content: center;
         flex-direction: column;
         height: auto;
-        padding: 15px;
     }
 }
 
@@ -369,7 +369,7 @@
 }
 .footer-box .footer-column-bottom {
     display: none;
-    @media (max-width: $ipod + px) {
+    @media (max-width: $ipad + px) {
         display: block;
         width: 100%;
         margin-top: 10px;
@@ -381,7 +381,6 @@
 .footer-policy{
     display: none;
     @media (max-width: $ipad + px) {
-        margin-top: 30px;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -399,10 +398,9 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color: #757171;
+    color: $white;
     @media (max-width: $ipod + px) {
-        color: $white;
         text-align: center;
         margin-bottom: 15px;
-     }
+    }
 }
