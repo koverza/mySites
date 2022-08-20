@@ -3186,9 +3186,15 @@
 .catalogRecipes-block {
     width: 100%;
     padding: 18px 16px;
+    min-height: 226px;
     background-color: #FBF8F1;
+    display: flex;
+    flex-direction: column;
     @media (max-width: $ipad + px) {
         padding: 15px;
+    }
+    @media (max-width: $iphone + px) {
+        min-height: auto;
     }
     &__title {
         font-family: Segoe;
@@ -3210,6 +3216,12 @@
         font-size: 16px;
         line-height: 16px;
         color: #403E3E;
+        margin-top: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
         @media (max-width: $ipod + px) {
             font-size: 14px;
         }
@@ -3227,6 +3239,10 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 13px;
+    margin-top: auto;
+    @media (max-width: $iphone + px) {
+        margin-top: 13px;
+    }
     &__eye {
         display: flex;
         align-items: center;
@@ -3290,5 +3306,613 @@
         font-size: 12px;
         line-height: 16px;
         color: #403E3E;
+    }
+}
+
+//==================Recipe==============================================//
+
+.recipe {
+    width: 100%;
+    background-color: $white;
+}
+.recipe-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    @media (max-width: $ipad + px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.recipe-photo {
+    margin-right: 40px;
+    @media (max-width: 1100px) {
+        margin-right: 20px;
+    }
+    @media (max-width: $ipad + px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    @media (max-width: $iphone + px) {
+        margin-bottom: 12px;
+    }
+}
+.recipe-img {
+    width: 460px;
+    @media (max-width: $ipad + px) {
+        width: 520px;
+    }
+    @media (max-width: $iphone + px) {
+        width: 100%;
+    }
+}
+.recipe-info {
+        width: 100%;
+		&__name {
+            font-family: Segoe;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 50px;
+            color: $black;
+		}
+
+		&__text {
+            margin-top: 6px;
+            font-size: 14px;
+		}
+}
+.recipe-box {
+    margin-top: 18px;
+		&__name {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 150%;
+            color: $black;
+		}
+
+		&__text {
+            font-size: 14px;
+		}
+}
+
+.recipeCook {
+    width: 100%;
+    background-color: $white;
+}
+.recipeCook-inner {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    @media (max-width: $ipad + px) {
+        padding-bottom: 40px;
+    }
+    @media (max-width: $ipod + px) {
+        padding-bottom: 30px;
+    }
+    @media (max-width: $iphone + px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+.recipeCook-title {
+    text-align: center;
+    @media (max-width: $iphone + px) {
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
+.recipeCook-row {
+    margin-top: 39px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: $ipod + px) {
+        margin-top: 30px;
+    }
+    @media (max-width: $iphone + px) {
+        margin-top: 20px;
+    }
+}
+.recipeCook-item {
+    width: 32%;
+    margin-top: 52px;
+    @media (max-width: $ipad + px) {
+        margin-top: 35px;
+    }
+    @media (max-width: $ipod + px) {
+        margin-top: 20px;
+        width: 48%;
+    }
+    @media (max-width: $iphone + px) {
+        width: 100%;
+        margin-top: 15px;
+    }
+		&__img {
+            width: 100%;
+		}
+
+		&__content {
+            min-height: 170px;
+            padding: 8px 20px;
+            background: #FBF8F1;
+            @media (max-width: $ipad + px) {
+                min-height: 200px;
+                padding: 8px 12px;
+            }
+            @media (max-width: $ipod + px) {
+                min-height: 170px;
+            }
+            @media (max-width: $iphone + px) {
+                min-height: auto;
+            }
+		}
+
+		&__content-title {
+            font-family: Segoe;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 50px;
+            color: $black;
+		}
+
+		&__content-text {
+            padding-top: 5px;
+            border-top: 1px solid #CDCDCD;
+            @media (max-width: $ipod + px) {
+                font-size: 14px;
+            }
+        }
+}
+.recipeCook-item:nth-child(1),
+.recipeCook-item:nth-child(2),
+.recipeCook-item:nth-child(3) {
+    margin-top: 0;
+    @media (max-width: $ipod + px) {
+        margin-top: 20px;
+    }
+
+}
+.recipeCook-item:nth-child(1),
+.recipeCook-item:nth-child(2) {
+    @media (max-width: $ipod + px) {
+        margin-top: 0;
+    }
+}
+.recipeCook-item:nth-child(2) {
+    @media (max-width: $iphone + px) {
+        margin-top: 15px;
+    }
+}
+.recipeCook-item:nth-child(1) {
+    @media (max-width: $iphone + px) {
+        margin-top: 0;
+    }
+}
+
+.recipeVideoCook {
+    width: 100%;
+    background-color: $white;
+}
+.recipeVideoCook-inner {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    @media (max-width: $ipad + px) {
+        padding-top: 40px;
+    }
+    @media (max-width: $ipod + px) {
+        padding-top: 30px;
+    }
+    @media (max-width: $iphone + px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+.recipeVideoCook-title {
+    text-align: center;
+}
+.recipeVideoCook-video {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recipeVideoCook-video iframe {
+    @media (max-width: $iphone + px) {
+        height: 220px;
+    }
+}
+.recipeVideoCook-form {
+    margin-top: 61px;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 38px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #9F9F9F;
+    @media (max-width: $ipod + px) {
+        padding: 20px;
+        margin-top: 40px;
+    }
+    @media (max-width: $iphone + px) {
+        border: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+}
+.recipeVideoCook-block {
+    @media (max-width: $ipod + px) {
+        width: 100%;
+    }
+    &__title {
+        display: block;
+        font-family: Segoe;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 50px;
+        color: #35414D;
+    }
+}
+.recipeVideoCook-box {
+    margin-top: 19px;
+    background: #FBF8F1;
+    border-radius: 10px;
+    padding: 24px 43px;
+    width: 600px;
+    @media (max-width: $ipod + px) {
+        width: 100%;
+    }
+    @media (max-width: $iphone + px) {
+        padding: 15px;
+        margin-top: 15px;
+    }
+    &__top {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        @media (max-width: $iphone + px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__top-img {
+        margin-right: 16px;
+    }
+
+    &__top-textarea {
+        width: 100%;
+        padding: 10px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        height: 108px;
+        color: #ABABAB;
+        @media (max-width: $iphone + px) {
+            margin-top: 15px;
+        }
+    }
+    &__top-textarea::placeholder{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        color: #ABABAB;
+    }
+    &__button {
+        margin-left: auto;
+        margin-top: 18px;
+        @media (max-width: $iphone + px) {
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+    }
+}
+
+.recipeInteresting {
+    width: 100%;
+    background-color: $white;
+}
+.recipeInteresting-inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media (max-width: $ipod + px) {
+        padding-top: 33px;
+        padding-bottom: 33px;
+    }
+    @media (max-width: $iphone + px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+.recipeInteresting-title {
+    text-align: left;
+        @media (max-width: $iphone + px) {
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+.recipeInteresting-row {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 59px;
+        @media (max-width: $ipod + px) {
+            flex-direction: column;
+            align-items: center;
+        }
+}
+.recipeInteresting-item {
+    width: 32%;
+    @media (max-width: $ipod + px) {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    @media (max-width: $iphone + px) {
+        width: 100%;
+    }
+}
+.recipeInteresting-item:last-child{
+    @media (max-width: $ipod + px) {
+        margin-bottom: 0px;
+    }
+}
+.recipeInteresting-item-photo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recipeInteresting-content {
+    width: 100%;
+    padding: 16px 12px;
+    background: #F0F0F0;
+    min-height: 286px;
+    @media (max-width: $ipod + px) {
+        min-height: auto;
+    }
+		&__title {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 36px;
+            letter-spacing: -0.015em;
+            color: #403E3E;
+		}
+		&__box {
+            margin-top: 9px;
+		}
+        &__text{
+            @media (max-width: $iphone + px) {
+                font-size: 14px;
+            }
+        }
+		&__description {
+            margin-top: 70px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: $black;
+            @media (max-width: $ipad + px) {
+                margin-top: 40px;
+            }
+		}
+}
+.recipeInteresting-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 26px;
+    @media (max-width: 1140px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: $iphone + px) {
+        margin-top: 15px;
+    }
+		&__more {
+            width: 148px;
+            height: 33px;
+            border: 1px solid #D56359;
+            border-radius: 50px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 36px;
+            letter-spacing: -0.015em;
+            color: #666666;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: 424px) {
+                width: 100%;
+            }
+		}
+
+		&__youtube {
+            display: flex;
+            align-items: center;
+		}
+
+		&__youtube-text {
+            font-size: 13px;
+            margin-right: 10px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 36px;
+            letter-spacing: -0.015em;
+            color: #403E3E;
+		}
+}
+
+// Talk
+
+.talk-title.catalogRecipes-block__title{
+    overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+    width: 100%;
+    line-height: 26px;
+    font-size: 18px;
+}
+.talk-icons .catalogRecipes-icons-row__comments{
+    margin-left: 23px;
+}
+.talk-continue{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.015em;
+    color: $red;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    @media (max-width: $iphone + px) {
+        margin-bottom: 0px;
+    }
+}
+
+//==================Article==============================================//
+
+.article {
+    width: 100%;
+    background-color: $white;
+}
+.article-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    @media (max-width: $ipad + px) {
+        flex-direction: column;
+    }
+}
+.article-slider {
+    display: flex;
+    align-items: center;
+    margin-right: 41px;
+    @media (max-width: 1100px) {
+        margin-right: 20px;
+    }
+    @media (max-width: $ipad + px) {
+        align-items: flex-start;
+        justify-content: center;
+        margin-right: 0;
+        margin: 0 auto;
+        width: 468px;
+    }
+    @media (max-width: $iphone + px) {
+        width: 300px;
+    }
+}
+.article-small{
+    margin-right: 7px;
+}
+.article-slider-small {
+    width: 108px;
+    height: 535px;
+    @media (max-width: $ipad + px) {
+        height: 445px;
+    }
+    @media (max-width: $iphone + px) {
+        height: 200px;
+        width: 50px;
+    }
+}
+.article-slider-small .swiper-slide .article-slider-small__img {
+    @media (max-width: $iphone + px) {
+        height: 100%;
+    }
+}
+.article-big{
+    width: 425px;
+    @media (max-width: $iphone + px) {
+        width: 158px;
+    }
+}
+.article-slider-big {
+    height: 535px;
+    @media (max-width: $ipad + px) {
+        height: 445px;
+    }
+    @media (max-width: $iphone + px) {
+        height: 200px;
+    }
+}
+.article-slider-big .swiper-slide .article-slider-big__img{
+    width: 100%;
+    @media (max-width: $iphone + px) {
+        width: auto;
+        height: 100%;
+    }
+}
+.article-info {
+    width: 100%;
+    @media (max-width: $ipad + px) {
+        margin-top: 20px;
+    }
+		&__date {
+            display: block;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 36px;
+            letter-spacing: -0.015em;
+            color: #989898;
+            @media (max-width: $iphone + px) {
+                font-size: 14px;
+            }
+		}
+
+		&__title {
+            font-family: Segoe;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 34px;
+            color: #000000;
+            margin-top: 6px;
+            @media (max-width: $iphone + px) {
+                font-size: 18px;
+                line-height: 26px;
+            }
+		}
+
+		&__text {
+            font-size: 16px;
+            margin-top: 18px;
+            @media (max-width: $iphone + px) {
+                font-size: 14px;
+            }
+		}
+}
+.article-text {
+    font-size: 16px;
+    margin-top: 67px;
+    @media (max-width: $ipod + px) {
+        margin-top: 20px;
+    }
+    @media (max-width: $iphone + px) {
+        font-size: 14px;
     }
 }

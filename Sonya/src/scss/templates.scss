@@ -33,7 +33,7 @@ main{
             margin-right: 3px;
             color: rgba(19, 19, 19, 0.5);
             @media (max-width: $iphone + px) {
-                font-size: 14px;
+                font-size: 13px;
             }
         }
 
@@ -45,7 +45,7 @@ main{
             line-height: 28px;
             color: #131313;
             @media (max-width: $iphone + px) {
-                font-size: 14px;
+                font-size: 13px;
             }
 		}
 }
@@ -177,6 +177,9 @@ main{
 }
 .bg10{
     background: url('@img/catalogRecipes/catalogRecipes-big.png') center no-repeat;
+}
+.bg11{
+    background: url('@img/talk/talk-big.png') 41% no-repeat;
 }
 .tegs-row {
     width: 100%;

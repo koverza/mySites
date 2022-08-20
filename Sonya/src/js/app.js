@@ -175,13 +175,12 @@ selects.forEach((select) => {
 })
 
 // Swiper
-
-/* Big slider */
-const bigSlider = new Swiper('.card-item-swiper', {
+/* .card-item-swiper - Big slider */
+const cardBigSlider = new Swiper('.card-item-swiper', {
     loop: true,
 })
-/* Small slider */
-const smallSlider = new Swiper('.card-item-small', {
+/* .card-item-small - Small slider */
+const cardSmallSlider = new Swiper('.card-item-small', {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 60,
@@ -206,6 +205,32 @@ const smallSlider = new Swiper('.card-item-small', {
         },
     }
 })
+cardBigSlider.controller.control = cardSmallSlider
+cardSmallSlider.controller.control = cardBigSlider
 
-bigSlider.controller.control = smallSlider
-smallSlider.controller.control = bigSlider
+// .article-slider-small - Small slider 
+const articleSmallSlider = new Swiper('.article-slider-small', {
+    direction: 'vertical',
+    loop: false,
+    slidesPerView: 5,
+    spaceBetween: 29,
+    breakpoints: {
+        320: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        575: {
+            slidesPerView: 4,
+        },
+        992: {
+            slidesPerView: 5,
+        },
+    }
+})
+// .article-slider-big - Big slider 
+const articleBigSlider = new Swiper('.article-slider-big', {
+    direction: 'vertical',
+    loop: false,
+})
+articleBigSlider.controller.control = articleSmallSlider
+articleSmallSlider.controller.control = articleBigSlider
