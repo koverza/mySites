@@ -20,12 +20,12 @@ body {
     min-height: 100%;
 }
 .container {
-    max-width: 1277px;
+    max-width: $maxWidthContainer + px;
     margin: 0 auto;
     padding: 0 15px;
 }
 .max-width {
-    max-width: 1920px;
+    max-width: $maxWidth + px;
     margin: 0 auto;
 }
 ::-webkit-scrollbar {

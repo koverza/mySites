@@ -1,23 +1,14 @@
-/* Zero */
-@import "zero";
-
 /* Variables */
 @import "variables";
 
-/* Templates */
-@import "templates";
-
-/* Fonts */
-// @import "fonts";
-
-/* Font Awesome */
-@import "all";
-
-/* Icomoon */
-@import "icons";
+/* Zero */
+@import "zero";
 
 /* Mixins */
 @import "mixins";
+
+/* Templates */
+@import "templates";
 
 /* Header */
 @import "header";
@@ -25,50 +16,62 @@
 /* Footer */
 @import "footer";
 
+/* Fonts */
+// @import "fonts";
+
+/* Font Awesome */
+// @import "other/all";
+
+/* Icomoon */
+// @import "other/icons";
+
+/* Loaders */
+// @import "other/loaders";
+
 /* Burger Menu */
-// @import "burger";
+// @import "other/burger";
 
 /* More */
-// @import "more";
+// @import "other/more";
 
 /* Pagination */
-// @import "pagination";
+// @import "other/pagination";
 
 /* Checkbox-radio */
-// @import "checkbox-radio";
+// @import "other/checkbox-radio";
 
 /* Popup */
-// @import "popup";
+// @import "other/popup";
 
 /* Quantity */
-// @import "quantity";
+// @import "other/quantity";
 
 /* Spoiler */
-// @import "spoiler";
+// @import "other/spoiler";
 
 /* Select*/
-// @import "select";
+// @import "other/select";
 
 /* Switch */
-// @import "switch";
+// @import "other/switch";
 
 /* Tabs */
-// @import "tabs";
+// @import "other/tabs";
 
 /* Zoom */
-// @import "zoom";
+// @import "other/zoom";
 
 /* Rating */
-// @import "rating";
+// @import "other/rating";
 
 /* Rating + Score */
-// @import "ratingScore";
+// @import "other/ratingScore";
 
 /* Swiper */
-// @import "swiper.min.scss";
+// @import 'node_modules/swiper/swiper-bundle.min';
 
 /* NoUiSlider */
-// @import "nouislider.min.scss";
+// @import 'node_modules/nouislider/dist/nouislider';
 
 /* Range */
-// @import "range.scss";
+// @import "other/range.scss";

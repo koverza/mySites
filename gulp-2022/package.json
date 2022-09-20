@@ -17,8 +17,9 @@
 		"gulp-cli": "^2.3.0"
 	},
 	"devDependencies": {
+		"@fortawesome/fontawesome-free": "latest",
 		"browser-sync": "latest",
-		"chart.js": "^3.9.1",
+		"chart.js": "latest",
 		"del": "latest",
 		"gulp": "latest",
 		"gulp-autoprefixer": "latest",
@@ -43,6 +44,7 @@
 		"gulp-webp-html-nosvg": "latest",
 		"gulp-webpcss": "latest",
 		"gulp-zip": "latest",
+		"nouislider": "latest",
 		"sass": "latest",
 		"swiper": "latest",
 		"vinyl-ftp": "latest",
