@@ -7,10 +7,10 @@ import ifPlugin from "gulp-if"; // Условное ветвление
 
 // Экспортируем объект
 export const plugins = {
-	replace: replace,
-	plumber: plumber,
-	notify: notify,
-	browsersync: browsersync,
-	newer: newer,
-	if: ifPlugin
-}
+  replace: replace,
+  plumber: plumber,
+  notify: notify,
+  browsersync: browsersync,
+  newer: newer,
+  if: ifPlugin,
+};
