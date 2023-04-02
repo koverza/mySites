@@ -1,3 +1,5 @@
+export function select() {
+console.log('select works');
 // Для корректного отображения в IE
 if (window.NodeList && !NodeList.prototype.forEach) {
     NodeList.prototype.forEach = function (callback, thisArg) {
@@ -46,3 +48,4 @@ selects.forEach((select) => {
     })
 
 })
+}

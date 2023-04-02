@@ -1,42 +1,42 @@
 .tabs {
-    width: 600px;
+  width: 600px;
 }
 
 .tabs-buttons {
-    display: flex;
+  display: flex;
 }
 
 .tabs-button {
-    border: 1px solid #ccc;
-    background-color: #fff;
-    border-bottom: none;
-    border-right: none;
-    color: black;
-    cursor: pointer;
-    height: 50px;
-    text-transform: uppercase;
-    width: 150px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-bottom: none;
+  border-right: none;
+  color: black;
+  cursor: pointer;
+  height: 50px;
+  text-transform: uppercase;
+  width: 150px;
 }
 
 .tabs-button.active {
-    background-color: teal;
-    color: white;
+  background-color: teal;
+  color: white;
 }
 
 .tabs-button:last-child {
-    border-right: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 .tabs-contents {
-    width: 100%;
+  width: 100%;
 }
 
 .tab-content {
-    border: 1px solid #ccc;
-    display: none;
-    padding: 20px;
+  border: 1px solid #ccc;
+  display: none;
+  padding: 20px;
 }
 
 .tab-content.active {
-    display: block;
+  display: block;
 }

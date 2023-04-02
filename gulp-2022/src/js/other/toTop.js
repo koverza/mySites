@@ -1,4 +1,6 @@
-// Button to top
+export function toTop() {
+    console.log('toTop works');
+    // Button to top
 window.onscroll = () => {
     // Button to top
     const toTop = document.querySelector('.toTop')
@@ -9,4 +11,5 @@ window.onscroll = () => {
     } else {
         toTop.classList.remove('toTop-fixed')
     }
+}
 }

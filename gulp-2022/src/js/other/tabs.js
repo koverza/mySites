@@ -1,4 +1,6 @@
-const tabs = document.querySelectorAll('.tabs')
+export function tabs() {
+    console.log('tabs works');
+    const tabs = document.querySelectorAll('.tabs')
 
 tabs.forEach(tab => {
     const tabButtons = tab.querySelectorAll('.tabs-button')
@@ -28,3 +30,4 @@ tabs.forEach(tab => {
 
     tab.querySelector('.tabs-button:nth-child(2)').click()
 })
+}

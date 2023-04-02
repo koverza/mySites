@@ -2,7 +2,7 @@
 @import "variables";
 
 /* Zero */
-@import "zero";
+@import "reset";
 
 /* Mixins */
 @import "mixins";
@@ -22,7 +22,7 @@
 /* Font Awesome */
 // @import "other/all";
 
-/* Icomoon */
+/* IcoMoon */
 // @import "other/icons";
 
 /* Loaders */
@@ -68,9 +68,11 @@
 // @import "other/ratingScore";
 
 /* Swiper */
+// @import "other/swiper.min";
 // @import 'node_modules/swiper/swiper-bundle.min';
 
 /* NoUiSlider */
+// @import "other/nouislider.min";
 // @import 'node_modules/nouislider/dist/nouislider';
 
 /* Range */

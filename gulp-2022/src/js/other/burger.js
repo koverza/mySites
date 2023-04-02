@@ -1,6 +1,12 @@
-let burger = document.querySelector('.burger')
+export function burger() {
+    console.log('burger works');
+    let burger = document.querySelector('.burger')
 
-burger.addEventListener('click', (e) => {
-    e.preventDefault()
-    burger.classList.toggle('burger-active')
-})
+    if(burger) {
+        burger.addEventListener('click', (e) => {
+            e.preventDefault()
+            burger.classList.toggle('burger-active')
+        })
+    }
+
+}
