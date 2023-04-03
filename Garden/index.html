@@ -24,7 +24,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 	<!-- Styles -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230402170026" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230403221607" />
 	
 	<!-- Title page -->
 	<title>Home</title>
@@ -32,12 +32,30 @@
 
 <body>
   <main class="wrapper max-width headerImage">
-    <section class="intro">
-      <div class="container">
-        <div class="intro-inner">
-          <img src="img/logo.svg" alt="logo" class="intro-logo" />
+    <section class="thanksSwiper swiper padding">
+      <div class="thanksSwiper-block">
+        <div class="container">
+          <div class="thanksSwiper-logo">
+            <img src="img/logo-icon.svg" alt="logo" />
+            <span class="logo-text">ORLEN <br> VIETUVA</span>
+          </div>
         </div>
       </div>
+      <div class="swiper-wrapper">
+        <div class="thanksSwiperSlide4 swiper-slide">
+
+        </div>
+        <div class="thanksSwiperSlide2 swiper-slide">
+
+        </div>
+        <div class="thanksSwiperSlide3 swiper-slide">
+
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </section>
     <section class="our" id="our">
       <div class="container">
@@ -46,13 +64,16 @@
             <header class="header">
   <div class="container">
     <div class="our-top__block header-navigation">
-        <img src="img/logo.svg" alt="image"class="our-top__block-img">
+        <div class="thanksSwiper-logo">
+          <img src="img/logo-icon.svg" alt="logo" />
+          <span class="logo-text">ORLEN <br> VIETUVA</span>
+        </div>
         <nav class="our-navigation">
           <a href="#work" class="our-navigation__link">Послуги</a>
-          <a href="#calc" class="our-navigation__link">Калькулятор</a>
-          <a href="#quality" class="our-navigation__link">Сертифікати якості</a>
-          <a href="#clients" class="our-navigation__link">Новини</a>
           <a href="#our" class="our-navigation__link">Про компанію</a>
+          <a href="#clients" class="our-navigation__link">Новини</a>
+          <a href="#quality" class="our-navigation__link">Сертифікати якості</a>
+          <a href="#calc" class="our-navigation__link">Калькулятор</a>
           <a href="#footer" class="our-navigation__link">Контакти</a>
         </nav>
         <div class="burger-wrapper">
@@ -63,7 +84,6 @@
       </div>
   </div>
 </header>
-
 
 
 
@@ -83,7 +103,7 @@
             </div>
           </div>
           <div class="our-block">
-            <span class="our-small-title small-title">Garden Petroleum</span>
+            <span class="our-small-title small-title">Orlen Vietuva</span>
             <h1 class="our-title title">Наша компанія</h1>
             <div class="our-block__row our-row">
               <div class="our-row__box our-box">
@@ -161,26 +181,24 @@
             </div>
             <div class="work-box">
               <img src="img/work-icon2.svg" alt="image" class="work-box__img" />
-              <span class="work-box__title">Своєчасне виконання</span>
+              <span class="work-box__title">Поставку без втрат</span>
               <p class="work-box__subtitle">
-                Диспетчер формує оптимальний маршрут. І виконуємо доставку в
-                узгоджений термін з Вами.
+                Наші бензовози обладнані лічильниками і ми слідкуємо, щоб не було втрат.
               </p>
             </div>
             <div class="work-box">
               <img src="img/work-icon3.svg" alt="image" class="work-box__img" />
-              <span class="work-box__title">Своєчасне виконання</span>
+              <span class="work-box__title">Сертифіковане пальне</span>
               <p class="work-box__subtitle">
-                Диспетчер формує оптимальний маршрут. І виконуємо доставку в
-                узгоджений термін з Вами.
+                Сертифіковане пальне Oil Start має партнерські договори з виробниками нафтопродуктів. Ви отримуєте
+                тільки якісне паливо з усіма необхідними сертифікатами.
               </p>
             </div>
             <div class="work-box">
               <img src="img/work-icon4.svg" alt="image" class="work-box__img" />
-              <span class="work-box__title">Своєчасне виконання</span>
+              <span class="work-box__title">Індивідуальний підхід</span>
               <p class="work-box__subtitle">
-                Диспетчер формує оптимальний маршрут. І виконуємо доставку в
-                узгоджений термін з Вами.
+                Гнучкий підхід до потреб кожного клієнта.
               </p>
             </div>
           </div>
@@ -194,7 +212,8 @@
             <div class="work-bottom__block2 work-block">
               <div class="work-texts">
                 <span class="work-block__title">Ми дотримуємося стандратів</span>
-                <span class="work-block__subtitle">Наше пальне відповідає всім українським ДСТУ, а також вимогам європейського екологічного стандарту ЄВРО-5</span>
+                <span class="work-block__subtitle">Наше пальне відповідає всім українським ДСТУ, а також вимогам
+                  європейського екологічного стандарту ЄВРО-5</span>
               </div>
             </div>
           </div>
@@ -259,7 +278,12 @@
         <div class="quality-inner padding">
           <h1 class="quality-title title">Сертифікат якості</h1>
           <div class="quality-block">
-            <picture><source srcset="img/quality-img.webp" type="image/webp"><img src="img/quality-img.png" alt="image" class="quality-block__img" /></picture>
+            <a href="" target="_blank">
+              <picture><source srcset="img/quality-img.webp" type="image/webp"><img src="img/quality-img.png" alt="image" class="quality-block__img" /></picture>
+            </a>
+            <a href="" target="_blank">
+              <picture><source srcset="img/quality-img2.webp" type="image/webp"><img src="img/quality-img2.png" alt="image" class="quality-block__img" /></picture>
+            </a>
           </div>
         </div>
       </div>
@@ -408,7 +432,7 @@
 </footer>
 
   </main>
-  <script src="js/app.min.js?_v=20230402170026"></script>
+  <script src="js/app.min.js?_v=20230403221607"></script>
 
 </body>
 
