@@ -1,0 +1,27 @@
+// Switch
+.switch {
+  width: 80px;
+  height: 35px;
+  background-color: grey;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 5px;
+  transition: all 250ms ease 0s;
+  cursor: pointer;
+
+  &__ball {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 250ms ease 0s;
+  }
+  &__ball.active {
+    transform: translate(calc(100% + 20px), 0%);
+  }
+}
+.switch.active {
+  background-color: rgb(56, 150, 56);
+}

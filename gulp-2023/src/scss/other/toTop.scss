@@ -1,0 +1,12 @@
+.toTop {
+  @include adaptiveValue("width", 50, 40, 0);
+  @include adaptiveValue("height", 50, 40, 0);
+  background-color: teal;
+  border-radius: 50%;
+}
+
+.toTop.active {
+  position: fixed;
+  @include adaptiveValue("right", 100, 25, 0);
+  @include adaptiveValue("bottom", 100, 25, 0);
+}
