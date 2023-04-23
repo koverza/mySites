@@ -24,7 +24,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 	<!-- Styles -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230411150332" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230423200212" />
 	
 	<!-- Title page -->
 	<title>Home</title>
@@ -32,28 +32,31 @@
 
 <body>
   <main class="wrapper max-width headerImage">
-    <section class="thanksSwiper swiper padding" id="intro">
-      <div class="thanksSwiper-block">
+    <section class="swiper introSwiper" id="intro">
+      <div class="introSwiper-block">
         <div class="container">
-          <div class="thanksSwiper-logo">
-            <img src="img/logo-icon.svg" alt="logo" />
-            <span class="logo-text">ORLEN <br> VIETUVA</span>
+          <div class="introSwiper-logo">
+            <img src="img/logo.svg" alt="logo" />
           </div>
         </div>
       </div>
       <div class="swiper-wrapper">
-        <div class="thanksSwiperSlide4 swiper-slide">
-
+        <div class="swiper-slide ">
+          <picture><source srcset="img/slider-img.webp" type="image/webp"><img class="oneImg" src="img/slider-img.png" alt="image"></picture>
         </div>
-        <div class="thanksSwiperSlide2 swiper-slide">
-
+        <div class="swiper-slide ">
+          <picture><source srcset="img/slider-img2.webp" type="image/webp"><img class="twoImg" src="img/slider-img2.jpg" alt="image"></picture>
         </div>
-        <div class="thanksSwiperSlide3 swiper-slide">
-
+        <div class="swiper-slide ">
+          <picture><source srcset="img/slider-img3.webp" type="image/webp"><img class="threeImg" src="img/slider-img3.jpg" alt="image"></picture>
+        </div>
+        <div class="swiper-slide ">
+          <picture><source srcset="img/slider-img4.webp" type="image/webp"><img class="fourImg" src="img/slider-img4.jpg" alt="image"></picture>
+        </div>
+        <div class="swiper-slide ">
+          <picture><source srcset="img/slider-img6.webp" type="image/webp"><img class="fiveImg" src="img/slider-img6.jpg" alt="image"></picture>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
-
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </section>
@@ -65,13 +68,12 @@
   <div class="container">
     <div class="our-top__block header-navigation headerTop">
         <div class="thanksSwiper-logo">
-          <img src="img/logo-icon.svg" alt="logo" />
-          <span class="logo-text">ORLEN <br> VIETUVA</span>
+          <img src="img/logo.svg" alt="logo" />
         </div>
         <nav class="our-navigation">
           <a href="#work" class="our-navigation__link">Послуги</a>
           <a href="#our" class="our-navigation__link">Про компанію</a>
-          <a href="#clients" class="our-navigation__link">Новини</a>
+          <a href="#currency" class="our-navigation__link">Новини</a>
           <a href="#quality" class="our-navigation__link">Сертифікати якості</a>
           <a href="#calc" class="our-navigation__link">Калькулятор</a>
           <a href="#footer" class="our-navigation__link">Контакти</a>
@@ -103,7 +105,7 @@
             </div>
           </div>
           <div class="our-block">
-            <span class="our-small-title small-title">Orlen Vietuva</span>
+            <span class="our-small-title small-title">Garden petroleum</span>
             <h1 class="our-title title">Наша компанія</h1>
             <div class="our-block__row our-row">
               <div class="our-row__box our-box animation-item animation-item-noHide">
@@ -111,7 +113,7 @@
                   <picture><source srcset="img/company-icon.webp" type="image/webp"><img src="img/company-icon.png" alt="image" class="our-box__img" /></picture>
                 </div>
                 <div class="our-box__text">
-                  Доставка в день замовлення або на наступний день.
+                  Зручний графік доставки
                 </div>
               </div>
               <div class="our-row__box our-box animation-item animation-item-noHide">
@@ -169,7 +171,6 @@
           <h1 class="work-title title">
             Працюючи з нами, Ви гарантовано отримуєте:
           </h1>
-
           <div class="work-row">
             <div class="work-box animation-item animation-item-noHide">
               <img src="img/work-icon.svg" alt="image" class="work-box__img" />
@@ -220,19 +221,19 @@
         </div>
       </div>
     </section>
-    <section class="clients" id="clients">
+    <section class="clients">
       <div class="container">
         <div class="clients-inner padding">
           <h1 class="clients-title title">Наші клієнти</h1>
           <div class="clients-row">
             <div class="clients-row__box clients-box animation-item animation-item-noHide">
-              <picture><source srcset="img/clients-img.webp" type="image/webp"><img src="img/clients-img.png" alt="image" class="clients-box__img" /></picture>
+              <picture><source srcset="img/clients-img.webp" type="image/webp"><img src="img/clients-img.jpg" alt="image" class="clients-box__img" /></picture>
               <div class="clients-block">
                 <div class="clients-block__text">Компанії з перевезень</div>
               </div>
             </div>
             <div class="clients-row__box clients-box animation-item animation-item-noHide">
-              <picture><source srcset="img/clients-img2.webp" type="image/webp"><img src="img/clients-img2.png" alt="image" class="clients-box__img" /></picture>
+              <picture><source srcset="img/clients-img2.webp" type="image/webp"><img src="img/clients-img2.jpg" alt="image" class="clients-box__img" /></picture>
               <div class="clients-block">
                 <div class="clients-block__text">
                   Підприємства сільськогосподарської техніки
@@ -240,13 +241,43 @@
               </div>
             </div>
             <div class="clients-row__box clients-box animation-item animation-item-noHide">
-              <picture><source srcset="img/clients-img3.webp" type="image/webp"><img src="img/clients-img3.png" alt="image" class="clients-box__img" /></picture>
+              <picture><source srcset="img/clients-img3.webp" type="image/webp"><img src="img/clients-img3.jpg" alt="image" class="clients-box__img" /></picture>
               <div class="clients-block">
                 <div class="clients-block__text">Фермерські господартсва</div>
               </div>
             </div>
             <div class="clients-row__box clients-box animation-item animation-item-noHide">
-              <picture><source srcset="img/clients-img4.webp" type="image/webp"><img src="img/clients-img4.png" alt="image" class="clients-box__img" /></picture>
+              <picture><source srcset="img/clients-img4.webp" type="image/webp"><img src="img/clients-img4.jpg" alt="image" class="clients-box__img" /></picture>
+              <div class="clients-block">
+                <div class="clients-block__text">Аграрні холдинги</div>
+              </div>
+            </div>
+            <div class="clients-row__box clients-box animation-item animation-item-noHide">
+              <picture><source srcset="img/clients-img5.webp" type="image/webp"><img src="img/clients-img5.png" alt="image" class="clients-box__img" /></picture>
+              <div class="clients-block">
+                <div class="clients-block__text">Аграрні холдинги</div>
+              </div>
+            </div>
+            <div class="clients-row__box clients-box animation-item animation-item-noHide">
+              <picture><source srcset="img/clients-img6.webp" type="image/webp"><img src="img/clients-img6.jpg" alt="image" class="clients-box__img" /></picture>
+              <div class="clients-block">
+                <div class="clients-block__text">Аграрні холдинги</div>
+              </div>
+            </div>
+            <div class="clients-row__box clients-box animation-item animation-item-noHide">
+              <picture><source srcset="img/clients-img7.webp" type="image/webp"><img src="img/clients-img7.png" alt="image" class="clients-box__img" /></picture>
+              <div class="clients-block">
+                <div class="clients-block__text">Аграрні холдинги</div>
+              </div>
+            </div>
+            <div class="clients-row__box clients-box animation-item animation-item-noHide">
+              <picture><source srcset="img/clients-img8.webp" type="image/webp"><img src="img/clients-img8.png" alt="image" class="clients-box__img" /></picture>
+              <div class="clients-block">
+                <div class="clients-block__text">Аграрні холдинги</div>
+              </div>
+            </div>
+            <div class="clients-row__box clients-box animation-item animation-item-noHide">
+              <picture><source srcset="img/clients-img9.webp" type="image/webp"><img src="img/clients-img9.png" alt="image" class="clients-box__img" /></picture>
               <div class="clients-block">
                 <div class="clients-block__text">Аграрні холдинги</div>
               </div>
@@ -255,7 +286,7 @@
         </div>
       </div>
     </section>
-    <section class="currency">
+    <section class="currency" id="currency">
       <div class="container">
         <div class="currency-inner padding">
           <span class="currency-subtitle small-title">Новини</span>
@@ -282,13 +313,11 @@
               <picture><source srcset="img/quality-img.webp" type="image/webp"><img src="img/quality-img.png" alt="image" class="quality-block__img" /></picture>
             </a>
             <a href="" target="_blank">
-              <picture><source srcset="img/quality-img2.webp" type="image/webp"><img src="img/quality-img2.png" alt="image" class="quality-block__img" /></picture>
+              <picture><source srcset="img/quality-img.webp" type="image/webp"><img src="img/quality-img.png" alt="image" class="quality-block__img" /></picture>
             </a>
           </div>
         </div>
       </div>
-    </section>
-    <section class="calc" id="calc">
       <div class="container">
         <div class="calc-inner padding">
           <span class="calc-subtitle small-title">Калькулятор</span>
@@ -368,12 +397,12 @@
     <div class="footer-inner padding">
       <div class="footer-row">
         <div class="footer-box">
-          <img src="img/logo.svg" alt="image" class="footer-img" />
+          <picture><source srcset="img/logo-white.webp" type="image/webp"><img src="img/logo-white.png" alt="image" class="footer-img" /></picture>
           <div class="media">
-            <a href="#" class="media-icon">
+            <a href="https://www.facebook.com/gardenpetroleumworld " class="media-icon">
               <img src="img/facebook.svg" alt="media-icon" />
             </a>
-            <a href="#" class="media-icon">
+            <a href="https://www.instagram.com/gardenpetroleum/" class="media-icon">
               <img src="img/instagram.svg" alt="media-icon" />
             </a>
             <a href="#" class="media-icon">
@@ -386,7 +415,7 @@
           <li class="footer-list__link"><a href="#work">Послуги</a></li>
           <li class="footer-list__link"><a href="#calc">Калькулятор</a></li>
           <li class="footer-list__link"><a href="#quality">Сертифікати якості</a></li>
-          <li class="footer-list__link"><a href="#clients">Новини</a></li>
+          <li class="footer-list__link"><a href="#currency">Новини</a></li>
           <li class="footer-list__link"><a href="#our">Про компанію</a></li>
           <li class="footer-list__link"><a href="#footer">Контакти</a></li>
         </ul>
@@ -395,8 +424,8 @@
           <li class="footer-list__link city">м. Хмельницький</li>
           <li class="footer-list__title">Email</li>
           <li class="footer-list__link mail">
-            <a href="mailto:garden.petroleum1@gmail.com"
-              >garden.petroleum1@gmail.com</a
+            <a href="mailto:Garden.petroleum.world@gmail.com"
+              >Garden.petroleum.world@gmail.com</a
             >
           </li>
         </ul>
@@ -435,7 +464,7 @@
   <a href="#intro" class="toTop">
     <span class="toTop-arrow"></span>
   </a>
-  <script src="js/app.min.js?_v=20230411150332"></script>
+  <script src="js/app.min.js?_v=20230423200212"></script>
 
 </body>
 
