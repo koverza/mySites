@@ -76,7 +76,7 @@ body {
   font-weight: 700;
   line-height: 100%;
   color: white;
-  font-size: calc(16px + 2 * ((100vw - 320px) / 1600));
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
 }
 
 .title {
@@ -207,6 +207,10 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: white;
+}
+
+.footer-list .tel a {
+  font-family: "Times New Roman", Times, serif;
 }
 
 .city {
@@ -10601,7 +10605,7 @@ button.swiper-pagination-bullet {
 }
 
 .introSwiper {
-  height: 100%;
+  max-height: 550px;
 }
 
 .introSwiper .swiper-slide img {
@@ -10764,7 +10768,7 @@ button.swiper-pagination-bullet {
   margin-right: calc(0px + 40 * ((100vw - 320px) / 1600));
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
   line-height: 22px;
   color: white;
   cursor: pointer;
@@ -10805,7 +10809,7 @@ button.swiper-pagination-bullet {
   font-family: "Times New Roman";
   font-style: normal;
   font-weight: 700;
-  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
+  font-size: calc(16px + 10 * ((100vw - 320px) / 1600));
   line-height: 130%;
   color: white;
   margin-top: 24px;
@@ -10868,7 +10872,7 @@ button.swiper-pagination-bullet {
   font-family: "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
   line-height: 130%;
   color: #111111;
 }
@@ -10900,12 +10904,12 @@ button.swiper-pagination-bullet {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: calc(10px + 5 * ((100vw - 320px) / 1600));
+  gap: calc(10px + 13 * ((100vw - 320px) / 1600));
 }
 
 .work-box {
   width: 23%;
-  padding: calc(20px + 20 * ((100vw - 320px) / 1600));
+  padding: calc(15px + 15 * ((100vw - 320px) / 1600));
   background-color: white;
   -webkit-box-shadow: 0px 36px 50px -10px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 36px 50px -10px rgba(0, 0, 0, 0.3);
@@ -10920,7 +10924,7 @@ button.swiper-pagination-bullet {
   font-family: "Times New Roman";
   font-style: normal;
   font-weight: 700;
-  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
+  font-size: calc(16px + 12 * ((100vw - 320px) / 1600));
   line-height: 130%;
   color: #111111;
   margin-top: calc(10px + 19 * ((100vw - 320px) / 1600));
@@ -10931,7 +10935,7 @@ button.swiper-pagination-bullet {
   font-family: "Times New Roman";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
   line-height: 140%;
   color: #4f4f4f;
 }
@@ -10981,7 +10985,7 @@ button.swiper-pagination-bullet {
   font-family: "Times New Roman";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: calc(14px + 8 * ((100vw - 320px) / 1600));
   line-height: 140%;
   color: white;
   margin-top: calc(15px + 9 * ((100vw - 320px) / 1600));
@@ -11056,7 +11060,7 @@ button.swiper-pagination-bullet {
   font-family: "Times New Roman";
   font-style: normal;
   font-weight: 700;
-  font-size: calc(13px + 5 * ((100vw - 320px) / 1600));
+  font-size: calc(13px + 11 * ((100vw - 320px) / 1600));
   color: #111111;
 }
 
@@ -11142,11 +11146,11 @@ button.swiper-pagination-bullet {
 }
 
 .calc-subtitle {
-  color: #111111;
+  color: white;
 }
 
 .calc-title {
-  color: #111111;
+  color: white;
 }
 
 .calc-row {
@@ -11514,7 +11518,7 @@ button.swiper-pagination-bullet {
   }
 
   .work-box {
-    width: 49%;
+    width: 48%;
   }
 
   .work-bottom {
