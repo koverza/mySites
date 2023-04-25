@@ -47,7 +47,6 @@ body {
 }
 
 .max-width {
-  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -10607,7 +10606,6 @@ button.swiper-pagination-bullet {
 
 .introSwiper .swiper-slide img {
   width: 100%;
-  max-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10841,7 +10839,7 @@ button.swiper-pagination-bullet {
   -webkit-transition: all 1.2s ease;
   -o-transition: all 1.2s ease;
   transition: all 1.2s ease;
-  width: 32.5%;
+  width: 32%;
   padding: calc(10px + 15 * ((100vw - 320px) / 1600));
   background: white;
   -webkit-box-shadow: 0px 36px 50px -10px rgba(0, 0, 0, 0.3);
@@ -10906,7 +10904,7 @@ button.swiper-pagination-bullet {
 }
 
 .work-box {
-  width: 24%;
+  width: 23%;
   padding: calc(20px + 20 * ((100vw - 320px) / 1600));
   background-color: white;
   -webkit-box-shadow: 0px 36px 50px -10px rgba(0, 0, 0, 0.3);
@@ -11114,15 +11112,19 @@ button.swiper-pagination-bullet {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: calc(20px + 40 * ((100vw - 320px) / 1600));
 }
 
 .quality-block a {
   width: 49%;
   display: block;
+}
+
+.quality-block a + a {
+  margin-left: auto;
 }
 
 .quality-block__img {
@@ -11586,42 +11588,42 @@ button.swiper-pagination-bullet {
   }
 
   .introSwiper .swiper-slide img {
-    height: 400px;
+    height: 450px;
     -o-object-fit: cover;
        object-fit: cover;
   }
 
   .oneImg {
-    -o-object-position: -80px;
-       object-position: -80px;
+    -o-object-position: -150px;
+       object-position: -150px;
   }
 
   .twoImg {
-    -o-object-position: -210px;
-       object-position: -210px;
+    -o-object-position: -110px;
+       object-position: -110px;
   }
 
   .threeImg {
-    -o-object-position: -600px;
-       object-position: -600px;
+    -o-object-position: -300px;
+       object-position: -300px;
   }
 
   .fourImg {
-    -o-object-position: -640px;
-       object-position: -640px;
+    -o-object-position: -740px;
+       object-position: -740px;
   }
 
   .fiveImg {
-    -o-object-position: -50px;
-       object-position: -50px;
+    -o-object-position: -750px;
+       object-position: -750px;
   }
 
   .introSwiper-block {
-    top: calc(160px + 0 * ((100vw - 320px) / 1600));
+    top: calc(170px + -10 * ((100vw - 320px) / 1600));
   }
 
   .introSwiper-logo img {
-    width: calc(250px + 650 * ((100vw - 320px) / 1600));
+    width: calc(280px + 620 * ((100vw - 320px) / 1600));
   }
 
   .our-inner {
