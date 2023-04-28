@@ -23,7 +23,7 @@
 	<!-- Favicon -->
 	<link rel="icon" href="/favicon.ico?ver=g6165" type="image/x-icon">
 	<!-- Styles -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230427231529" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230429000206" />
 	
 	<!-- Title page -->
 	<title>Home</title>
@@ -66,16 +66,16 @@
 
             <div class="header__info" data-da=".header__nav ul,767,6">
                 <a href="tel:+80447349201" class="header__phone">
-                    <img src="img/header-phone.svg" alt="phone" class="header__icon">
+                    <img src="img/header-phone.svg" alt="phone" class="telephone">
                     <span class="header__phone-text">8 044 734 92 01</span>
                 </a>
                 <a href="#" class="header__phone telegram">
-                    <img src="img/header-telegram.svg" alt="telegram" class="header__icon">
+                    <img src="img/header-telegram.svg" alt="telegram" class="telegram">
                     <span class="header__phone-text">Телеграм</span>
 
                 </a>
-                <a href="#" class="instagram">
-                    <img src="img/instagram.svg" alt="telegram" class="header__icon">
+                <a href="#" class="header__phone">
+                    <img src="img/instagram.svg" alt="telegram" class="instagram">
                 </a>
             </div>
             <div class="burger-wrapper">
@@ -341,6 +341,7 @@
         </div>
       </div>
       <img src="img/line.svg" alt="icon" class="line" />
+      <img src="img/blue-line.svg" alt="icon" class="blue__line" />
     </section>
     <section class="eat" id="eat">
       <div class="container">
@@ -451,7 +452,7 @@
               <div class="eat-years__block-number animation-item animation-item-noHide">>500</div>
             </div>
             <div class="eat-years__block">
-              <span class="eat-years__block-title">пегагогов школы</span>
+              <span class="eat-years__block-title">педагогов школы</span>
               <div class="eat-years__block-number animation-item animation-item-noHide">8</div>
             </div>
           </div>
@@ -508,23 +509,20 @@
     <section class="say" id="say">
       <div class="container">
         <div class="say__inner">
-          <div class="say__row">
+          <div class="say__row swiper">
             <div class="say__left">
               <div class="title title-smallest">
                 <span class="green">
                   Что говорят
-                  <img src="img/green-line.svg" alt="" />
+                  <img src="img/green-line.svg" alt="icon" class="greenLine"/>
                 </span>
                 про летний лагерь от Panda English School
               </div>
               <div class="say__reviews">
                 <p class="say__reviews-text">Всего отзывов:</p>
-                <span class="say__reviews-text say__reviews-number"></span>
+                <span class="say__reviews-text say__reviews-number">2</span>
               </div>
-              <div class="say__left-arrows">
-                <div class="sayPrev swiperArrow "></div>
-                <div class="sayNext swiperArrow "></div>
-              </div>
+              <div class="say__left-arrows"></div>
             </div>
             <div class="say__right">
               <div class="saySwiper swiper">
@@ -557,7 +555,11 @@
                       нетерпением ждал следующего дня, неоднократно просил записать его и на следующий год. </div>
                   </div>
                 </div>
-
+                <div  >
+                  <div data-da=".say__left-arrows,1920,1" class="sayPrev swiper-button-prev"></div>
+                  <div data-da=".say__left-arrows,1920,2" class="sayNext swiper-button-next"></div>
+                </div>
+                <div  class="saySwiper__blur"></div>
               </div>
 
             </div>
@@ -668,14 +670,13 @@
             </div>
             <div class="cost__right">
               <form action="#" class="form cost__form">
-                <span class="cost__form-title title-smallest">Познакомтесь с нашим лагерем </span>
+                <span class="cost__form-title title-smallest">Познакомьтесь с нашим лагерем </span>
                 <p class="cost__form-text">Ответим на ваши вопросы — расскажем о деталях</p>
                 <input type="text" class="cost__form-input" placeholder="Ваше имя">
                 <input class="tel cost__form-input" value="" type="tel" placeholder="+375 __ ___-__-__" />
                 <button class="button cost__form-button costSend">Отправить</button>
-                <div class="cost__form-smallText">Нажимая на кнопку «Отправить», вы даете согласие на<a
-                    href="https://panda-school.by/politika_personalnih_dannih_panda/">обработку своих персональных
-                    данных.</a> </div>
+                <div class="cost__form-smallText">Нажимая на кнопку «Отправить», вы даете согласие на <a
+                    href="https://panda-school.by/politika_personalnih_dannih_panda/">обработку своих персональных данных.</a> </div>
                 <img src="img/blue.svg" alt="icon" class="line blue" />
                 <img src="img/red.svg" alt="icon" class="line red" />
                 <img src="img/yellow.svg" alt="icon" class="line yellow" />
@@ -729,7 +730,7 @@
 
 
   </main>
-  <script src="js/app.min.js?_v=20230427231529"></script>
+  <script src="js/app.min.js?_v=20230429000206"></script>
 
 
 </body>
