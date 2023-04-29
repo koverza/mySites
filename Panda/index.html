@@ -23,7 +23,7 @@
 	<!-- Favicon -->
 	<link rel="icon" href="/favicon.ico?ver=g6165" type="image/x-icon">
 	<!-- Styles -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230429001925" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230430020214" />
 	
 	<!-- Title page -->
 	<title>Home</title>
@@ -65,9 +65,9 @@
 
 
             <div class="header__info" data-da=".header__nav ul,767,6">
-                <a href="tel:+80447349201" class="header__phone">
+                <a href="tel:+375447349201" class="header__phone">
                     <img src="img/header-phone.svg" alt="phone" class="telephone">
-                    <span class="header__phone-text">8 044 734 92 01</span>
+                    <span class="header__phone-text">+375447349201</span>
                 </a>
                 <a href="#" class="header__phone telegram">
                     <img src="img/header-telegram.svg" alt="telegram" class="telegram">
@@ -467,6 +467,9 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="swiper photoSwiper">
+                  <div class="photoSwiper__fullscreen">
+                    <img src="img/fullscreen.svg" alt="icon">
+                  </div>
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <picture><source srcset="img/video-img.webp" type="image/webp"><img src="img/video-img.png" alt="" class="videoSwiper__img"></picture>
@@ -482,6 +485,9 @@
               </div>
               <div class="swiper-slide">
                 <div class="swipe__video">
+                  <div class="progressBar">
+                    <div class="progressBar__line"></div>
+                  </div>
                   <video muted="muted" autoplay="autoplay" poster="img/video-img2.png" id="video">
                     <source src="./files/video.mp4" type="video/mp4">
                     <source src="./files/video.3gp" type="video/3gp">
@@ -505,6 +511,35 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="photoSlider">
+      <div class="photoSlider__cross">
+        <img src="img/white-cross.svg" alt="image">
+      </div>
+        <div class="container">
+            <div class="photoSlider__inner">
+                <div class="photoSlider__block">
+                  <div class="photoSlider__block-next">
+                    <div class="photoSwiperBigNext"></div>
+                  </div>
+                  <div class="swiper photoSwiperBig">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <picture><source srcset="img/video-img.webp" type="image/webp"><img src="img/video-img.png" alt="image" class="photoSwiperBig__img"></picture>
+                      </div>
+                      <div class="swiper-slide">
+                        <picture><source srcset="img/video-img2.webp" type="image/webp"><img src="img/video-img2.png" alt="image" class="photoSwiperBig__img"></picture>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <div class="photoSlider__block-prev">
+                    <div class="photoSwiperBigPrev "></div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
     </section>
     <section class="say" id="say">
       <div class="container">
@@ -704,33 +739,74 @@
         </div>
     </div>
 </footer>
-    <div class="popup">
-  <div class="popup__content">
-    <div class="popup-top">
-      <div class="saySwiper__slide-top saySwiper-top">
-        <picture><source srcset="img/slider-img.webp" type="image/webp"><img src="img/slider-img.png" alt="avatar" class="saySwiper-top__img"></picture>
-        <div class="saySwiper-top__block">
-          <span class="saySwiper-top__block-name">Александр А.</span>
-          <span class="saySwiper-top__block-role">папа ученицы о лагере</span>
+    <div class="popupSwiper">
+      <div class="popup__content">
+        <div class="popup-top">
+          <div class="saySwiper__slide-top saySwiper-top">
+            <picture><source srcset="img/slider-img.webp" type="image/webp"><img src="img/slider-img.png" alt="avatar" class="saySwiper-top__img"></picture>
+            <div class="saySwiper-top__block">
+              <span class="saySwiper-top__block-name">Александр А.</span>
+              <span class="saySwiper-top__block-role">папа ученицы о лагере</span>
+            </div>
+          </div>
+          <div class="popup-top__cross">
+            <img src="img/cross.svg" alt="">
+          </div>
+        </div>
+        <div class="popup__block">
+          Даниил был в лагере впервые. Это первый опыт проведения каникул в таком формате вообще. Сначала побаивался и не горел желанием идти. Но после первого же дня он с нетерпением ждал следующего дня, неоднократно просил записать его и на следующий год. Подумывает и о третьей смене. Поэтому я с больший и искренней благодарностью хочу сказать спасибо и организаторам, поэтому я с больший и искренней благодарностью хочу сказать спасибо и организаторам, поэтому я с больший и искренней благодарностью хочу сказать спасибо и организаторам.
         </div>
       </div>
-      <div class="popup-top__cross">
-        <img src="img/cross.svg" alt="">
+    </div>
+    <div class="popup">
+      <div class="popup__content">
+        <div class="popup-top">
+          <div class="saySwiper__slide-top saySwiper-top">
+            <picture><source srcset="img/slider-img.webp" type="image/webp"><img src="img/slider-img.png" alt="avatar" class="saySwiper-top__img"></picture>
+            <div class="saySwiper-top__block">
+              <span class="saySwiper-top__block-name">Александр А.</span>
+              <span class="saySwiper-top__block-role">папа ученицы о лагере</span>
+            </div>
+          </div>
+          <div class="popup-top__cross">
+            <img src="img/cross.svg" alt="">
+          </div>
+        </div>
+        <div class="popup__block">
+          Даниил был в лагере впервые. Это первый опыт проведения каникул в таком формате вообще. Сначала побаивался и не горел желанием идти. Но после первого же дня он с нетерпением ждал следующего дня, неоднократно просил записать его и на следующий год. Подумывает и о третьей смене. Поэтому я с больший и искренней благодарностью хочу сказать спасибо и организаторам, поэтому я с больший и искренней благодарностью хочу сказать спасибо и организаторам, поэтому я с больший и искренней благодарностью хочу сказать спасибо и организаторам.
+        </div>
       </div>
     </div>
-    <div class="popup__block">
-      Даниил был в лагере впервые. Это первый опыт проведения каникул в таком формате вообще. Сначала побаивался и не горел желанием идти. Но после первого же дня он с нетерпением ждал следующего дня, неоднократно просил записать его и на следующий год. Подумывает и о третьей смене. Поэтому я с больший и искренней благодарностью хочу сказать спасибо и организаторам, поэтому я с больший и искренней благодарностью хочу сказать спасибо и организаторам, поэтому я с больший и искренней благодарностью хочу сказать спасибо и организаторам.
+    <div class="popupEat">
+      <div class="cost__right">
+        <form action="#" class="form cost__form">
+          <span class="cost__form-title title-smallest">Познакомьтесь с нашим лагерем </span>
+          <p class="cost__form-text">Ответим на ваши вопросы — расскажем о деталях</p>
+          <input type="text" class="cost__form-input" placeholder="Ваше имя">
+          <input class="tel cost__form-input" value="" type="tel" placeholder="+375 __ ___-__-__" />
+          <button class="button cost__form-button costSend">Отправить</button>
+          <div class="cost__form-smallText">Нажимая на кнопку «Отправить», вы даете согласие на <a
+              href="https://panda-school.by/politika_personalnih_dannih_panda/">обработку своих персональных данных.</a> </div>
+          <img src="img/blue.svg" alt="icon" class="line blue" />
+          <img src="img/red.svg" alt="icon" class="line red" />
+          <img src="img/yellow.svg" alt="icon" class="line yellow" />
+        </form>
+        <div class="cost__success">
+          <span class="cost__form-title title-smallest">Заявка отправлена!</span>
+          <p class="cost__form-text">Мы свяжемся с вами в ближайшее время</p>
+          <button class="cost__form-button costRepeat">Повторить</button>
+          <div class="cost__success-photo">
+            <picture><source srcset="img/bear.webp" type="image/webp"><img src="img/bear.png" alt="image" class="cost__success-img"></picture>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
     <a href="#intro" class="toTop">
     <img src="img/toTop.svg" alt="">
 </a>
 
-
   </main>
-  <script src="js/app.min.js?_v=20230429001925"></script>
+  <script src="js/app.min.js?_v=20230430020214"></script>
 
 
 </body>
