@@ -27,11 +27,11 @@
 	<link rel="stylesheet" href="css/style.min.css" />
 	
 	<!-- Title page -->
-	<title>Blog</title>
+	<title>Cart</title>
 </head>
 
-<body>
-    <main class="wrapper max-width">
+<body class="false">
+    <main class="wrapper max-width hideMenu">
         <header class="header" id="header">
     <div class="header__inner">
         <div class="container">
@@ -598,281 +598,166 @@
     </div>
 </header>
 
-        <div class="bread__crumbs">
-            <div class="container">
-                <div class="bread__crumbs-inner">
-                    <a href="#" class="bread__crumbs-link">Главная</a>
-                    <span class="bread__crumbs-text">></span>
-                    <a href="#" class="bread__crumbs-link">Парфюмерия</a>
-                    <span class="bread__crumbs-text">></span>
-                    <span class="bread__crumbs-text">Женская парфюмерия</span>
-                </div>
-            </div>
-        </div>
         <section class="chapter">
             <div class="container">
                 <div class="chapter__inner">
-                    <div class="chapter__title">
-                        <span class="title">Огляди та статті</span>
-                    </div>
-                    <div class="blog__row">
-                        <div class="blog__item">
-                            <div class="blog__photo">
-                                <img src="img/blog.png" alt="image" class="blog__img">
+                    <div class="cart__row">
+                        <div class="cart__column">
+                            <div class="chapter__title">
+                                <span class="title">Введите данные для заказа</span>
                             </div>
-                            <div class="blog__block">
-                                <span class="blog__title">Як очистити «Інше» в Айфон</span>
-                                <p class="blog__text">У цій статті ми розповімо, як видалити програми на
-                                    Айфоні, та дамо поради щодо вирішення проблем, які
-                                    можуть виникнути в процесі.
-                                </p>
-                                <div class="blog__dates">
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Дата:</b>
-                                        <span class="blog__date-text">16.04.2023</span>
+                            <form action="#" class="form">
+                                <div class="form__item">
+                                    <span class="form__name">Ваш телефон</span>
+                                    <input type="tel" name="phone" class="form__input phoneNumber" required placeholder="+38(_ _ _)_ _ _ _ _ _ _">
+                                    <button class="continue buttonRed">Продолжить</button>
+                                </div>
+                                <div class="hide">
+                                    <div class="form__item">
+                                        <span class="form__name">Ваше имя</span>
+                                        <input type="text" required class="form__input userName">
                                     </div>
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Переглядів:</b>
-                                        <span class="blog__date-text">264</span>
+                                    <span class="form__title">Данные о доставке:</span>
+                                    <div class="form__item">
+                                        <span class="form__name">Город доставки</span>
+                                        <div class="select bodyClick">
+                                            <div data-select="1" class="select__top select-top bodyClick">
+                                                <div class="select-top__text bodyClick">Одесса</div>
+                                                <div class="select-top__arrow bodyClick"></div>
+                                            </div>
+                                            <ul data-select="1" class="select__menu select-menu bodyClick">
+                                                <div data-item="Киев" class="select-menu__item bodyClick">Киев</div>
+                                                <div data-item="Львов" class="select-menu__item bodyClick">Львов</div>
+                                                <div data-item="Днепропетровск" class="select-menu__item bodyClick">Днепропетровск</div>
+                                                <div data-item="Запорожье" class="select-menu__item bodyClick">Запорожье</div>
+                                                <div data-item="Харьков" class="select-menu__item bodyClick">Харьков</div>
+                                                <div data-item="Луцк" class="select-menu__item bodyClick">Луцк</div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <span class="form__name">Отделение новой почты</span>
+                                        <div class="select bodyClick">
+                                            <div data-select="2" class="select__top select-top bodyClick">
+                                                <div class="select-top__text bodyClick">Выбрать из списка</div>
+                                                <div class="select-top__arrow bodyClick"></div>
+                                            </div>
+                                            <ul data-select="2" class="select__menu select-menu bodyClick">
+                                                <div data-item="Выбор 1" class="select-menu__item bodyClick">Выбор 1</div>
+                                                <div data-item="Выбор 2" class="select-menu__item bodyClick">Выбор 2</div>
+                                                <div data-item="Выбор 3" class="select-menu__item bodyClick">Выбор 3</div>
+                                                <div data-item="Выбор 4" class="select-menu__item bodyClick">Выбор 4</div>
+                                                <div data-item="Выбор 5" class="select-menu__item bodyClick">Выбор 5</div>
+                                                <div data-item="Выбор 6" class="select-menu__item bodyClick">Выбор 6</div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <span class="form__name">Тип оплаты</span>
+                                        <div class="select bodyClick">
+                                            <div data-select="3" class="select__top select-top bodyClick">
+                                                <div class="select-top__text bodyClick">Наложенный платеж</div>
+                                                <div class="select-top__arrow bodyClick"></div>
+                                            </div>
+                                            <ul data-select="3" class="select__menu select-menu bodyClick">
+                                                <div data-item="Курьером" class="select-menu__item bodyClick">Курьером</div>
+                                                <div data-item="Самовывоз" class="select-menu__item bodyClick">Самовывоз</div>
+                                                <div data-item="Наложенный платеж" class="select-menu__item bodyClick">Наложенный платеж</div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <span class="form__name">Комментарий</span>
+                                        <textarea class="form__comment" name="comment"></textarea>
                                     </div>
                                 </div>
-                                <a href="#" class="blog__button buttonGreen">Детальніше</a>
-                            </div>
+                            </form>
                         </div>
-                        <div class="blog__item">
-                            <div class="blog__photo">
-                                <img src="img/blog.png" alt="image" class="blog__img">
-                            </div>
-                            <div class="blog__block">
-                                <span class="blog__title">Як очистити «Інше» в Айфон</span>
-                                <p class="blog__text">У цій статті ми розповімо, як видалити програми на
-                                    Айфоні, та дамо поради щодо вирішення проблем, які
-                                    можуть виникнути в процесі.
-                                </p>
-                                <div class="blog__dates">
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Дата:</b>
-                                        <span class="blog__date-text">16.04.2023</span>
-                                    </div>
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Переглядів:</b>
-                                        <span class="blog__date-text">264</span>
-                                    </div>
+                        <div class="cart__column">
+                            <span class="cart__column-title">Ваш заказ:</span>
+                            <div class="cart__item">
+                                <div class="cart__photo">
+                                    <img src="img/cart-img.png" alt="image" class="cart__img">
                                 </div>
-                                <a href="#" class="blog__button buttonGreen">Детальніше</a>
-                            </div>
-                        </div>
-                        <div class="blog__item">
-                            <div class="blog__photo">
-                                <img src="img/blog.png" alt="image" class="blog__img">
-                            </div>
-                            <div class="blog__block">
-                                <span class="blog__title">Як очистити «Інше» в Айфон</span>
-                                <p class="blog__text">У цій статті ми розповімо, як видалити програми на
-                                    Айфоні, та дамо поради щодо вирішення проблем, які
-                                    можуть виникнути в процесі.
-                                </p>
-                                <div class="blog__dates">
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Дата:</b>
-                                        <span class="blog__date-text">16.04.2023</span>
+                                <div class="cart__block">
+                                    <div class="cart__info">
+                                        <span class="cart__title">L'Essentiel High Perfection L'Essentiel
+                                            High Perfection</span>
+                                        <span class="cart__cost"> <span>Стоимость товара:</span> 8 355 грн</span>
                                     </div>
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Переглядів:</b>
-                                        <span class="blog__date-text">264</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="blog__button buttonGreen">Детальніше</a>
-                            </div>
-                        </div>
-                        <div class="blog__item">
-                            <div class="blog__photo">
-                                <img src="img/blog.png" alt="image" class="blog__img">
-                            </div>
-                            <div class="blog__block">
-                                <span class="blog__title">Як очистити «Інше» в Айфон</span>
-                                <p class="blog__text">У цій статті ми розповімо, як видалити програми на
-                                    Айфоні, та дамо поради щодо вирішення проблем, які
-                                    можуть виникнути в процесі.
-                                </p>
-                                <div class="blog__dates">
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Дата:</b>
-                                        <span class="blog__date-text">16.04.2023</span>
-                                    </div>
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Переглядів:</b>
-                                        <span class="blog__date-text">264</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="blog__button buttonGreen">Детальніше</a>
-                            </div>
-                        </div>
-                        <div class="blog__item">
-                            <div class="blog__photo">
-                                <img src="img/blog.png" alt="image" class="blog__img">
-                            </div>
-                            <div class="blog__block">
-                                <span class="blog__title">Як очистити «Інше» в Айфон</span>
-                                <p class="blog__text">У цій статті ми розповімо, як видалити програми на
-                                    Айфоні, та дамо поради щодо вирішення проблем, які
-                                    можуть виникнути в процесі.
-                                </p>
-                                <div class="blog__dates">
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Дата:</b>
-                                        <span class="blog__date-text">16.04.2023</span>
-                                    </div>
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Переглядів:</b>
-                                        <span class="blog__date-text">264</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="blog__button buttonGreen">Детальніше</a>
-                            </div>
-                        </div>
-                        <div class="blog__item">
-                            <div class="blog__photo">
-                                <img src="img/blog.png" alt="image" class="blog__img">
-                            </div>
-                            <div class="blog__block">
-                                <span class="blog__title">Як очистити «Інше» в Айфон</span>
-                                <p class="blog__text">У цій статті ми розповімо, як видалити програми на
-                                    Айфоні, та дамо поради щодо вирішення проблем, які
-                                    можуть виникнути в процесі.
-                                </p>
-                                <div class="blog__dates">
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Дата:</b>
-                                        <span class="blog__date-text">16.04.2023</span>
-                                    </div>
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Переглядів:</b>
-                                        <span class="blog__date-text">264</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="blog__button buttonGreen">Детальніше</a>
-                            </div>
-                        </div>
-                        <div class="blog__item">
-                            <div class="blog__photo">
-                                <img src="img/blog.png" alt="image" class="blog__img">
-                            </div>
-                            <div class="blog__block">
-                                <span class="blog__title">Як очистити «Інше» в Айфон</span>
-                                <p class="blog__text">У цій статті ми розповімо, як видалити програми на
-                                    Айфоні, та дамо поради щодо вирішення проблем, які
-                                    можуть виникнути в процесі.
-                                </p>
-                                <div class="blog__dates">
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Дата:</b>
-                                        <span class="blog__date-text">16.04.2023</span>
-                                    </div>
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Переглядів:</b>
-                                        <span class="blog__date-text">264</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="blog__button buttonGreen">Детальніше</a>
-                            </div>
-                        </div>
-                        <div class="blog__item">
-                            <div class="blog__photo">
-                                <img src="img/blog.png" alt="image" class="blog__img">
-                            </div>
-                            <div class="blog__block">
-                                <span class="blog__title">Як очистити «Інше» в Айфон</span>
-                                <p class="blog__text">У цій статті ми розповімо, як видалити програми на
-                                    Айфоні, та дамо поради щодо вирішення проблем, які
-                                    можуть виникнути в процесі.
-                                </p>
-                                <div class="blog__dates">
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Дата:</b>
-                                        <span class="blog__date-text">16.04.2023</span>
-                                    </div>
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Переглядів:</b>
-                                        <span class="blog__date-text">264</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="blog__button buttonGreen">Детальніше</a>
-                            </div>
-                        </div>
-                        <div class="blog__item">
-                            <div class="blog__photo">
-                                <img src="img/blog.png" alt="image" class="blog__img">
-                            </div>
-                            <div class="blog__block">
-                                <span class="blog__title">Як очистити «Інше» в Айфон</span>
-                                <p class="blog__text">У цій статті ми розповімо, як видалити програми на
-                                    Айфоні, та дамо поради щодо вирішення проблем, які
-                                    можуть виникнути в процесі.
-                                </p>
-                                <div class="blog__dates">
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Дата:</b>
-                                        <span class="blog__date-text">16.04.2023</span>
-                                    </div>
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Переглядів:</b>
-                                        <span class="blog__date-text">264</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="blog__button buttonGreen">Детальніше</a>
-                            </div>
-                        </div>
-                        <div class="blog__item">
-                            <div class="blog__photo">
-                                <img src="img/blog.png" alt="image" class="blog__img">
-                            </div>
-                            <div class="blog__block">
-                                <span class="blog__title">Як очистити «Інше» в Айфон</span>
-                                <p class="blog__text">У цій статті ми розповімо, як видалити програми на
-                                    Айфоні, та дамо поради щодо вирішення проблем, які
-                                    можуть виникнути в процесі.
-                                </p>
-                                <div class="blog__dates">
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Дата:</b>
-                                        <span class="blog__date-text">16.04.2023</span>
-                                    </div>
-                                    <div class="blog__date">
-                                        <b class="blog__date-title">Переглядів:</b>
-                                        <span class="blog__date-text">264</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="blog__button buttonGreen">Детальніше</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pages">
-  <ul class="pages-list">
-    <li>
-      <a href="" class="pages-list__link">1</a>
-    </li>
-    <li>
-      <a href="" class="pages-list__link">2</a>
-    </li>
-    <li>
-      <a href="" class="pages-list__link">3</a>
-    </li>
-    <li>
-      <a href="" class="pages-list__link">4</a>
-    </li>
-    <li>
-      <a href="" class="pages-list__link">5</a>
-    </li>
-    <li>
-      <span class="pages-list__text">...</span>
-    </li>
-    <li>
-      <a href="" class="pages-list__link last">878</a>
-    </li>
-  </ul>
+                                    <div class="cart__adaptive cartOne"></div>
+                                    <span class="cart__buy">8 355 грн</span>
+                                    <div data-da=".cartOne,650,1" class="cart__box"> 
+                                        <div class="quantity">
+  <div class="quantity__minus quantity__button">–</div>
+  <div class="quantity__number quantity__button">0</div>
+  <div class="quantity__plus quantity__button">+</div>
 </div>
 
+                                        <button type="button" class="cart__delete">Удалить</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="cart__item">
+                                <div class="cart__photo">
+                                    <img src="img/cart-img.png" alt="image" class="cart__img">
+                                </div>
+                                <div class="cart__block">
+                                    <div class="cart__info">
+                                        <span class="cart__title">L'Essentiel High Perfection L'Essentiel
+                                            High Perfection</span>
+                                        <span class="cart__cost"> <span>Стоимость товара:</span> 8 355 грн</span>
+                                    </div>
+                                    <div class="cart__adaptive cartTwo"></div>
+                                    <span class="cart__buy">8 355 грн</span>
+                                    <div data-da=".cartTwo,650,1" class="cart__box"> 
+                                        <div class="quantity">
+  <div class="quantity__minus quantity__button">–</div>
+  <div class="quantity__number quantity__button">0</div>
+  <div class="quantity__plus quantity__button">+</div>
+</div>
+
+                                        <button type="button" class="cart__delete">Удалить</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="cart__item">
+                                <div class="cart__photo">
+                                    <img src="img/cart-img.png" alt="image" class="cart__img">
+                                </div>
+                                <div class="cart__block">
+                                    <div class="cart__info">
+                                        <span class="cart__title">L'Essentiel High Perfection L'Essentiel
+                                            High Perfection</span>
+                                        <span class="cart__cost"> <span>Стоимость товара:</span> 8 355 грн</span>
+                                    </div>
+                                    <div class="cart__adaptive cartThree"></div>
+                                    <span class="cart__buy">8 355 грн</span>
+                                    <div data-da=".cartThree,650,1" class="cart__box"> 
+                                        <div class="quantity">
+  <div class="quantity__minus quantity__button">–</div>
+  <div class="quantity__number quantity__button">0</div>
+  <div class="quantity__plus quantity__button">+</div>
+</div>
+
+                                        <button type="button" class="cart__delete">Удалить</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="cart__result">
+                                <span class="cart__result-text">Итого:</span>
+                                <span class="cart__result-number">45 654 грн</span>
+                            </div>
+                            <div class="cart__policy">
+                                <input type="checkbox" checked class="cart__input" id="cart__input">
+                                <label for="cart__input">Согласен с условиями предоставления услуг</label>
+                            </div>
+                            <button class="cartReady buttonRed">Оформить заказ</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -981,3 +866,4 @@
 </body>
 
 </html>
+
