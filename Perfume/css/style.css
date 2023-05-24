@@ -14269,6 +14269,10 @@ swiper-container .swiper-notification {
 }
 
 @media (max-width: 425px) {
+  .header__logo-subtitle {
+    display: none;
+  }
+
   .header__panel .phone__img {
     width: 20px;
     height: 20px;
@@ -14356,11 +14360,11 @@ swiper-container .swiper-notification {
 
 @media (max-width: 350px) {
   .header__panel .phone {
-    margin-right: 10px;
+    margin-right: 15px;
   }
 
   .header__cart {
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
   .chapter__products {
