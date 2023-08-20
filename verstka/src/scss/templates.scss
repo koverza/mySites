@@ -1,0 +1,22 @@
+.button{}
+.button:hover{}
+.button.active{}
+
+.input{}
+.input::placeholder{}
+.input:hover{}
+.input:focus{}
+
+.title{}
+.subtitle{}
+
+// Bread crumbs
+.bread__crumbs{}
+.bread__crumbs-link{}
+.bread__crumbs-text{}
+
+// ...
+// display: -webkit-box;
+// -webkit-line-clamp: 1; // количество строк
+// -webkit-box-orient: vertical;
+// overflow: hidden;
