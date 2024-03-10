@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Адаптивность  -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" /> <!--maximum-scale=1.0, user-scalable=0-->
+    <!-- Отключает формирование ссылки у номера телефона на iOS -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- Краткое описание страницы  -->
+    <!-- <meta name="description" content="Что такое мета теги и для чего они нужны" /> -->
+    <!-- Ключевые слова страницы  -->
+    <!-- <meta name="keywords" content="мета теги, meta, мета теги для seo" /> -->
+
+    <!-- Управление доступом поисковых роботов к странице -->
+    <!-- Запрет индексации страницы полностью -->
+    <!-- <meta name="robots" content="none"> -->
+
+    <!-- For 404 page -->
+    <!-- Задержка в секундах; url=Адрес сайта/страницы -->
+    <!-- <meta http-equiv="refresh" content="5; url=index.html"> -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico?ver=p8623" type="image/x-icon">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Title page -->
+    <title>Товар</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-left">
+            <p class="wrapper-left-top">BELLA DONNA <br> beauty ambassador </p>
+            <div class="wrapper-left-content">
+                <ul class="wrapper-list">
+                    <li class="wrapper-list__item" data-da=".header__navigation,768,5">
+                        <a href="#">Волосся</a>
+                    </li>
+                    <li class="wrapper-list__item" data-da=".header__navigation,768,6">
+                        <a href="#">Обличчя</a>
+                    </li>
+                    <li class="wrapper-list__item" data-da=".header__navigation,768,7">
+                        <a href="#">Тіло</a>
+                    </li>
+                    <li class="wrapper-list__item" data-da=".header__navigation,768,8">
+                        <a href="#">Депіляція та шугаринг</a>
+                    </li>
+                    <li class="wrapper-list__item" data-da=".header__navigation,768,9">
+                        <a href="#">Sale</a>
+                    </li>
+                </ul>
+                <p class="wrapper-bottom" data-da=".header__navigation,768,10">
+                    Доставка по всій Україні
+                </p>
+            </div>
+        </div>
+        <div class="wrapper-main productPage">
+            <header class="header" id="header">
+                <div class="header__inner">
+                    <div class="burger-wrapper">
+                        <div class="burger">
+                            <div class="burger__line"></div>
+                            <div class="burger__line"></div>
+                            <div class="burger__line"></div>
+                        </div>
+                    </div>
+                    <nav class="header__navigation" data-da=".header__menu,992,1">
+                        <li class="header__item">
+                            <a href="#">Про магазин</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#">Гарантії і повернення</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#">Відгуки про магазин</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#">Контакти</a>
+                        </li>
+                    </nav>
+                    <div class="header__info">
+                        <a href="#">
+                            <div class="header__box">
+                                <img src="img/search.svg" alt="icon" class="header__icon search">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="header__box">
+                                <img src="img/cabinet.svg" alt="icon" class="header__icon">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="header__box">
+                                <img src="img/cart.svg" alt="icon" class="header__icon">
+                                <span class="cart__count">1</span>
+                            </div>
+                        </a>
+                        <div class="select">
+                            <div class="select-top">
+                                <span class="select-top__text">RU</span>
+                            </div>
+                            <div class="header__select">
+                                <ul class="select-menu">
+                                    <li data-item="RU" class="select-menu__item">RU</li>
+                                    <li data-item="UKR" class="select-menu__item">UKR</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu"></div>
+                <div class="header__inputBox">
+                    <input type="text" class="header__input" placeholder="Search...">
+                </div>
+            </header>
+            <section class="singleProduct">
+                <div class="container">
+                    <div class="singleProduct__inner">
+                        <div class="bread-crumbs">
+                            <a href="#" class="bread-crumbs__link">Головна</a>
+                            <div class="bread-crumbs__arrow">
+                                <img src="img/arrow2.svg" alt="image">
+                            </div>
+                            <a href="#" class="bread-crumbs__link">Волосся</a>
+                            <div class="bread-crumbs__arrow">
+                                <img src="img/arrow2.svg" alt="image">
+                            </div>
+                            <span class="bread__crumbs-text">Окисник кремоподібний OXIGEN CREAM 3 vol. 1% BBcos</span>
+                        </div>
+                        <div class="singleProduct__row">
+                            <div class="singleProduct__left">
+                                <div class="singleProduct__left-top">
+                                    <div class="singleProduct__stars">
+                                        <img src="img/star.svg" alt="icon" class="singleProduct__icon">
+                                        <span class="singleProduct__text">4.8</span>
+                                    </div>
+                                    <div class="singleProduct__reviews">
+                                        <img src="img/comment.svg" alt="icon" class="singleProduct__icon">
+                                        <span class="singleProduct__text"><span>67</span>Reviews</span>
+                                    </div>
+                                </div>
+                                <span class="singleProduct__title">Окисник кремоподібний OXIGEN CREAM 3 vol. 1%
+                                    BBcos
+                                </span>
+
+                                <div class="singleProduct__box">
+                                    <div class="singleProduct__photo">
+                                        <img src="img/done.svg" alt="icon">
+                                    </div>
+                                    <span class="singleProduct__text">В наявності</span>
+                                </div>
+                                <div class="singleProduct__block">
+                                    <div class="singleProduct__costs">
+                                        <span class="singleProduct__costNew">1 269 грн.</span>
+                                        <span class="singleProduct__costOld">1 769 грн.</span>
+                                    </div>
+                                    <div class="singleProduct__timer">
+                                        <span class="singleProduct__timerTitle">До кінця акції</span>
+                                        <div class="singleProduct__timerBlock">
+                                            <div class="singleProduct__timerBox">
+                                                <span class="singleProduct__timerBold">12</span>
+                                                <span class="singleProduct__timerText">Hours</span>
+                                            </div>
+                                            <div class="singleProduct__timerBox">
+                                                <span class="singleProduct__timerBold">25</span>
+                                                <span class="singleProduct__timerText">Minutes</span>
+                                            </div>
+                                            <div class="singleProduct__timerBox">
+                                                <span class="singleProduct__timerBold">45</span>
+                                                <span class="singleProduct__timerText">Seconds</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="singleProduct__box">
+                                    <span class="singleProduct__text">Обʼєм</span>
+                                    <div class="singleProduct__select select">
+                                        <div class="select-top">
+                                            <span class="select-top__text">100мл</span>
+                                            <span class="select-top__arrow"></span>
+                                        </div>
+                                        <ul class="select-menu">
+                                            <li data-item="100" class="select-menu__item">100мл</li>
+                                            <li data-item="200" class="select-menu__item">200мл</li>
+                                            <li data-item="300" class="select-menu__item">300мл</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="singleProduct__bottom">
+                                    <div class="singleProduct__quantity quantity">
+                                        <button class="quantity__minus quantity__button">–</button>
+                                        <div class="quantity__number quantity__button">0</div>
+                                        <button class="quantity__plus quantity__button">+</button>
+                                    </div>
+                                    <button class="singleProduct__button button">
+                                        <img src="img/cart-white.png" alt="image">
+                                        <span>Замовити</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="singleProduct__slider">
+                                <div class="singleProduct__Small">
+                                    <div class="block"></div>
+                                    <div class="block"></div>
+                                    <div class="block"></div>
+                                </div>
+                                <div class="singleProduct__Big"></div>
+                            </div>
+                            <div class="singleProduct__right">
+                                <a href="#" class="singleProduct__backBlock">
+                                    <img src="img/arrow2.svg" alt="image">
+                                    <span class="singleProduct__backText">Назад до категорії Волосся</span>
+                                </a>
+                                <div class="singleProduct__information">
+                                    <div class="singleProduct__informationRow">
+                                        <span class="singleProduct__informationTitle">Артикул:</span>
+                                        <span class="singleProduct__informationText">: 000005246</span>
+                                    </div>
+                                    <div class="singleProduct__informationRow">
+                                        <span class="singleProduct__informationTitle">Країна:</span>
+                                        <span class="singleProduct__informationText"> Італія</span>
+                                    </div>
+                                    <div class="singleProduct__informationRow">
+                                        <span class="singleProduct__informationTitle">Лінійка BBcos:</span>
+                                        <span class="singleProduct__informationText"> Oxigen</span>
+                                    </div>
+                                    <div class="singleProduct__informationRow">
+                                        <span class="singleProduct__informationTitle">Виробник:</span>
+                                        <span class="singleProduct__informationText">BBcos</span>
+                                    </div>
+                                </div>
+                                <div class="singleProduct__images">
+                                    <div class="singleProduct__imagesPhoto">
+                                        <img src="img/product-img.png" alt="image">
+                                    </div>
+                                    <div class="singleProduct__imagesPhoto">
+                                        <img src="img/product-img2.png" alt="image">
+                                    </div>
+                                    <div class="singleProduct__imagesPhoto">
+                                        <img src="img/product-img3.png" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="update">
+                <div class="container">
+                    <div class="update__inner">
+                        <div class="parent">
+                            <div class="div1">
+                                <div class="update__photo">
+                                    <img src="img/rainbow-img.png" alt="image" class="update__img">
+                                </div>
+                            </div>
+                            <div class="div2">
+                                <div class="update__content">
+                                    <div class="update__block">
+                                        <span class="update__title">Опис</span>
+                                        <p class="update__text">Окисник кремоподібний OXIGEN CREAM 3 vol. 1% покращує
+                                            ефективність фарбування та освітлення продуктами bbcos, легко поєднується з
+                                            фарбником до однорідності, гарантує захист шкіри голови та волосся. Має
+                                            ніжний фруктовий аромат.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div3">
+                                <div class="update__photo">
+                                    <img src="img/rainbow-img2.png" alt="image" class="update__img">
+                                </div>
+                            </div>
+                            <div class="div4">
+                                <div class="update__info">
+                                    <div class="update__box">
+                                        <span class="update__description">Основні характеристики</span>
+                                        <ul class="update__list">
+                                            <li class="update__list-item"><span>—</span> Збалансована кремова
+                                                консистенція дозволяє легко змішувати його з фарбником</li>
+                                            <li class="update__list-item"><span>—</span> Зволоження</li>
+                                            <li class="update__list-item"><span>—</span> Зміцнення</li>
+                                            <li class="update__list-item"><span>—</span> Кондиціювання</li>
+                                            <li class="update__list-item"><span>—</span> Ніжний фруктовий аромат</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="update__flex">
+                            <div class="flex1">
+                                <div class="update__photo">
+                                    <img src="img/rainbow-img.png" alt="image" class="update__img">
+                                </div>
+                            </div>
+                            <div class="flex2">
+                                <div class="update__content">
+                                    <div class="update__block">
+                                        <span class="update__title">Опис</span>
+                                        <p class="update__text">Окисник кремоподібний OXIGEN CREAM 3 vol. 1% покращує
+                                            ефективність фарбування та освітлення продуктами bbcos, легко поєднується з
+                                            фарбником до однорідності, гарантує захист шкіри голови та волосся. Має
+                                            ніжний фруктовий аромат.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex3">
+                                <div class="update__photo">
+                                    <img src="img/rainbow-img2.png" alt="image" class="update__img">
+                                </div>
+                            </div>
+                            <div class="flex4">
+                                <div class="update__info">
+                                    <div class="update__box">
+                                        <span class="update__description">Основні характеристики</span>
+                                        <ul class="update__list">
+                                            <li class="update__list-item"><span>-</span> Збалансована кремова
+                                                консистенція дозволяє легко змішувати його з фарбником</li>
+                                            <li class="update__list-item"><span>-</span> Зволоження</li>
+                                            <li class="update__list-item"><span>-</span> Зміцнення</li>
+                                            <li class="update__list-item"><span>-</span> Кондиціювання</li>
+                                            <li class="update__list-item"><span>-</span> Ніжний фруктовий аромат</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="oxigen">
+                <div class="container">
+                    <div class="oxigen__inner">
+                        <div class="oxigen__row">
+                            <div class="oxigen__block">
+                                <div class="title-block">
+                                    <span class="title">Окисник кремоподібний OXIGEN CREAM 3 vol. 1%</span>
+                                    <div class="title-line"></div>
+                                </div>
+                            </div>
+                            <div class="oxigen__block">
+                                <div class="oxigen__box">
+                                    <span class="oxigen__title">Активні інгредієнти</span>
+                                    <span class="oxigen__text">Білок пшениці</span>
+                                    <span class="oxigen__title">Спосіб використання</span>
+                                    <span class="oxigen__text">Змішайте OXIGEN CREAM з фарбою у співвідношенні 1:2. Час
+                                        експозиції 10-25 хв.</span>
+                                    <span class="oxigen__title">Результат</span>
+                                    <span class="oxigen__text">Тонування, оновлення кольору, репігментація</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="oxigen__bottom">
+                            <p>BELLA DONNA</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="brand">
+                <div class="container">
+                    <div class="brand__inner">
+                        <div class="title-block">
+    <span class="title">Про бренд</span>
+    <div class="title-line"></div>
+</div>
+                        <div class="more">
+                            <div class="more__block">
+                                <p class="more__text">
+                                    BBcos - італійські професійні засоби для догляду за волоссям. Використовуючи цю
+                                    косметику, ви отримаєте здорові, блискучі та міцні локони. У процесі виробництва
+                                    використовуються природні компоненти. Продукти з професійних ліній дуже легкі у
+                                    використанні, їх також можна використовувати вдома. Купити косметику бренду BBcos
+                                    можна в інтернет-магазині Bella Donna.
+                                    <br>
+                                    <br>
+                                    Історія BBcos
+                                    <br>
+                                    <br>
+                                    Компанія BBCOS hair pro була
+                                    створена в 1998 році на півночі Італії. Її назва складається з перших літер прізвищ
+                                    засновників Bertola і Beccaria та скорочення від слова "косметика". Компанія
+                                    пишається своїми професійними лініями продуктів для волосся. Від фарби на основі
+                                    олії насіння льону та олії аргани до ексклюзивної лінії Кристалл, деколорантів,
+                                    окислювачів, ексклюзивної природної лікувальної лінії Meristema та багато іншого
+                                </p>
+                                <div class="more__bottom"></div>
+                            </div>
+                            <button type="button" class="more__button">Читати далі</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="new recommendation">
+                <div class="container">
+                    <div class="new__inner padding">
+                        <div class="new__top">
+                            <div class="title-block">
+    <span class="title">Рекомендації <br> для вас</span>
+    <div class="title-line"></div>
+</div>
+                            <div class="recommendation__buttons"></div>
+                        </div>
+                        <div class="products-slider">
+                            <div class="recommendation-swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="products-swiper__photo recommendation__photo" id="productPhotoBg">
+                                            <img src="img/product-item.png" alt="image" class="products-swiper__img">
+                                            <div class="products-swiper__box">
+                                                <span class="products-swiper__plash">new</span>
+                                                <div class="products-swiper__line"></div>
+                                            </div>
+                                        </div>
+                                        <div class="products-swiper__block">
+                                            <p class="products-swiper__text">Термальная вода Hydrawave KSurgery</p>
+                                            <span class="products-swiper__cost">1 569 грн.</span>
+                                            <button class="products-swiper__button button">Купити</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="products-swiper__photo recommendation__photo" id="productPhotoBg">
+                                            <img src="img/product-item.png" alt="image" class="products-swiper__img">
+                                            <div class="products-swiper__box">
+                                                <span class="products-swiper__plash">new</span>
+                                                <div class="products-swiper__line"></div>
+                                            </div>
+                                        </div>
+                                        <div class="products-swiper__block">
+                                            <p class="products-swiper__text">Термальная вода Hydrawave KSurgery</p>
+                                            <span class="products-swiper__cost">1 569 грн.</span>
+                                            <button class="products-swiper__button button">Купити</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="products-swiper__photo recommendation__photo" id="productPhotoBg">
+                                            <img src="img/product-item.png" alt="image" class="products-swiper__img">
+                                            <div class="products-swiper__box">
+                                                <span class="products-swiper__plash">new</span>
+                                                <div class="products-swiper__line"></div>
+                                            </div>
+                                        </div>
+                                        <div class="products-swiper__block">
+                                            <p class="products-swiper__text">Термальная вода Hydrawave KSurgery</p>
+                                            <span class="products-swiper__cost">1 569 грн.</span>
+                                            <button class="products-swiper__button button">Купити</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="products-swiper__photo recommendation__photo" id="productPhotoBg">
+                                            <img src="img/product-item.png" alt="image" class="products-swiper__img">
+                                            <div class="products-swiper__box">
+                                                <span class="products-swiper__plash">new</span>
+                                                <div class="products-swiper__line"></div>
+                                            </div>
+                                        </div>
+                                        <div class="products-swiper__block">
+                                            <p class="products-swiper__text">Термальная вода Hydrawave KSurgery</p>
+                                            <span class="products-swiper__cost">1 569 грн.</span>
+                                            <button class="products-swiper__button button">Купити</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="products-swiper__photo recommendation__photo" id="productPhotoBg">
+                                            <img src="img/product-item.png" alt="image" class="products-swiper__img">
+                                            <div class="products-swiper__box">
+                                                <span class="products-swiper__plash">new</span>
+                                                <div class="products-swiper__line"></div>
+                                            </div>
+                                        </div>
+                                        <div class="products-swiper__block">
+                                            <p class="products-swiper__text">Термальная вода Hydrawave KSurgery</p>
+                                            <span class="products-swiper__cost">1 569 грн.</span>
+                                            <button class="products-swiper__button button">Купити</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div data-da=".recommendation__buttons,3000,1" class="recommendation-swiper__buttons">
+                                    <div class="swiper-button-prev recommendation-swiper__prev">назад</div>
+                                    <div class="swiper-button-next recommendation-swiper__next">далі</div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="new our">
+                <div class="container">
+                    <div class="new__inner padding">
+                        <div class="new__top">
+                            <div class="title-block">
+    <span class="title">Що думають <br> про цей товар</span>
+    <div class="title-line"></div>
+</div>
+                            <div class="our__buttons"></div>
+                        </div>
+                        <div class="our-slider">
+                            <div class="our-swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="our__block">
+                                            <div class="our__top">
+                                                <div class="our__photo">
+                                                    <img src="img/productBg.png" alt="image" class="our__img">
+                                                </div>
+                                                <div class="our__info">
+                                                    <div class="our__rating">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                    </div>
+                                                    <div class="our__person">
+                                                        <div class="our__box">
+                                                            <span class="our__name">Світлана Шевченко</span>
+                                                            <a href="#" class="our__link">instagram.com/svitlana_sh</a>
+                                                        </div>
+                                                        <div class="our__avatar">
+                                                            <img src="img/avatar.png" alt="image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="our__bottom">
+                                                <span class="our__title">Що таке Lorem Ipsum?</span>
+                                                <p class="our__subtitle">Lorem Ipsum - це текст-"риба", що
+                                                    використовується в друкарстві та
+                                                    дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI
+                                                    сторіччя</p>
+                                                <div class="our__figure"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="our__block">
+                                            <div class="our__top">
+                                                <div class="our__photo">
+                                                    <img src="img/productBg.png" alt="image" class="our__img">
+                                                </div>
+                                                <div class="our__info">
+                                                    <div class="our__rating">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                    </div>
+                                                    <div class="our__person">
+                                                        <div class="our__box">
+                                                            <span class="our__name">Світлана Шевченко</span>
+                                                            <a href="#" class="our__link">instagram.com/svitlana_sh</a>
+                                                        </div>
+                                                        <div class="our__avatar">
+                                                            <img src="img/avatar.png" alt="image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="our__bottom">
+                                                <span class="our__title">Що таке Lorem Ipsum?</span>
+                                                <p class="our__subtitle">Lorem Ipsum - це текст-"риба", що
+                                                    використовується в друкарстві та
+                                                    дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI
+                                                    сторіччя</p>
+                                                <div class="our__figure"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="our__block">
+                                            <div class="our__top">
+                                                <div class="our__photo">
+                                                    <img src="img/productBg.png" alt="image" class="our__img">
+                                                </div>
+                                                <div class="our__info">
+                                                    <div class="our__rating">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                    </div>
+                                                    <div class="our__person">
+                                                        <div class="our__box">
+                                                            <span class="our__name">Світлана Шевченко</span>
+                                                            <a href="#" class="our__link">instagram.com/svitlana_sh</a>
+                                                        </div>
+                                                        <div class="our__avatar">
+                                                            <img src="img/avatar.png" alt="image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="our__bottom">
+                                                <span class="our__title">Що таке Lorem Ipsum?</span>
+                                                <p class="our__subtitle">Lorem Ipsum - це текст-"риба", що
+                                                    використовується в друкарстві та
+                                                    дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI
+                                                    сторіччя</p>
+                                                <div class="our__figure"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="our__block">
+                                            <div class="our__top">
+                                                <div class="our__photo">
+                                                    <img src="img/productBg.png" alt="image" class="our__img">
+                                                </div>
+                                                <div class="our__info">
+                                                    <div class="our__rating">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                    </div>
+                                                    <div class="our__person">
+                                                        <div class="our__box">
+                                                            <span class="our__name">Світлана Шевченко</span>
+                                                            <a href="#" class="our__link">instagram.com/svitlana_sh</a>
+                                                        </div>
+                                                        <div class="our__avatar">
+                                                            <img src="img/avatar.png" alt="image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="our__bottom">
+                                                <span class="our__title">Що таке Lorem Ipsum?</span>
+                                                <p class="our__subtitle">Lorem Ipsum - це текст-"риба", що
+                                                    використовується в друкарстві та
+                                                    дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI
+                                                    сторіччя</p>
+                                                <div class="our__figure"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="our__block">
+                                            <div class="our__top">
+                                                <div class="our__photo">
+                                                    <img src="img/productBg.png" alt="image" class="our__img">
+                                                </div>
+                                                <div class="our__info">
+                                                    <div class="our__rating">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                        <img src="img/star-yellow.svg" alt="icon" class="our__star">
+                                                    </div>
+                                                    <div class="our__person">
+                                                        <div class="our__box">
+                                                            <span class="our__name">Світлана Шевченко</span>
+                                                            <a href="#" class="our__link">instagram.com/svitlana_sh</a>
+                                                        </div>
+                                                        <div class="our__avatar">
+                                                            <img src="img/avatar.png" alt="image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="our__bottom">
+                                                <span class="our__title">Що таке Lorem Ipsum?</span>
+                                                <p class="our__subtitle">Lorem Ipsum - це текст-"риба", що
+                                                    використовується в друкарстві та
+                                                    дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI
+                                                    сторіччя</p>
+                                                <div class="our__figure"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div data-da=".our__buttons,3000,1" class="our-swiper__buttons">
+                                    <div class="swiper-button-prev our-swiper__prev">назад</div>
+                                    <div class="swiper-button-next our-swiper__next">далі</div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer" id="footer">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__top">
+                            <div class="footer__top-left">
+                                <span class="footer__top-title">Будьте в центрі подій - підписуйтесь на нашу
+                                    розсилку!</span>
+                                <p class="footer__top-subtitle">Отримуйте першими свіжі новини про продукти, акції та
+                                    спеціальні
+                                    пропозиції. Залиште адресу електронної пошти та залишайтеся в курсі всіх оновлень.
+                                </p>
+                            </div>
+                            <div class="footer__top-right"></div>
+                        </div>
+                        <div class="footer__middle">
+                            <div class="footer__block">
+                                <p class="footer__title">BELLA DONNA <br> beauty ambassador </p>
+                            </div>
+                            <div class="footer__row">
+                                <div class="footer__column">
+                                    <ul class="footer__list">
+                                        <li class="footer__list-name">Меню</li>
+                                        <li class="footer__list-text">
+                                            <a href="#">Про магазин</a>
+                                        </li>
+                                        <li class="footer__list-text">
+                                            <a href="#">Оплата і доставка</a>
+                                        </li>
+                                        <li class="footer__list-text">
+                                            <a href="#">Співробітницво</a>
+                                        </li>
+                                        <li class="footer__list-text">
+                                            <a href="#">Гарантії і повернення</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="footer__list ">
+                                        <li class="footer__list-name hide">TEXT</li>
+                                        <li class="footer__list-text">
+                                            <a href="#">Відгуки про магазин</a>
+                                        </li>
+                                        <li class="footer__list-text">
+                                            <a href="#">Блог магазина</a>
+                                        </li>
+                                        <li class="footer__list-text">
+                                            <a href="#">Контакти</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="footer__list">
+                                        <li class="footer__list-name">Інформація</li>
+                                        <li class="footer__list-text">
+                                            <a href="#">Особистий кабінет</a>
+                                        </li>
+                                        <li class="footer__list-text">
+                                            <a href="#">Terms and Conditions of Use</a>
+                                        </li>
+                                        <li class="footer__list-text">
+                                            <a href="#">Умови використання сайту</a>
+                                        </li>
+                                        <li class="footer__list-text">
+                                            <a href="#">Карта сайту</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="footer__list">
+                                        <li class="footer__list-name">Контакты</li>
+                                        <li class="footer__list-text">
+                                            для інтернет замовлень <br>
+                                            <a href="tel:+38(067)4691860">(067) 469 18 60</a>
+                                        </li>
+                                        <li class="footer__list-text">
+                                            для співробітництва <br>
+                                            офіс: <a href="tel:+38(067)4483374">+38(067)448-33-74</a>
+                                            офіс: <a href="tel:+38(095)2715844">+38(095)271-58-44</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="footer__list">
+                                        <li class="footer__list-name hide">TEXT</li>
+                                        <li class="footer__list-text">
+                                            графік работи <br>
+                                            Пн-пт.: 9.00-16.00
+                                        </li>
+                                        <button class="footer__button">Звʼязатися з нами</button>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__bottom">
+                            <div class="footer__box">
+                                <p class="footer__title"></p>
+                            </div>
+                            <div class="footer__information">
+                                <div class="footer__media">
+                                    <img src="img/insta.svg" alt="icon" class="footer__icon">
+                                    <img src="img/youtube.svg" alt="icon" class="footer__icon">
+                                </div>
+                                <p class="footer__copy" data-da=".footer__copyright,575,1">© 2020-2023 BELLA DONNA. Всі
+                                    права защинеі
+                                </p>
+                                <div class="footer__pay">
+                                    <img src="img/visa.png" alt="image" class="footer__img">
+                                    <img src="img/mastercard.png" alt="image" class="footer__img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__copyright"></div>
+                    </div>
+                </div>
+                <div class="footer__top-sale" data-da=".footer__top-right,1420,1">
+                    <div class="footer__inputBox">
+                        <span class="input-name">Ваш Email щоб не пропустити акції</span>
+                        <input type="text" class="footer__input input">
+                        <img src="img/arrow.svg" alt="icon" class="footer__arrow">
+                    </div>
+                </div>
+                <img src="img/b.svg" alt="image" class="footer__b">
+                <img src="img/d.svg" alt="image" class="footer__d">
+            </footer>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
