@@ -28,16 +28,14 @@ import {
   tabs,
   toTop,
   typed, // NEW
-  video, // NEW
+  video // NEW
   // webp,
   // zoom,
-} from "./other/index.js";
+} from './other/index.js';
 
-window.addEventListener("load", (e) => {
+window.addEventListener('load', e => {
   // Dynamic adaptive
   useDynamicAdapt(); // data-da=".content__column-garden,992,2"
-
-
 
   // inputMask
   // let inputs = document.querySelectorAll('input[type="tel"]');
@@ -45,4 +43,3 @@ window.addEventListener("load", (e) => {
   // im.mask(inputs);
   // placeholder="+38 (___) ___-__-__"
 });
-

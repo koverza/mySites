@@ -23,7 +23,7 @@
 // @import "ibg"; // --- NEW 
 
 /* Font Awesome */
-// @import "all.scss"; // without var transform and var animation-delay
+@import "all.scss"; // without var transform and var animation-delay
 
 /* Animation */
 // @import "animation";
@@ -33,6 +33,9 @@
 
 /* Loaders */
 // @import "loaders";
+
+/* Light Gallery */
+// @import "lightGallery/indexGallery"; // --- NEW 
 
 /* Burger Menu */
 // @import "burger";
@@ -68,7 +71,7 @@
 // @import "spoiler";
 
 /* Select*/
-// @import "select";
+@import "select";
 
 /* Switch */
 // @import "switch";
@@ -91,8 +94,7 @@
 /* Rating + Score */
 // @import "ratingScore";
 
-/* Swiper */
-// @import 'node_modules/swiper/swiper-bundle.min';
+// no swiper min.scss
 
 /* NoUiSlider */
 // @import "nouislider.min";

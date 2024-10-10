@@ -64,7 +64,7 @@ h6 {
 	font-size: inherit;
 }
 .wrapper {
-  min-height: 100%;
+  min-height: 100%; // 100vh for fullscreen display: flex; flex-direction: column;
   position: relative; // for toTop
 }
 .container {
@@ -76,12 +76,4 @@ h6 {
   // max-width: $maxWidth + px; // for full background
   margin: 0 auto;
 }
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-thumb {
-  width: 5px;
-  margin: 2px;
-  background-color: #797878;
-  border-radius: 9em;
-}
+
