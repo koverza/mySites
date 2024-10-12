@@ -33,7 +33,7 @@ import {
   // zoom,
 } from './other/index.js';
 
-window.addEventListener('load', e => {
+window.addEventListener('load', () => {
   // Dynamic adaptive
   useDynamicAdapt(); // data-da=".content__column-garden,992,2"
 
